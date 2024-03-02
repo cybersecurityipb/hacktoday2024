@@ -5,4 +5,4 @@ Repository soal HackToday 2024
 ### `^hacktoday{[ -~]+}$` ###
 
 # Rekapan Challenges
-Google docs : [Rekap Soal] (https://docs.google.com/document/d/1QDhcu0ayscpb59ciVNEpJpa-y4tODpaMwKYPEm5qpq0/edit?usp=sharing)
+Google docs : [Rekap Soal](https://docs.google.com/document/d/1QDhcu0ayscpb59ciVNEpJpa-y4tODpaMwKYPEm5qpq0/edit?usp=sharing)
