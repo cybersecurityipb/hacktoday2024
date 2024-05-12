@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asam</title>
+</head>
+<body>
+    <label for="flag">Flag: </label>
+    <input type="text" id="flagInput" name="flag">
+    <button onclick="checker()">Check</button>
+    <script>
+        function checker() {
+            const flag = document.getElementById("flagInput").value.trim();
+            const result = check(flag);
+            alert(result);
+        }
+    </script>
+    <script type="module">
+        import init, {check} from "./pkg/asam.js";
+
+        await init();
+        window.check = check;
+    </script>
+</body>
+</html>
