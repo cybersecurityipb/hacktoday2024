@@ -1,17 +1,17 @@
-# Zantos Encryption
+# Curve Enjoyer
 
-bit error correction with hamming code
+ECDLP with crt
 
 ## Description
+give me the bit and i will generate something to you
 
-Frustrated cuz he couldn't understand Swusjask and Wrth encryption, Zantos decided to make his own encryption mechanism. Can you break it?
 
-nc 103.181.183.216 <port>
+nc <ip> <port>
 
 ## Release
 
 - server.py
-- nc 103.181.183.216 <port>
+- nc <ip> <port>
 
 ## Flag
-'hacktoday{error_satu_bit_gak_ngaruh_12add1992}'
+'hacktoday{B4bY_Curv3_T0_St4RT_Y0ur_D4y}'
