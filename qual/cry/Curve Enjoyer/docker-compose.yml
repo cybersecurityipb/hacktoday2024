@@ -1,0 +1,12 @@
+version: '3'
+services:
+  hacktod:
+    container_name: Curve_Enjoyer
+    restart: always
+    build:
+      context: .
+      args:
+        binary: server.py
+    ports:
+      - "<ports>:5000" # exposed:local
+    read_only: true
