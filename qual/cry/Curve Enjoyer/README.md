@@ -14,4 +14,4 @@ nc <ip> <port>
 - nc <ip> <port>
 
 ## Flag
-'hacktoday{B4bY_Curv3_T0_St4RT_Y0ur_D4y}'
+`hacktoday{B4bY_Curv3_T0_St4RT_Y0ur_D4y}`
