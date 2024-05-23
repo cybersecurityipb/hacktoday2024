@@ -1,0 +1,14 @@
+{
+  "name": "asam",
+  "version": "0.1.0",
+  "files": [
+    "asam_bg.wasm",
+    "asam.js",
+    "asam.d.ts"
+  ],
+  "module": "asam.js",
+  "types": "asam.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}

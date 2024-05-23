@@ -7,7 +7,7 @@ cumi asam manis adalah makanan favoritku, informasi ini tidak akan membantumu so
 
 ## Release
 
-None
+`service : web`
 
 ## Flag
 `hacktoday{teh_yang_asam_or_should_we_say_TEA_in_WASM??}`
