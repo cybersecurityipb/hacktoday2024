@@ -1,0 +1,8 @@
+services:
+    yesjail_revenge:
+        image: yesjail_revenge
+        container_name: yesjail_revenge
+        build: src/
+        restart: always
+        ports:
+            - "1472:8000"

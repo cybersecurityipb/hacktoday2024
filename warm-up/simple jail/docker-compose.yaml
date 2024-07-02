@@ -1,0 +1,9 @@
+services:
+    simple-jail:
+        image: simple-jail
+        container_name: simple-jail
+        build: src/
+        restart: always
+        ports:
+            - "1470:8000"
+        read_only: true

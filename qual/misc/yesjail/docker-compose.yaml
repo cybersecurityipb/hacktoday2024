@@ -1,0 +1,8 @@
+services:
+    yesjail:
+        image: yesjail
+        container_name: yesjail
+        build: src/
+        restart: always
+        ports:
+            - "1472:8000"

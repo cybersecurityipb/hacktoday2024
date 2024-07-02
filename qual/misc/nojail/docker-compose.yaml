@@ -1,0 +1,9 @@
+services:
+    nojail:
+        image: nojail
+        container_name: nojail
+        build: src/
+        restart: always
+        ports:
+            - "1471:8000"
+        read_only: true
