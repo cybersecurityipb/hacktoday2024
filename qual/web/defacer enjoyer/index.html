@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacked</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #0f0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .glitch {
+            font-size: 3em;
+            position: relative;
+            display: inline-block;
+            animation: glitch 1s infinite;
+            animation-direction: alternate;
+            margin-bottom: 20px;
+        }
+        @keyframes glitch {
+            0% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(-2px, -2px); }
+            60% { transform: translate(2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+            100% { transform: translate(0); }
+        }
+        .sindiran {
+            font-size: 1.2em;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+        /* Properti untuk gambar */
+        .hacker-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px; /* menambahkan border radius */
+            box-shadow: 0 0 10px rgba(0,0,0,0.5); /* menambahkan shadow */
+        }
+
+        /* Media queries untuk tata letak responsif */
+        @media screen and (max-width: 768px) {
+            .glitch {
+                font-size: 2em;
+            }
+            .sindiran {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="glitch">Hacked by Cyberdesu</h1>
+        <br>
+        <p class="glitch">This is just a static website and it's unhackable, lol.</p>
+        <p class="sindiran">"So, you thought you could hack me? Nice try, but I'm just too secure for your hacking skills. Maybe try learning some new tricks, scriptKiddie! 😜"</p>        
+        <img class="hacker-image" src="https://i1.sndcdn.com/artworks-000212324544-jwer8n-t500x500.jpg" alt="Hacker Image">
+    </div>
+</body>
+</html>
