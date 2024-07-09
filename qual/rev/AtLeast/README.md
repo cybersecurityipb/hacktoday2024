@@ -1,6 +1,6 @@
 # AtLeast
 
-AES GCM in rust
+AES CBC in rust
 
 ## Description
 at least this one is easy, i swear
