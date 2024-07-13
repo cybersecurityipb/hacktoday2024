@@ -1,0 +1,3758 @@
+
+// O[1] Decompilation of $func0, known as $func0
+int $func0(int param0) {
+  // local index=1
+  int local1;
+  // local index=2
+  int local2;
+  // local index=3
+  int local3;
+  // local index=4
+  int local4;
+  // local index=5
+  int local5;
+  // local index=6
+  int local6;
+  // local index=7
+  int local7;
+  // local index=8
+  int local8;
+  // local index=9
+  int local9;
+  // local index=10
+  long local10;
+
+  global0 = local8 = (global0 - 0x10);
+  label$1: {
+    label$2: {
+      label$3: {
+        label$4: {
+          label$5: {
+            label$6: {
+              label$7: {
+                if (((unsigned) param0 >= 0xf5)) {
+                  {
+                    if (((unsigned) param0 >= -0x10033)) break label$1;
+                    local5 = (param0 = (param0 + 0xb) & -0x8);
+                    if ((local9 = *((unsigned int *) 0x101024) == 0x0)) break label$4;
+                    local3 = (0x0 - local5);
+                    if ((local1 = *((unsigned int *) ((local7 = label$9: {
+                      if (((unsigned) local5 < 0x100)) break(0x0) label$9;
+                      if (((unsigned) local5 > 0xffffff)) break(0x1f) label$9;
+                      ((((local5 >>> (0x6 - param0 = __clz_i32((param0 >>> 0x8)))) & 0x1) - (param0 << 0x1)) + 0x3e);
+                    } << 0x2) + 0x100e88)) == 0x0)) {
+                      {
+                        param0 = 0x0;
+                        break label$7;
+                      };
+                    };
+                    param0 = 0x0;
+                    local4 = (local5 << (local7 != 0x1f) ? (0x19 - (local7 >>> 0x1)) : 0x0);
+                    while (1) {
+                      label$12: {
+                        if (((unsigned) local6 = (*((unsigned int *) local1 + 0x4) & -0x8) < local5)) break label$12;
+                        if (((unsigned) local6 = (local6 - local5) >= local3)) break label$12;
+                        local2 = local1;
+                        if (local3 = local6) break label$12;
+                        local3 = 0x0;
+                        param0 = local1;
+                        break label$6;
+                      };
+                      param0 = local6 ? (local6 != local1 = *((unsigned int *) ((local1 + ((local4 >>> 0x1d) & 0x4)) + 0x10))) ? local6 = *((unsigned int *) (local1 + 0x14)) : param0 : param0;
+                      local4 = (local4 << 0x1);
+                      if (local1) break label$11;
+                    break ;
+                    };
+                    break label$7;
+                  };
+                };
+                if ((local1 = (local2 = *((unsigned int *) 0x101020) >>> param0 = (local5 = ((unsigned) param0 < 0xb) ? 0x10 : ((param0 + 0xb) & -0x8) >>> 0x3)) & 0x3)) {
+                  {
+                    label$14: {
+                      if ((local4 = (param0 = (local1 = (((local1 ^ -0x1) & 0x1) + param0) << 0x3) + 0x100f18) != local3 = *((unsigned int *) param0 = *((unsigned int *) (param0 + 0x100f20)) + 0x8))) {
+                        {
+                          *((unsigned int *) local3 + 0xc) = local4;
+                          *((unsigned int *) local4 + 0x8) = local3;
+                          break label$14;
+                        };
+                      };
+                      *((unsigned int *) 0x101020) = (local2 & __rotl_i32(-0x2, local1));
+                    };
+                    local3 = (param0 + 0x8);
+                    *((unsigned int *) param0 + 0x4) = (local1 = (local1 << 0x3) | 0x3);
+                    *((unsigned int *) param0 = (param0 + local1) + 0x4) = (*((unsigned int *) param0 + 0x4) | 0x1);
+                    break label$1;
+                  };
+                };
+                if (((unsigned) local5 <= *((unsigned int *) 0x101028))) break label$4;
+                label$16: {
+                  label$17: {
+                    if ((local1 == 0x0)) {
+                      {
+                        if ((param0 = *((unsigned int *) 0x101024) == 0x0)) break label$4;
+                        local3 = ((*((unsigned int *) local1 = *((unsigned int *) ((__ctz_i32(param0) << 0x2) + 0x100e88)) + 0x4) & -0x8) - local5);
+                        local2 = local1;
+                        while (1) {
+                          label$20: {
+                            if (param0 = *((unsigned int *) local1 + 0x10)) break label$20;
+                            if (param0 = *((unsigned int *) (local1 + 0x14))) break label$20;
+                            local7 = *((unsigned int *) local2 + 0x18);
+                            label$21: {
+                              label$22: {
+                                if ((local2 == param0 = *((unsigned int *) local2 + 0xc))) {
+                                  {
+                                    if (local1 = *((unsigned int *) (local2 + local4 = *((unsigned int *) param0 = (local2 + 0x14)) ? 0x14 : 0x10))) break label$22;
+                                    param0 = 0x0;
+                                    break label$21;
+                                  };
+                                };
+                                *((unsigned int *) local1 = *((unsigned int *) local2 + 0x8) + 0xc) = param0;
+                                *((unsigned int *) param0 + 0x8) = local1;
+                                break label$21;
+                              };
+                              local4 = local4 ? param0 : (local2 + 0x10);
+                              while (1) {
+                                local6 = local4;
+                                local4 = local1 = *((unsigned int *) local1) ? local1 = (param0 = local1 + 0x14) : (param0 + 0x10);
+                                if (local1 = *((unsigned int *) (param0 + local1 ? 0x14 : 0x10))) break label$24;
+                              break ;
+                              };
+                              *((unsigned int *) local6) = 0x0;
+                            };
+                            if ((local7 == 0x0)) break label$16;
+                            if ((local2 != *((unsigned int *) local1 = ((*((unsigned int *) local2 + 0x1c) << 0x2) + 0x100e88)))) {
+                              {
+                                *((unsigned int *) (local7 + (*((unsigned int *) local7 + 0x10) == local2) ? 0x10 : 0x14)) = param0;
+                                if ((param0 == 0x0)) break label$16;
+                                break label$17;
+                              };
+                            };
+                            *((unsigned int *) local1) = param0;
+                            if (param0) break label$17;
+                            *((unsigned int *) 0x101024) = (*((unsigned int *) 0x101024) & __rotl_i32(-0x2, *((unsigned int *) local2 + 0x1c)));
+                            break label$16;
+                          };
+                          local3 = local1 = ((unsigned) local1 < local3) ? local1 = ((*((unsigned int *) param0 + 0x4) & -0x8) - local5) : local3;
+                          local2 = local1 ? param0 : local2;
+                          local1 = param0;
+                          break label$19;
+                        break ;
+                        };
+                      };
+                    };
+                    label$26: {
+                      if ((local4 = (param0 = (local1 = __ctz_i32(((local4 = (0x2 << param0) | (0x0 - local4)) & (local1 << param0))) << 0x3) + 0x100f18) != local3 = *((unsigned int *) param0 = *((unsigned int *) (param0 + 0x100f20)) + 0x8))) {
+                        {
+                          *((unsigned int *) local3 + 0xc) = local4;
+                          *((unsigned int *) local4 + 0x8) = local3;
+                          break label$26;
+                        };
+                      };
+                      *((unsigned int *) 0x101020) = (local2 & __rotl_i32(-0x2, local1));
+                    };
+                    *((unsigned int *) param0 + 0x4) = (local5 | 0x3);
+                    *((unsigned int *) local6 = (param0 + local5) + 0x4) = (local4 = (local1 = (local1 << 0x3) - local5) | 0x1);
+                    *((unsigned int *) (param0 + local1)) = local4;
+                    if (local3 = *((unsigned int *) 0x101028)) {
+                      {
+                        local1 = ((local3 & -0x8) + 0x100f18);
+                        local2 = *((unsigned int *) 0x101030);
+                        local3 = label$29: {
+                          if (((local5 = *((unsigned int *) 0x101020) & local3 = (0x1 << (local3 >>> 0x3))) == 0x0)) {
+                            {
+                              *((unsigned int *) 0x101020) = (local3 | local5);
+                              break(local1) label$29;
+                            };
+                          };
+                          *((unsigned int *) local1 + 0x8);
+                        };
+                        *((unsigned int *) local1 + 0x8) = local2;
+                        *((unsigned int *) local3 + 0xc) = local2;
+                        *((unsigned int *) local2 + 0xc) = local1;
+                        *((unsigned int *) local2 + 0x8) = local3;
+                      };
+                    };
+                    local3 = (param0 + 0x8);
+                    *((unsigned int *) 0x101030) = local6;
+                    *((unsigned int *) 0x101028) = local4;
+                    break label$1;
+                  };
+                  *((unsigned int *) param0 + 0x18) = local7;
+                  if (local1 = *((unsigned int *) local2 + 0x10)) {
+                    {
+                      *((unsigned int *) param0 + 0x10) = local1;
+                      *((unsigned int *) local1 + 0x18) = param0;
+                    };
+                  };
+                  if ((local1 = *((unsigned int *) (local2 + 0x14)) == 0x0)) break label$16;
+                  *((unsigned int *) (param0 + 0x14)) = local1;
+                  *((unsigned int *) local1 + 0x18) = param0;
+                };
+                label$32: {
+                  label$33: {
+                    if (((unsigned) local3 >= 0x10)) {
+                      {
+                        *((unsigned int *) local2 + 0x4) = (local5 | 0x3);
+                        *((unsigned int *) local4 = (local2 + local5) + 0x4) = (local3 | 0x1);
+                        *((unsigned int *) (local3 + local4)) = local3;
+                        if ((local6 = *((unsigned int *) 0x101028) == 0x0)) break label$33;
+                        param0 = ((local6 & -0x8) + 0x100f18);
+                        local1 = *((unsigned int *) 0x101030);
+                        local6 = label$35: {
+                          if (((local5 = *((unsigned int *) 0x101020) & local6 = (0x1 << (local6 >>> 0x3))) == 0x0)) {
+                            {
+                              *((unsigned int *) 0x101020) = (local5 | local6);
+                              break(param0) label$35;
+                            };
+                          };
+                          *((unsigned int *) param0 + 0x8);
+                        };
+                        *((unsigned int *) param0 + 0x8) = local1;
+                        *((unsigned int *) local6 + 0xc) = local1;
+                        *((unsigned int *) local1 + 0xc) = param0;
+                        *((unsigned int *) local1 + 0x8) = local6;
+                        break label$33;
+                      };
+                    };
+                    *((unsigned int *) local2 + 0x4) = (param0 = (local3 + local5) | 0x3);
+                    *((unsigned int *) param0 = (param0 + local2) + 0x4) = (*((unsigned int *) param0 + 0x4) | 0x1);
+                    break label$32;
+                  };
+                  *((unsigned int *) 0x101030) = local4;
+                  *((unsigned int *) 0x101028) = local3;
+                };
+                local3 = (local2 + 0x8);
+                break label$1;
+              };
+              if (((param0 | local2) == 0x0)) {
+                {
+                  local2 = 0x0;
+                  if ((param0 = ((param0 = (0x2 << local7) | (0x0 - param0)) & local9) == 0x0)) break label$4;
+                  param0 = *((unsigned int *) ((__ctz_i32(param0) << 0x2) + 0x100e88));
+                };
+              };
+              if ((param0 == 0x0)) break label$5;
+            };
+            while (1) {
+              local9 = local7 = ((unsigned) local6 = (local4 = (*((unsigned int *) param0 + 0x4) & -0x8) - local5) < local3) ? param0 : local2;
+              if ((local1 = *((unsigned int *) param0 + 0x10) == 0x0)) {
+                local1 = *((unsigned int *) (param0 + 0x14));
+              };
+              local2 = param0 = ((unsigned) local4 < local5) ? local2 : local9;
+              local3 = param0 ? local3 : local7 ? local6 : local3;
+              if (param0 = local1) break label$38;
+            break ;
+            };
+          };
+          if ((local2 == 0x0)) break label$4;
+          if ((((unsigned) local5 <= param0 = *((unsigned int *) 0x101028)) & ((unsigned) local3 >= (param0 - local5)))) break label$4;
+          local7 = *((unsigned int *) local2 + 0x18);
+          label$40: {
+            label$41: {
+              if ((local2 == param0 = *((unsigned int *) local2 + 0xc))) {
+                {
+                  if (local1 = *((unsigned int *) (local2 + local4 = *((unsigned int *) param0 = (local2 + 0x14)) ? 0x14 : 0x10))) break label$41;
+                  param0 = 0x0;
+                  break label$40;
+                };
+              };
+              *((unsigned int *) local1 = *((unsigned int *) local2 + 0x8) + 0xc) = param0;
+              *((unsigned int *) param0 + 0x8) = local1;
+              break label$40;
+            };
+            local4 = local4 ? param0 : (local2 + 0x10);
+            while (1) {
+              local6 = local4;
+              local4 = local1 = *((unsigned int *) local1) ? local1 = (param0 = local1 + 0x14) : (param0 + 0x10);
+              if (local1 = *((unsigned int *) (param0 + local1 ? 0x14 : 0x10))) break label$43;
+            break ;
+            };
+            *((unsigned int *) local6) = 0x0;
+          };
+          if ((local7 == 0x0)) break label$2;
+          if ((local2 != *((unsigned int *) local1 = ((*((unsigned int *) local2 + 0x1c) << 0x2) + 0x100e88)))) {
+            {
+              *((unsigned int *) (local7 + (*((unsigned int *) local7 + 0x10) == local2) ? 0x10 : 0x14)) = param0;
+              if ((param0 == 0x0)) break label$2;
+              break label$3;
+            };
+          };
+          *((unsigned int *) local1) = param0;
+          if (param0) break label$3;
+          *((unsigned int *) 0x101024) = (*((unsigned int *) 0x101024) & __rotl_i32(-0x2, *((unsigned int *) local2 + 0x1c)));
+          break label$2;
+        };
+        label$45: {
+          label$46: {
+            label$47: {
+              label$48: {
+                label$49: {
+                  if (((unsigned) local5 > local1 = *((unsigned int *) 0x101028))) {
+                    {
+                      if (((unsigned) local5 >= param0 = *((unsigned int *) 0x10102c))) {
+                        {
+                          param0 = __grow_memory_size((local2 = ((local5 + 0x1002f) & -0x10000) >>> 0x10));
+                          *((unsigned int *) local1 = (local8 + 0x4) + 0x8) = 0x0;
+                          *((unsigned int *) local1 + 0x4) = local2 = (param0 == -0x1) ? 0x0 : (local2 & -0x10000);
+                          *((unsigned int *) local1) = local2 ? 0x0 : (param0 << 0x10);
+                          if ((local1 = *((unsigned int *) local8 + 0x4) == 0x0)) {
+                            {
+                              local3 = 0x0;
+                              break label$1;
+                            };
+                          };
+                          local6 = *((unsigned int *) local8 + 0xc);
+                          *((unsigned int *) 0x101038) = param0 = (local3 = *((unsigned int *) local8 + 0x8) + *((unsigned int *) 0x101038));
+                          *((unsigned int *) 0x10103c) = ((unsigned) param0 < local2) ? local2 = *((unsigned int *) 0x10103c) : param0;
+                          label$53: {
+                            label$54: {
+                              if (local2 = *((unsigned int *) 0x101034)) {
+                                {
+                                  param0 = 0x100f08;
+                                  while (1) {
+                                    if ((local1 == (local4 = *((unsigned int *) param0) + local7 = *((unsigned int *) param0 + 0x4)))) break label$54;
+                                    if (param0 = *((unsigned int *) param0 + 0x8)) break label$56;
+                                  break ;
+                                  };
+                                  break label$53;
+                                };
+                              };
+                              if ((((unsigned) param0 <= local1) ? param0 = *((unsigned int *) 0x101044) : 0x0 == 0x0)) {
+                                *((unsigned int *) 0x101044) = local1;
+                              };
+                              *((unsigned int *) 0x101048) = 0xfff;
+                              *((unsigned int *) 0x100f14) = local6;
+                              *((unsigned int *) 0x100f0c) = local3;
+                              *((unsigned int *) 0x100f08) = local1;
+                              *((unsigned int *) 0x100f24) = 0x100f18;
+                              *((unsigned int *) 0x100f2c) = 0x100f20;
+                              *((unsigned int *) 0x100f20) = 0x100f18;
+                              *((unsigned int *) 0x100f34) = 0x100f28;
+                              *((unsigned int *) 0x100f28) = 0x100f20;
+                              *((unsigned int *) 0x100f3c) = 0x100f30;
+                              *((unsigned int *) 0x100f30) = 0x100f28;
+                              *((unsigned int *) 0x100f44) = 0x100f38;
+                              *((unsigned int *) 0x100f38) = 0x100f30;
+                              *((unsigned int *) 0x100f4c) = 0x100f40;
+                              *((unsigned int *) 0x100f40) = 0x100f38;
+                              *((unsigned int *) 0x100f54) = 0x100f48;
+                              *((unsigned int *) 0x100f48) = 0x100f40;
+                              *((unsigned int *) 0x100f5c) = 0x100f50;
+                              *((unsigned int *) 0x100f50) = 0x100f48;
+                              *((unsigned int *) 0x100f64) = 0x100f58;
+                              *((unsigned int *) 0x100f58) = 0x100f50;
+                              *((unsigned int *) 0x100f60) = 0x100f58;
+                              *((unsigned int *) 0x100f6c) = 0x100f60;
+                              *((unsigned int *) 0x100f68) = 0x100f60;
+                              *((unsigned int *) 0x100f74) = 0x100f68;
+                              *((unsigned int *) 0x100f70) = 0x100f68;
+                              *((unsigned int *) 0x100f7c) = 0x100f70;
+                              *((unsigned int *) 0x100f78) = 0x100f70;
+                              *((unsigned int *) 0x100f84) = 0x100f78;
+                              *((unsigned int *) 0x100f80) = 0x100f78;
+                              *((unsigned int *) 0x100f8c) = 0x100f80;
+                              *((unsigned int *) 0x100f88) = 0x100f80;
+                              *((unsigned int *) 0x100f94) = 0x100f88;
+                              *((unsigned int *) 0x100f90) = 0x100f88;
+                              *((unsigned int *) 0x100f9c) = 0x100f90;
+                              *((unsigned int *) 0x100f98) = 0x100f90;
+                              *((unsigned int *) 0x100fa4) = 0x100f98;
+                              *((unsigned int *) 0x100fac) = 0x100fa0;
+                              *((unsigned int *) 0x100fa0) = 0x100f98;
+                              *((unsigned int *) 0x100fb4) = 0x100fa8;
+                              *((unsigned int *) 0x100fa8) = 0x100fa0;
+                              *((unsigned int *) 0x100fbc) = 0x100fb0;
+                              *((unsigned int *) 0x100fb0) = 0x100fa8;
+                              *((unsigned int *) 0x100fc4) = 0x100fb8;
+                              *((unsigned int *) 0x100fb8) = 0x100fb0;
+                              *((unsigned int *) 0x100fcc) = 0x100fc0;
+                              *((unsigned int *) 0x100fc0) = 0x100fb8;
+                              *((unsigned int *) 0x100fd4) = 0x100fc8;
+                              *((unsigned int *) 0x100fc8) = 0x100fc0;
+                              *((unsigned int *) 0x100fdc) = 0x100fd0;
+                              *((unsigned int *) 0x100fd0) = 0x100fc8;
+                              *((unsigned int *) 0x100fe4) = 0x100fd8;
+                              *((unsigned int *) 0x100fd8) = 0x100fd0;
+                              *((unsigned int *) 0x100fec) = 0x100fe0;
+                              *((unsigned int *) 0x100fe0) = 0x100fd8;
+                              *((unsigned int *) 0x100ff4) = 0x100fe8;
+                              *((unsigned int *) 0x100fe8) = 0x100fe0;
+                              *((unsigned int *) 0x100ffc) = 0x100ff0;
+                              *((unsigned int *) 0x100ff0) = 0x100fe8;
+                              *((unsigned int *) 0x101004) = 0x100ff8;
+                              *((unsigned int *) 0x100ff8) = 0x100ff0;
+                              *((unsigned int *) 0x10100c) = 0x101000;
+                              *((unsigned int *) 0x101000) = 0x100ff8;
+                              *((unsigned int *) 0x101014) = 0x101008;
+                              *((unsigned int *) 0x101008) = 0x101000;
+                              *((unsigned int *) 0x10101c) = 0x101010;
+                              *((unsigned int *) 0x101010) = 0x101008;
+                              *((unsigned int *) 0x101034) = local2 = (param0 = ((local1 + 0xf) & -0x8) - 0x8);
+                              *((unsigned int *) 0x101018) = 0x101010;
+                              *((unsigned int *) 0x10102c) = param0 = ((local4 = (local3 - 0x28) + (local1 - param0)) + 0x8);
+                              *((unsigned int *) local2 + 0x4) = (param0 | 0x1);
+                              *((unsigned int *) (local1 + local4) + 0x4) = 0x28;
+                              *((unsigned int *) 0x101040) = 0x200000;
+                              break label$45;
+                            };
+                            if ((((unsigned) local2 < local4) | ((unsigned) local1 <= local2))) break label$53;
+                            if ((local4 = *((unsigned int *) param0 + 0xc) & 0x1)) break label$53;
+                            if (((local4 >>> 0x1) == local6)) break label$49;
+                          };
+                          *((unsigned int *) 0x101044) = ((unsigned) param0 < local1) ? param0 = *((unsigned int *) 0x101044) : local1;
+                          local4 = (local1 + local3);
+                          param0 = 0x100f08;
+                          label$58: {
+                            label$59: {
+                              while (1) if ((local4 != *((unsigned int *) param0))) {
+                                {
+                                  if (param0 = *((unsigned int *) param0 + 0x8)) break label$60;
+                                  break label$59;
+                                };
+                              };
+                              if ((local7 = *((unsigned int *) param0 + 0xc) & 0x1)) break label$59;
+                              if (((local7 >>> 0x1) == local6)) break label$58;
+                            };
+                            param0 = 0x100f08;
+                            while (1) label$63: {
+                              if (((unsigned) local2 >= local4 = *((unsigned int *) param0))) {
+                                if (((unsigned) local7 = (local4 + *((unsigned int *) param0 + 0x4)) > local2)) continue label$63;
+                              };
+                              param0 = *((unsigned int *) param0 + 0x8);
+                              break label$62;
+                            break label$63;
+                            };
+                            *((unsigned int *) 0x101034) = local4 = (param0 = ((local1 + 0xf) & -0x8) - 0x8);
+                            *((unsigned int *) 0x10102c) = param0 = ((local9 = (local3 - 0x28) + (local1 - param0)) + 0x8);
+                            *((unsigned int *) local4 + 0x4) = (param0 | 0x1);
+                            *((unsigned int *) (local1 + local9) + 0x4) = 0x28;
+                            *((unsigned int *) 0x101040) = 0x200000;
+                            *((unsigned int *) local4 = ((unsigned) param0 < (local2 + 0x10)) ? local2 : param0 = (((local7 - 0x20) & -0x8) - 0x8) + 0x4) = 0x1b;
+                            local10 = *((unsigned long *) 0x100f08);
+                            *((unsigned long *) (local4 + 0x10)) = *((unsigned long *) 0x100f10);
+                            *((unsigned long *) local4 + 0x8) = local10;
+                            *((unsigned int *) 0x100f14) = local6;
+                            *((unsigned int *) 0x100f0c) = local3;
+                            *((unsigned int *) 0x100f08) = local1;
+                            *((unsigned int *) 0x100f10) = (local4 + 0x8);
+                            param0 = (local4 + 0x1c);
+                            while (1) {
+                              *((unsigned int *) param0) = 0x7;
+                              if (((unsigned) param0 = (param0 + 0x4) < local7)) break label$65;
+                            break ;
+                            };
+                            if ((local2 == local4)) break label$45;
+                            *((unsigned int *) local4 + 0x4) = (*((unsigned int *) local4 + 0x4) & -0x2);
+                            *((unsigned int *) local2 + 0x4) = (param0 = (local4 - local2) | 0x1);
+                            *((unsigned int *) local4) = param0;
+                            if (((unsigned) param0 >= 0x100)) {
+                              {
+                                $func13(local2, param0);
+                                break label$45;
+                              };
+                            };
+                            local1 = ((param0 & -0x8) + 0x100f18);
+                            param0 = label$67: {
+                              if (((local4 = *((unsigned int *) 0x101020) & param0 = (0x1 << (param0 >>> 0x3))) == 0x0)) {
+                                {
+                                  *((unsigned int *) 0x101020) = (param0 | local4);
+                                  break(local1) label$67;
+                                };
+                              };
+                              *((unsigned int *) local1 + 0x8);
+                            };
+                            *((unsigned int *) local1 + 0x8) = local2;
+                            *((unsigned int *) param0 + 0xc) = local2;
+                            *((unsigned int *) local2 + 0xc) = local1;
+                            *((unsigned int *) local2 + 0x8) = param0;
+                            break label$45;
+                          };
+                          *((unsigned int *) param0) = local1;
+                          *((unsigned int *) param0 + 0x4) = (*((unsigned int *) param0 + 0x4) + local3);
+                          *((unsigned int *) local2 = (((local1 + 0xf) & -0x8) - 0x8) + 0x4) = (local5 | 0x3);
+                          local5 = (local3 = (((local4 + 0xf) & -0x8) - 0x8) - param0 = (local2 + local5));
+                          if ((local3 == *((unsigned int *) 0x101034))) break label$48;
+                          if ((local3 == *((unsigned int *) 0x101030))) break label$47;
+                          if (((local1 = *((unsigned int *) local3 + 0x4) & 0x3) == 0x1)) {
+                            {
+                              $func8(local3, local1 = (local1 & -0x8));
+                              local5 = (local1 + local5);
+                              local1 = *((unsigned int *) local3 = (local1 + local3) + 0x4);
+                            };
+                          };
+                          *((unsigned int *) local3 + 0x4) = (local1 & -0x2);
+                          *((unsigned int *) param0 + 0x4) = (local5 | 0x1);
+                          *((unsigned int *) (param0 + local5)) = local5;
+                          if (((unsigned) local5 >= 0x100)) {
+                            {
+                              $func13(param0, local5);
+                              break label$46;
+                            };
+                          };
+                          local1 = ((local5 & -0x8) + 0x100f18);
+                          local4 = label$71: {
+                            if (((local4 = *((unsigned int *) 0x101020) & local3 = (0x1 << (local5 >>> 0x3))) == 0x0)) {
+                              {
+                                *((unsigned int *) 0x101020) = (local3 | local4);
+                                break(local1) label$71;
+                              };
+                            };
+                            *((unsigned int *) local1 + 0x8);
+                          };
+                          *((unsigned int *) local1 + 0x8) = param0;
+                          *((unsigned int *) local4 + 0xc) = param0;
+                          *((unsigned int *) param0 + 0xc) = local1;
+                          *((unsigned int *) param0 + 0x8) = local4;
+                          break label$46;
+                        };
+                      };
+                      *((unsigned int *) 0x10102c) = local1 = (param0 - local5);
+                      *((unsigned int *) 0x101034) = local2 = (param0 = *((unsigned int *) 0x101034) + local5);
+                      *((unsigned int *) local2 + 0x4) = (local1 | 0x1);
+                      *((unsigned int *) param0 + 0x4) = (local5 | 0x3);
+                      local3 = (param0 + 0x8);
+                      break label$1;
+                    };
+                  };
+                  param0 = *((unsigned int *) 0x101030);
+                  label$73: {
+                    if (((unsigned) local2 = (local1 - local5) <= 0xf)) {
+                      {
+                        *((unsigned int *) 0x101030) = 0x0;
+                        *((unsigned int *) 0x101028) = 0x0;
+                        *((unsigned int *) param0 + 0x4) = (local1 | 0x3);
+                        *((unsigned int *) local1 = (param0 + local1) + 0x4) = (*((unsigned int *) local1 + 0x4) | 0x1);
+                        break label$73;
+                      };
+                    };
+                    *((unsigned int *) 0x101028) = local2;
+                    *((unsigned int *) 0x101030) = local4 = (param0 + local5);
+                    *((unsigned int *) local4 + 0x4) = (local2 | 0x1);
+                    *((unsigned int *) (param0 + local1)) = local2;
+                    *((unsigned int *) param0 + 0x4) = (local5 | 0x3);
+                  };
+                  local3 = (param0 + 0x8);
+                  break label$1;
+                };
+                *((unsigned int *) param0 + 0x4) = (local3 + local7);
+                *((unsigned int *) 0x101034) = local2 = (local1 = ((param0 = *((unsigned int *) 0x101034) + 0xf) & -0x8) - 0x8);
+                *((unsigned int *) 0x10102c) = local1 = ((local4 = (*((unsigned int *) 0x10102c) + local3) + (param0 - local1)) + 0x8);
+                *((unsigned int *) local2 + 0x4) = (local1 | 0x1);
+                *((unsigned int *) (param0 + local4) + 0x4) = 0x28;
+                *((unsigned int *) 0x101040) = 0x200000;
+                break label$45;
+              };
+              *((unsigned int *) 0x101034) = param0;
+              *((unsigned int *) 0x10102c) = local1 = (*((unsigned int *) 0x10102c) + local5);
+              *((unsigned int *) param0 + 0x4) = (local1 | 0x1);
+              break label$46;
+            };
+            *((unsigned int *) 0x101030) = param0;
+            *((unsigned int *) 0x101028) = local1 = (*((unsigned int *) 0x101028) + local5);
+            *((unsigned int *) param0 + 0x4) = (local1 | 0x1);
+            *((unsigned int *) (param0 + local1)) = local1;
+          };
+          local3 = (local2 + 0x8);
+          break label$1;
+        };
+        local3 = 0x0;
+        if (((unsigned) param0 = *((unsigned int *) 0x10102c) <= local5)) break label$1;
+        *((unsigned int *) 0x10102c) = local1 = (param0 - local5);
+        *((unsigned int *) 0x101034) = local2 = (param0 = *((unsigned int *) 0x101034) + local5);
+        *((unsigned int *) local2 + 0x4) = (local1 | 0x1);
+        *((unsigned int *) param0 + 0x4) = (local5 | 0x3);
+        local3 = (param0 + 0x8);
+        break label$1;
+      };
+      *((unsigned int *) param0 + 0x18) = local7;
+      if (local1 = *((unsigned int *) local2 + 0x10)) {
+        {
+          *((unsigned int *) param0 + 0x10) = local1;
+          *((unsigned int *) local1 + 0x18) = param0;
+        };
+      };
+      if ((local1 = *((unsigned int *) (local2 + 0x14)) == 0x0)) break label$2;
+      *((unsigned int *) (param0 + 0x14)) = local1;
+      *((unsigned int *) local1 + 0x18) = param0;
+    };
+    label$76: {
+      if (((unsigned) local3 >= 0x10)) {
+        {
+          *((unsigned int *) local2 + 0x4) = (local5 | 0x3);
+          *((unsigned int *) param0 = (local2 + local5) + 0x4) = (local3 | 0x1);
+          *((unsigned int *) (param0 + local3)) = local3;
+          if (((unsigned) local3 >= 0x100)) {
+            {
+              $func13(param0, local3);
+              break label$76;
+            };
+          };
+          local1 = ((local3 & -0x8) + 0x100f18);
+          local4 = label$79: {
+            if (((local4 = *((unsigned int *) 0x101020) & local3 = (0x1 << (local3 >>> 0x3))) == 0x0)) {
+              {
+                *((unsigned int *) 0x101020) = (local3 | local4);
+                break(local1) label$79;
+              };
+            };
+            *((unsigned int *) local1 + 0x8);
+          };
+          *((unsigned int *) local1 + 0x8) = param0;
+          *((unsigned int *) local4 + 0xc) = param0;
+          *((unsigned int *) param0 + 0xc) = local1;
+          *((unsigned int *) param0 + 0x8) = local4;
+          break label$76;
+        };
+      };
+      *((unsigned int *) local2 + 0x4) = (param0 = (local3 + local5) | 0x3);
+      *((unsigned int *) param0 = (param0 + local2) + 0x4) = (*((unsigned int *) param0 + 0x4) | 0x1);
+    };
+    local3 = (local2 + 0x8);
+  };
+  global0 = (local8 + 0x10);
+  return local3;
+}
+
+// O[1] Decompilation of $func1, known as $func1
+export "check"; // $func1 is exported to "check"
+int $func1(int param0, int param1) {
+  // local index=2
+  int local2;
+  // local index=3
+  int local3;
+  // local index=4
+  int local4;
+  // local index=5
+  int local5;
+  // local index=6
+  int local6;
+  // local index=7
+  int local7;
+  // local index=8
+  int local8;
+  // local index=9
+  int local9;
+  // local index=10
+  int local10;
+  // local index=11
+  int local11;
+  // local index=12
+  int local12;
+  // local index=13
+  int local13;
+  // local index=14
+  int local14;
+
+  global0 = local3 = (global0 - 0x60);
+  *((unsigned long *) local3 + 0x4c) = 0x6597966560967363488;
+  *((unsigned long *) local3 + 0x44) = -0x766840933949371609;
+  *((unsigned long *) local3 + 0x3c) = -0x4247886339151505561;
+  *((unsigned long *) local3 + 0x34) = -0x3700404499616383772;
+  *((unsigned long *) local3 + 0x2c) = 0x5568311295310460598;
+  *((unsigned long *) local3 + 0x24) = -0x2292911812726806454;
+  *((unsigned long *) local3 + 0x1c) = 0x2093532499834777045;
+  *((unsigned long *) local3 + 0x14) = -0x4925344955134557921;
+  *((unsigned long *) local3 + 0xc) = 0x1232776455115851805;
+  *((unsigned long *) local3 + 0x4) = 0x5760351557880941997;
+  *((unsigned int *) local3 + 0x5c) = 0x0;
+  *((unsigned long *) local3 + 0x54) = 0x17179869184;
+  label$1: {
+    label$2: {
+      label$3: {
+        label$4: {
+          label$5: {
+            if ((param1 == 0x0)) break label$5;
+            local11 = param1;
+            local4 = param0;
+            while (1) {
+              local5 = (local12 = ((unsigned) local11 >= 0x4) ? 0x4 : local11 & 0x3);
+              local7 = 0x0;
+              local9 = 0x0;
+              local2 = local4;
+              if (((unsigned) (local12 - 0x1) >= 0x3)) {
+                {
+                  local6 = (local12 & 0x4);
+                  local2 = 0x18;
+                  while (1) {
+                    local7 = ((*((unsigned char *) (local10 = (local4 + local9) + 0x3)) << local2) | (((local7 | *((unsigned char *) local10)) | (*((unsigned char *) (local10 + 0x1)) << (local2 - 0x10))) | (*((unsigned char *) (local10 + 0x2)) << (local2 - 0x8))));
+                    local2 = (local2 + 0x20);
+                    if ((local6 != local9 = (local9 + 0x4))) break label$8;
+                  break ;
+                  };
+                  local2 = (local4 + local9);
+                };
+              };
+              if (local5) {
+                {
+                  local6 = (local9 << 0x3);
+                  while (1) {
+                    local7 = ((*((unsigned char *) local2) << local6) | local7);
+                    local6 = (local6 + 0x8);
+                    local2 = (local2 + 0x1);
+                    if (local5 = (local5 - 0x1)) break label$10;
+                  break ;
+                  };
+                };
+              };
+              local11 = (local11 - local12);
+              if ((*((unsigned int *) local3 + 0x54) == local8)) {
+                {
+                  $func16((local3 + 0x54), local8);
+                  local8 = *((unsigned int *) local3 + 0x5c);
+                };
+              };
+              local4 = (local4 + local12);
+              *((unsigned int *) (*((unsigned int *) local3 + 0x58) + (local8 << 0x2))) = local7;
+              *((unsigned int *) local3 + 0x5c) = local8 = (*((unsigned int *) local3 + 0x5c) + 0x1);
+              if (local11) break label$6;
+            break ;
+            };
+            local11 = *((unsigned int *) local3 + 0x54);
+            if ((local8 & 0x1)) {
+              {
+                if ((local8 == local11)) {
+                  {
+                    $func16((local3 + 0x54), local8);
+                    local8 = *((unsigned int *) local3 + 0x5c);
+                  };
+                };
+                *((unsigned int *) (*((unsigned int *) local3 + 0x58) + (local8 << 0x2))) = 0x0;
+                local11 = *((unsigned int *) local3 + 0x54);
+                local8 = (*((unsigned int *) local3 + 0x5c) + 0x1);
+              };
+            };
+            local12 = *((unsigned int *) local3 + 0x58);
+            label$14: {
+              if ((local8 == 0x0)) break label$14;
+              local4 = local8;
+              local5 = local12;
+              while (1) {
+                if ((local2 = ((unsigned) local4 >= 0x2) ? 0x2 : local4 == 0x1)) break label$4;
+                local4 = (local4 - local2);
+                local5 = {
+                  local14 = (local5 + (local2 << 0x2));
+                  local2 = *((unsigned int *) local5 + 0x4);
+                  local7 = *((unsigned int *) local5);
+                  local6 = -0x61c88647;
+                  local9 = 0x20;
+                  while (1) {
+                    local2 = (((((local7 = (((local2 + local6) ^ (((local2 >>> 0x5) + 0x71726f6f) ^ ((local2 << 0x4) + 0x7971726f))) + local7) << 0x4) + 0x726f6f69) ^ (local6 + local7)) ^ ((local7 >>> 0x5) + 0x6f6f696e)) + local2);
+                    local6 = (local6 - 0x61c88647);
+                    if (local9 = (local9 - 0x1)) break label$16;
+                  break ;
+                  };
+                  *((unsigned int *) local5 + 0x4) = local2;
+                  *((unsigned int *) local5) = local7;
+                  local14;
+                };
+                if (local4) break label$15;
+              break ;
+              };
+              if ((local8 != 0x14)) break label$14;
+              if (($func49(local12, (local3 + 0x4), 0x50) == 0x0)) break label$3;
+            };
+            if ((local11 == 0x0)) break label$5;
+            $func4(local12);
+          };
+          local2 = 0x0;
+          break label$2;
+        };
+        $func22(0x1, 0x1, 0x10000c);
+        abort("unreachable");
+      };
+      label$17: {
+        label$18: {
+          label$19: {
+            label$20: {
+              if (((unsigned) param1 <= 0xd)) {
+                {
+                  if ((param1 != 0xd)) break label$20;
+                  break label$18;
+                };
+              };
+              if ((local4 = *((char *) param0 + 0xd) <= -0x41)) break label$20;
+              local2 = label$22: {
+                if ((local4 >= 0x0)) {
+                  {
+                    local6 = (local4 & 0xff);
+                    break((param0 + 0xe)) label$22;
+                  };
+                };
+                local2 = (*((unsigned char *) param0 + 0xe) & 0x3f);
+                local5 = (local4 & 0x1f);
+                if (((unsigned) local4 <= -0x21)) {
+                  {
+                    local6 = ((local5 << 0x6) | local2);
+                    break((param0 + 0xf)) label$22;
+                  };
+                };
+                local2 = ((*((unsigned char *) param0 + 0xf) & 0x3f) | (local2 << 0x6));
+                if (((unsigned) local4 < -0x10)) {
+                  {
+                    local6 = (local2 | (local5 << 0xc));
+                    break((param0 + 0x10)) label$22;
+                  };
+                };
+                if ((local6 = (((local5 << 0x12) & 0x1c0000) | ((*((unsigned char *) param0 + 0x10) & 0x3f) | (local2 << 0x6))) == 0x110000)) break label$18;
+                (param0 + 0x11);
+              };
+              *((unsigned char *) 0x100e4d);
+              local7 = 0x1;
+              if ((local9 = $func37(local4 = (((unsigned) local4 <= 0x7) ? 0x7 : local4 = ((local13 = (local8 = (param0 + param1) + 0x3) - local2) >>> 0x2) + 0x1), 0x1) == 0x0)) break label$19;
+              *((unsigned char *) local9) = (local6 ^ 0x69);
+              *((unsigned int *) local3 + 0x5c) = 0x1;
+              *((unsigned int *) local3 + 0x58) = local9;
+              *((unsigned int *) local3 + 0x54) = local4;
+              if ((local2 == local8)) break label$17;
+              while (1) label$27: {
+                local2 = label$28: {
+                  if ((local4 = *((char *) local2) >= 0x0)) {
+                    {
+                      local6 = (local4 & 0xff);
+                      break((local2 + 0x1)) label$28;
+                    };
+                  };
+                  local10 = (*((unsigned char *) local2 + 0x1) & 0x3f);
+                  local5 = (local4 & 0x1f);
+                  if (((unsigned) local4 <= -0x21)) {
+                    {
+                      local6 = ((local5 << 0x6) | local10);
+                      break((local2 + 0x2)) label$28;
+                    };
+                  };
+                  local10 = ((*((unsigned char *) local2 + 0x2) & 0x3f) | (local10 << 0x6));
+                  if (((unsigned) local4 < -0x10)) {
+                    {
+                      local6 = (local10 | (local5 << 0xc));
+                      break((local2 + 0x3)) label$28;
+                    };
+                  };
+                  if ((local6 = (((local5 << 0x12) & 0x1c0000) | ((*((unsigned char *) local2 + 0x3) & 0x3f) | (local10 << 0x6))) == 0x110000)) continue label$27;
+                  (local2 + 0x4);
+                };
+                if ((*((unsigned int *) local3 + 0x54) == local7)) {
+                  {
+                    $func18((local3 + 0x54), local7, (((local13 - local2) >>> 0x2) + 0x1));
+                    local9 = *((unsigned int *) local3 + 0x58);
+                  };
+                };
+                *((unsigned char *) (local7 + local9)) = (local6 ^ 0x69);
+                *((unsigned int *) local3 + 0x5c) = local7 = (local7 + 0x1);
+                if ((local2 != local8)) break label$26;
+              break label$27;
+              };
+              local9 = *((unsigned int *) local3 + 0x58);
+              local4 = *((unsigned int *) local3 + 0x54);
+              break label$17;
+            };
+            $func36(param0, param1, 0xd, param1, 0x10001c);
+            abort("unreachable");
+          };
+          $func47(0x1, local4);
+          abort("unreachable");
+        };
+        local9 = 0x1;
+        local4 = 0x0;
+        local7 = 0x0;
+      };
+      local2 = 0x0;
+      *((unsigned char *) 0x100e4d);
+      if ((local5 = $func37(0x3e, 0x1) == 0x0)) break label$1;
+      *((unsigned short *) local5 + 0x3c) = 0x141d;
+      *((unsigned int *) local5 + 0x38) = 0x5907361c;
+      *((unsigned long *) local5 + 0x30) = 0x436908589447717208;
+      *((unsigned long *) local5 + 0x28) = 0x3899303686850805814;
+      *((unsigned long *) local5 + 0x20) = 0x872022723546199565;
+      *((unsigned long *) local5 + 0x18) = 0x368267306934360346;
+      *((unsigned long *) local5 + 0x10) = 0x3895642299542408205;
+      *((unsigned long *) local5 + 0x8) = 0x586594083881618230;
+      *((unsigned long *) local5) = 0x295557651394658358;
+      if ((local7 == 0x3e)) {
+        local2 = ($func49(local9, local5, 0x3e) == 0x0);
+      };
+      $func4(local5);
+      if (local4) {
+        $func4(local9);
+      };
+      if ((local11 == 0x0)) break label$2;
+      $func4(local12);
+    };
+    if (param1) {
+      $func4(param0);
+    };
+    global0 = (local3 + 0x60);
+    return local2;
+  };
+  $func47(0x1, 0x3e);
+  abort("unreachable");
+}
+
+// O[2] Disassembly of $func2, known as $func2
+int $func2(int param0, int param1) {
+  // local index=2
+  int local2;
+  // local index=3
+  int local3;
+  // local index=4
+  int local4;
+  // local index=5
+  int local5;
+  // local index=6
+  int local6;
+  // local index=7
+  int local7;
+  // local index=8
+  int local8;
+  // local index=9
+  int local9;
+
+  label$1: {
+    label$2: {
+      if (((unsigned) param1 < local8 = (local2 = ((param0 + 0x3) & -0x4) - param0))) break label$2;
+      if (((unsigned) local6 = (param1 - local8) < 0x4)) break label$2;
+      local7 = (local6 & 0x3);
+      param1 = 0x0;
+      label$3: {
+        if (local9 = (param0 == local2)) break label$3;
+        label$4: {
+          if (((unsigned) (local2 + (param0 ^ -0x1)) < 0x3)) {
+            break label$4;
+          };
+          while (1) {
+            param1 = ((((param1 + (*((char *) local3 = (param0 + local4)) > -0x41)) + (*((char *) (local3 + 0x1)) > -0x41)) + (*((char *) (local3 + 0x2)) > -0x41)) + (*((char *) (local3 + 0x3)) > -0x41));
+            if (local4 = (local4 + 0x4)) break label$6;
+          break ;
+          };
+        };
+        if (local9) break label$3;
+        local3 = (param0 - local2);
+        local2 = (param0 + local4);
+        while (1) {
+          param1 = (param1 + (*((char *) local2) > -0x41));
+          local2 = (local2 + 0x1);
+          if (local3 = (local3 + 0x1)) break label$7;
+        break ;
+        };
+      };
+      local4 = (param0 + local8);
+      label$8: {
+        if ((local7 == 0x0)) break label$8;
+        local5 = (*((char *) param0 = (local4 + (local6 & -0x4))) > -0x41);
+        if ((local7 == 0x1)) break label$8;
+        local5 = (local5 + (*((char *) param0 + 0x1) > -0x41));
+        if ((local7 == 0x2)) break label$8;
+        local5 = (local5 + (*((char *) param0 + 0x2) > -0x41));
+      };
+      local6 = (local6 >>> 0x2);
+      local3 = (param1 + local5);
+      while (1) {
+        param0 = local4;
+        if ((local6 == 0x0)) break label$1;
+        local5 = (local4 = ((unsigned) local6 >= 0xc0) ? 0xc0 : local6 & 0x3);
+        local8 = (local4 << 0x2);
+        label$10: {
+          if ((local7 = (local4 & 0xfc) == 0x0)) {
+            {
+              local2 = 0x0;
+              break label$10;
+            };
+          };
+          local9 = (param0 + (local7 << 0x2));
+          local2 = 0x0;
+          param1 = param0;
+          while (1) {
+            local2 = ((((local2 + ((((local2 = *((unsigned int *) param1) ^ -0x1) >>> 0x7) | (local2 >>> 0x6)) & 0x1010101)) + ((((local2 = *((unsigned int *) (param1 + 0x4)) ^ -0x1) >>> 0x7) | (local2 >>> 0x6)) & 0x1010101)) + ((((local2 = *((unsigned int *) (param1 + 0x8)) ^ -0x1) >>> 0x7) | (local2 >>> 0x6)) & 0x1010101)) + ((((local2 = *((unsigned int *) (param1 + 0xc)) ^ -0x1) >>> 0x7) | (local2 >>> 0x6)) & 0x1010101));
+            if ((param1 = (param1 + 0x10) != local9)) break label$12;
+          break ;
+          };
+        };
+        local6 = (local6 - local4);
+        local4 = (param0 + local8);
+        local3 = ((((((local2 >>> 0x8) & 0xff00ff) + (local2 & 0xff00ff)) * 0x10001) >>> 0x10) + local3);
+        if ((local5 == 0x0)) break label$9;
+      break ;
+      };
+      local3 = ((((((param1 = label$13: {
+        if ((local5 == 0x1)) break(param1 = ((((param1 = *((unsigned int *) param0 = (param0 + (local7 << 0x2))) ^ -0x1) >>> 0x7) | (param1 >>> 0x6)) & 0x1010101)) label$13;
+        if ((local5 == 0x2)) break(param1 = (param1 + ((((param1 = *((unsigned int *) param0 + 0x4) ^ -0x1) >>> 0x7) | (param1 >>> 0x6)) & 0x1010101))) label$13;
+        (((((param0 = *((unsigned int *) param0 + 0x8) ^ -0x1) >>> 0x7) | (param0 >>> 0x6)) & 0x1010101) + param1);
+      } >>> 0x8) & 0x700ff) + (param1 & 0xff00ff)) * 0x10001) >>> 0x10) + local3);
+      break label$1;
+    };
+    if ((param1 == 0x0)) {
+      return 0x0;
+    };
+    local4 = (param1 & 0x3);
+    label$15: {
+      if (((unsigned) param1 < 0x4)) {
+        {
+          local2 = 0x0;
+          break label$15;
+        };
+      };
+      local5 = (param1 & -0x4);
+      local2 = 0x0;
+      while (1) {
+        local3 = ((((local3 + (*((char *) param1 = (param0 + local2)) > -0x41)) + (*((char *) (param1 + 0x1)) > -0x41)) + (*((char *) (param1 + 0x2)) > -0x41)) + (*((char *) (param1 + 0x3)) > -0x41));
+        if ((local5 != local2 = (local2 + 0x4))) break label$17;
+      break ;
+      };
+    };
+    if ((local4 == 0x0)) break label$1;
+    param1 = (param0 + local2);
+    while (1) {
+      local3 = (local3 + (*((char *) param1) > -0x41));
+      param1 = (param1 + 0x1);
+      if (local4 = (local4 - 0x1)) break label$18;
+    break ;
+    };
+  };
+  return local3;
+}
+
+// O[2] Disassembly of $func3, known as $func3
+int $func3(int param0, int param1, int param2, int param3, int param4) {
+  // local index=5
+  int local5;
+  // local index=6
+  int local6;
+  // local index=7
+  int local7;
+  // local index=8
+  int local8;
+  // local index=9
+  int local9;
+  // local index=10
+  int local10;
+  // local index=11
+  int local11;
+  // local index=12
+  int local12;
+
+  local12 = local6 = (local8 = *((unsigned int *) param0 + 0x1c) & 0x1) ? 0x2b : 0x110000;
+  local6 = (param4 + local6);
+  label$1: {
+    if (((local8 & 0x4) == 0x0)) {
+      {
+        param1 = 0x0;
+        break label$1;
+      };
+    };
+    label$3: {
+      if (((unsigned) param2 >= 0x10)) {
+        {
+          local5 = $func2(param1, param2);
+          break label$3;
+        };
+      };
+      if ((param2 == 0x0)) {
+        break label$3;
+      };
+      local9 = (param2 & 0x3);
+      label$6: {
+        if (((unsigned) param2 < 0x4)) {
+          break label$6;
+        };
+        local10 = (param2 & -0x4);
+        while (1) {
+          local5 = ((((local5 + (*((char *) local11 = (param1 + local7)) > -0x41)) + (*((char *) (local11 + 0x1)) > -0x41)) + (*((char *) (local11 + 0x2)) > -0x41)) + (*((char *) (local11 + 0x3)) > -0x41));
+          if ((local10 != local7 = (local7 + 0x4))) break label$8;
+        break ;
+        };
+      };
+      if ((local9 == 0x0)) break label$3;
+      local7 = (param1 + local7);
+      while (1) {
+        local5 = (local5 + (*((char *) local7) > -0x41));
+        local7 = (local7 + 0x1);
+        if (local9 = (local9 - 0x1)) break label$9;
+      break ;
+      };
+    };
+    local6 = (local5 + local6);
+  };
+  label$10: {
+    label$11: {
+      if ((*((unsigned int *) param0) == 0x0)) {
+        {
+          local5 = 0x1;
+          if ($func29(local6 = *((unsigned int *) param0 + 0x14), param0 = *((unsigned int *) param0 + 0x18), local12, param1, param2)) break label$11;
+          break label$10;
+        };
+      };
+      if (((unsigned) local6 >= local7 = *((unsigned int *) param0 + 0x4))) {
+        {
+          local5 = 0x1;
+          if ($func29(local6 = *((unsigned int *) param0 + 0x14), param0 = *((unsigned int *) param0 + 0x18), local12, param1, param2)) break label$11;
+          break label$10;
+        };
+      };
+      if ((local8 & 0x8)) {
+        {
+          local8 = *((unsigned int *) param0 + 0x10);
+          *((unsigned int *) param0 + 0x10) = 0x30;
+          local10 = *((unsigned char *) param0 + 0x20);
+          local5 = 0x1;
+          *((unsigned char *) param0 + 0x20) = 0x1;
+          if ($func29(local9 = *((unsigned int *) param0 + 0x14), local11 = *((unsigned int *) param0 + 0x18), local12, param1, param2)) break label$11;
+          local5 = ((local7 - local6) + 0x1);
+          label$15: {
+            while (1) {
+              if ((local5 = (local5 - 0x1) == 0x0)) break label$15;
+              if ((__function_table[*((unsigned int *) local11 + 0x10)](local9, 0x30) == 0x0)) break label$16;
+            break ;
+            };
+            return 0x1;
+          };
+          local5 = 0x1;
+          if (__function_table[*((unsigned int *) local11 + 0xc)](local9, param3, param4)) break label$11;
+          *((unsigned char *) param0 + 0x20) = local10;
+          *((unsigned int *) param0 + 0x10) = local8;
+          local5 = 0x0;
+          break label$11;
+        };
+      };
+      local6 = (local7 - local6);
+      label$17: {
+        label$18: {
+          label$19: {
+            switch ((local5 = *((unsigned char *) param0 + 0x20) - 0x1)) {
+              case 0: break label$19;
+              case 1: break label$18;
+              case 2: break label$19;
+              default: break label$17;
+            };
+          };
+          local5 = local6;
+          local6 = 0x0;
+          break label$17;
+        };
+        local5 = (local6 >>> 0x1);
+        local6 = ((local6 + 0x1) >>> 0x1);
+      };
+      local5 = (local5 + 0x1);
+      local8 = *((unsigned int *) (param0 + 0x18));
+      local10 = *((unsigned int *) param0 + 0x10);
+      param0 = *((unsigned int *) param0 + 0x14);
+      label$20: {
+        while (1) {
+          if ((local5 = (local5 - 0x1) == 0x0)) break label$20;
+          if ((__function_table[*((unsigned int *) local8 + 0x10)](param0, local10) == 0x0)) break label$21;
+        break ;
+        };
+        return 0x1;
+      };
+      local5 = 0x1;
+      if ($func29(param0, local8, local12, param1, param2)) break label$11;
+      if (__function_table[*((unsigned int *) local8 + 0xc)](param0, param3, param4)) break label$11;
+      local5 = 0x0;
+      while (1) {
+        if ((local5 == local6)) {
+          return 0x0;
+        };
+        local5 = (local5 + 0x1);
+        if ((__function_table[*((unsigned int *) local8 + 0x10)](param0, local10) == 0x0)) break label$22;
+      break ;
+      };
+      return ((unsigned) (local5 - 0x1) < local6);
+    };
+    return local5;
+  };
+  return __function_table[*((unsigned int *) param0 + 0xc)](local6, param3, param4);
+}
+
+// O[2] Disassembly of $func4, known as $func4
+void $func4(int param0) {
+  // local index=1
+  int local1;
+  // local index=2
+  int local2;
+  // local index=3
+  int local3;
+  // local index=4
+  int local4;
+  // local index=5
+  int local5;
+
+  local2 = (local1 = (param0 - 0x8) + param0 = (local3 = *((unsigned int *) (param0 - 0x4)) & -0x8));
+  label$1: {
+    label$2: {
+      label$3: {
+        label$4: {
+          if ((local3 & 0x1)) break label$4;
+          if (((local3 & 0x3) == 0x0)) break label$3;
+          param0 = (local3 = *((unsigned int *) local1) + param0);
+          if ((local1 = (local1 - local3) == *((unsigned int *) 0x101030))) {
+            {
+              if (((*((unsigned int *) local2 + 0x4) & 0x3) != 0x3)) break label$4;
+              *((unsigned int *) 0x101028) = param0;
+              *((unsigned int *) local2 + 0x4) = (*((unsigned int *) local2 + 0x4) & -0x2);
+              *((unsigned int *) local1 + 0x4) = (param0 | 0x1);
+              *((unsigned int *) local2) = param0;
+              return;
+            };
+          };
+          $func8(local1, local3);
+        };
+        label$6: {
+          label$7: {
+            if (((local3 = *((unsigned int *) local2 + 0x4) & 0x2) == 0x0)) {
+              {
+                if ((local2 == *((unsigned int *) 0x101034))) break label$6;
+                if ((local2 == *((unsigned int *) 0x101030))) break label$1;
+                $func8(local2, local2 = (local3 & -0x8));
+                *((unsigned int *) local1 + 0x4) = (param0 = (param0 + local2) | 0x1);
+                *((unsigned int *) (param0 + local1)) = param0;
+                if ((local1 != *((unsigned int *) 0x101030))) break label$7;
+                *((unsigned int *) 0x101028) = param0;
+                return;
+              };
+            };
+            *((unsigned int *) local2 + 0x4) = (local3 & -0x2);
+            *((unsigned int *) local1 + 0x4) = (param0 | 0x1);
+            *((unsigned int *) (param0 + local1)) = param0;
+          };
+          if (((unsigned) param0 < 0x100)) break label$2;
+          $func13(local1, param0);
+          local1 = 0x0;
+          *((unsigned int *) 0x101048) = param0 = (*((unsigned int *) 0x101048) - 0x1);
+          if (param0) break label$3;
+          if (param0 = *((unsigned int *) 0x100f10)) {
+            while (1) {
+              local1 = (local1 + 0x1);
+              if (param0 = *((unsigned int *) param0 + 0x8)) break label$10;
+            break ;
+            };
+          };
+          *((unsigned int *) 0x101048) = ((unsigned) local1 <= 0xfff) ? 0xfff : local1;
+          return;
+        };
+        *((unsigned int *) 0x101034) = local1;
+        *((unsigned int *) 0x10102c) = param0 = (*((unsigned int *) 0x10102c) + param0);
+        *((unsigned int *) local1 + 0x4) = (param0 | 0x1);
+        if ((*((unsigned int *) 0x101030) == local1)) {
+          {
+            *((unsigned int *) 0x101028) = 0x0;
+            *((unsigned int *) 0x101030) = 0x0;
+          };
+        };
+        if (((unsigned) param0 <= local3 = *((unsigned int *) 0x101040))) break label$3;
+        if ((local2 = *((unsigned int *) 0x101034) == 0x0)) break label$3;
+        local1 = 0x0;
+        label$12: {
+          if (((unsigned) local4 = *((unsigned int *) 0x10102c) < 0x29)) break label$12;
+          param0 = 0x100f08;
+          while (1) {
+            if (((unsigned) local2 >= local5 = *((unsigned int *) param0))) {
+              if (((unsigned) (local5 + *((unsigned int *) param0 + 0x4)) > local2)) break label$12;
+            };
+            if (param0 = *((unsigned int *) param0 + 0x8)) break label$13;
+          break ;
+          };
+        };
+        if (param0 = *((unsigned int *) 0x100f10)) {
+          while (1) {
+            local1 = (local1 + 0x1);
+            if (param0 = *((unsigned int *) param0 + 0x8)) break label$16;
+          break ;
+          };
+        };
+        *((unsigned int *) 0x101048) = ((unsigned) local1 <= 0xfff) ? 0xfff : local1;
+        if (((unsigned) local3 >= local4)) break label$3;
+        *((unsigned int *) 0x101040) = -0x1;
+      };
+      return;
+    };
+    local2 = ((param0 & -0x8) + 0x100f18);
+    param0 = label$17: {
+      if (((local3 = *((unsigned int *) 0x101020) & param0 = (0x1 << (param0 >>> 0x3))) == 0x0)) {
+        {
+          *((unsigned int *) 0x101020) = (param0 | local3);
+          break(local2) label$17;
+        };
+      };
+      *((unsigned int *) local2 + 0x8);
+    };
+    *((unsigned int *) local2 + 0x8) = local1;
+    *((unsigned int *) param0 + 0xc) = local1;
+    *((unsigned int *) local1 + 0xc) = local2;
+    *((unsigned int *) local1 + 0x8) = param0;
+    return;
+  };
+  *((unsigned int *) 0x101030) = local1;
+  *((unsigned int *) 0x101028) = param0 = (*((unsigned int *) 0x101028) + param0);
+  *((unsigned int *) local1 + 0x4) = (param0 | 0x1);
+  *((unsigned int *) (param0 + local1)) = param0;
+}
+
+// O[1] Decompilation of $func5, known as $func5
+int $func5(int param0, int param1, int param2) {
+  // local index=3
+  int local3;
+  // local index=4
+  int local4;
+  // local index=5
+  int local5;
+  // local index=6
+  int local6;
+  // local index=7
+  int local7;
+  // local index=8
+  int local8;
+  // local index=9
+  int local9;
+  // local index=10
+  int local10;
+  // local index=11
+  int local11;
+  // local index=12
+  int local12;
+  // local index=13
+  int local13;
+  // local index=14
+  int local14;
+
+  global0 = local3 = (global0 - 0x30);
+  *((unsigned int *) (local3 + 0x24)) = param1;
+  *((unsigned char *) local3 + 0x2c) = 0x3;
+  *((unsigned int *) local3 + 0x1c) = 0x20;
+  *((unsigned int *) local3 + 0x28) = 0x0;
+  *((unsigned int *) local3 + 0x20) = param0;
+  *((unsigned int *) local3 + 0x14) = 0x0;
+  *((unsigned int *) local3 + 0xc) = 0x0;
+  return {
+    local14 = label$1: {
+      label$2: {
+        label$3: {
+          label$4: {
+            if ((local11 = *((unsigned int *) param2 + 0x10) == 0x0)) {
+              {
+                if ((param0 = *((unsigned int *) (param2 + 0xc)) == 0x0)) break label$4;
+                local4 = (param1 = *((unsigned int *) param2 + 0x8) + (param0 << 0x3));
+                local8 = (((param0 - 0x1) & 0x1fffffff) + 0x1);
+                param0 = *((unsigned int *) param2);
+                while (1) {
+                  if (local6 = *((unsigned int *) (param0 + 0x4))) {
+                    if (__function_table[*((unsigned int *) *((unsigned int *) local3 + 0x24) + 0xc)](*((unsigned int *) local3 + 0x20), *((unsigned int *) param0), local6)) break label$3;
+                  };
+                  if (__function_table[*((unsigned int *) (param1 + 0x4))](*((unsigned int *) param1), (local3 + 0xc))) break label$3;
+                  local5 = (local5 + 0x1);
+                  param0 = (param0 + 0x8);
+                  if ((param1 = (param1 + 0x8) != local4)) break label$6;
+                break ;
+                };
+                break label$4;
+              };
+            };
+            if ((param0 = *((unsigned int *) (param2 + 0x14)) == 0x0)) break label$4;
+            local12 = (param0 << 0x5);
+            local8 = (((param0 - 0x1) & 0x7ffffff) + 0x1);
+            local6 = *((unsigned int *) param2 + 0x8);
+            param0 = *((unsigned int *) param2);
+            while (1) {
+              if (param1 = *((unsigned int *) (param0 + 0x4))) {
+                if (__function_table[*((unsigned int *) *((unsigned int *) local3 + 0x24) + 0xc)](*((unsigned int *) local3 + 0x20), *((unsigned int *) param0), param1)) break label$3;
+              };
+              *((unsigned int *) local3 + 0x1c) = *((unsigned int *) (param1 = (local5 + local11) + 0x10));
+              *((unsigned char *) local3 + 0x2c) = *((unsigned char *) (param1 + 0x1c));
+              *((unsigned int *) local3 + 0x28) = *((unsigned int *) (param1 + 0x18));
+              local7 = *((unsigned int *) (param1 + 0xc));
+              local10 = 0x0;
+              local4 = 0x0;
+              label$10: {
+                label$11: {
+                  label$12: {
+                    switch ((*((unsigned int *) (param1 + 0x8)) - 0x1)) {
+                      case 0: break label$12;
+                      case 1: break label$10;
+                      default: break label$11;
+                    };
+                  };
+                  if ((*((unsigned int *) local13 = ((local7 << 0x3) + local6) + 0x4) != 0x11)) break label$10;
+                  local7 = *((unsigned int *) *((unsigned int *) local13));
+                };
+                local4 = 0x1;
+              };
+              *((unsigned int *) local3 + 0x10) = local7;
+              *((unsigned int *) local3 + 0xc) = local4;
+              local4 = *((unsigned int *) (param1 + 0x4));
+              label$13: {
+                label$14: {
+                  label$15: {
+                    switch ((*((unsigned int *) param1) - 0x1)) {
+                      case 0: break label$15;
+                      case 1: break label$13;
+                      default: break label$14;
+                    };
+                  };
+                  if ((*((unsigned int *) local7 = ((local4 << 0x3) + local6) + 0x4) != 0x11)) break label$13;
+                  local4 = *((unsigned int *) *((unsigned int *) local7));
+                };
+                local10 = 0x1;
+              };
+              *((unsigned int *) local3 + 0x18) = local4;
+              *((unsigned int *) local3 + 0x14) = local10;
+              if (__function_table[*((unsigned int *) (param1 + 0x4))](*((unsigned int *) param1 = (local6 + (*((unsigned int *) (param1 + 0x14)) << 0x3))), (local3 + 0xc))) break label$3;
+              local9 = (local9 + 0x1);
+              param0 = (param0 + 0x8);
+              if ((local12 != local5 = (local5 + 0x20))) break label$8;
+            break ;
+            };
+          };
+          if (((unsigned) local8 >= *((unsigned int *) param2 + 0x4))) break label$2;
+          if ((__function_table[*((unsigned int *) *((unsigned int *) local3 + 0x24) + 0xc)](*((unsigned int *) local3 + 0x20), *((unsigned int *) param0 = (*((unsigned int *) param2) + (local8 << 0x3))), *((unsigned int *) param0 + 0x4)) == 0x0)) break label$2;
+        };
+        break(0x1) label$1;
+      };
+      0x0;
+    };
+    global0 = (local3 + 0x30);
+    local14;
+  };
+}
+
+// O[2] Disassembly of $func6, known as $func6
+void $func6(int param0, int param1) {
+  // local index=2
+  int local2;
+  // local index=3
+  int local3;
+
+  local2 = (param0 + param1);
+  label$1: {
+    label$2: {
+      if ((local3 = *((unsigned int *) param0 + 0x4) & 0x1)) break label$2;
+      if (((local3 & 0x3) == 0x0)) break label$1;
+      param1 = (local3 = *((unsigned int *) param0) + param1);
+      if ((param0 = (param0 - local3) == *((unsigned int *) 0x101030))) {
+        {
+          if (((*((unsigned int *) local2 + 0x4) & 0x3) != 0x3)) break label$2;
+          *((unsigned int *) 0x101028) = param1;
+          *((unsigned int *) local2 + 0x4) = (*((unsigned int *) local2 + 0x4) & -0x2);
+          *((unsigned int *) param0 + 0x4) = (param1 | 0x1);
+          *((unsigned int *) local2) = param1;
+          break label$1;
+        };
+      };
+      $func8(param0, local3);
+    };
+    label$4: {
+      label$5: {
+        label$6: {
+          if (((local3 = *((unsigned int *) local2 + 0x4) & 0x2) == 0x0)) {
+            {
+              if ((local2 == *((unsigned int *) 0x101034))) break label$5;
+              if ((local2 == *((unsigned int *) 0x101030))) break label$4;
+              $func8(local2, local2 = (local3 & -0x8));
+              *((unsigned int *) param0 + 0x4) = (param1 = (param1 + local2) | 0x1);
+              *((unsigned int *) (param0 + param1)) = param1;
+              if ((param0 != *((unsigned int *) 0x101030))) break label$6;
+              *((unsigned int *) 0x101028) = param1;
+              return;
+            };
+          };
+          *((unsigned int *) local2 + 0x4) = (local3 & -0x2);
+          *((unsigned int *) param0 + 0x4) = (param1 | 0x1);
+          *((unsigned int *) (param0 + param1)) = param1;
+        };
+        if (((unsigned) param1 >= 0x100)) {
+          {
+            $func13(param0, param1);
+            return;
+          };
+        };
+        local2 = ((param1 & -0x8) + 0x100f18);
+        param1 = label$9: {
+          if (((local3 = *((unsigned int *) 0x101020) & param1 = (0x1 << (param1 >>> 0x3))) == 0x0)) {
+            {
+              *((unsigned int *) 0x101020) = (param1 | local3);
+              break(local2) label$9;
+            };
+          };
+          *((unsigned int *) local2 + 0x8);
+        };
+        *((unsigned int *) local2 + 0x8) = param0;
+        *((unsigned int *) param1 + 0xc) = param0;
+        *((unsigned int *) param0 + 0xc) = local2;
+        *((unsigned int *) param0 + 0x8) = param1;
+        return;
+      };
+      *((unsigned int *) 0x101034) = param0;
+      *((unsigned int *) 0x10102c) = param1 = (*((unsigned int *) 0x10102c) + param1);
+      *((unsigned int *) param0 + 0x4) = (param1 | 0x1);
+      if ((param0 != *((unsigned int *) 0x101030))) break label$1;
+      *((unsigned int *) 0x101028) = 0x0;
+      *((unsigned int *) 0x101030) = 0x0;
+      return;
+    };
+    *((unsigned int *) 0x101030) = param0;
+    *((unsigned int *) 0x101028) = param1 = (*((unsigned int *) 0x101028) + param1);
+    *((unsigned int *) param0 + 0x4) = (param1 | 0x1);
+    *((unsigned int *) (param0 + param1)) = param1;
+  };
+}
+
+// O[2] Disassembly of $func7, known as $func7
+int $func7(int param0, int param1) {
+  // local index=2
+  int local2;
+  // local index=3
+  int local3;
+  // local index=4
+  int local4;
+  // local index=5
+  int local5;
+  // local index=6
+  int local6;
+
+  label$1: {
+    if (((unsigned) (-0x10033 - param0 = ((unsigned) param0 <= 0x10) ? 0x10 : param0) <= param1)) break label$1;
+    if ((local2 = $func0(((param0 + local4 = ((unsigned) param1 < 0xb) ? 0x10 : ((param1 + 0xb) & -0x8)) + 0xc)) == 0x0)) break label$1;
+    param1 = (local2 - 0x8);
+    label$2: {
+      if (((local3 = (param0 - 0x1) & local2) == 0x0)) {
+        {
+          param0 = param1;
+          break label$2;
+        };
+      };
+      local3 = ((local6 = *((unsigned int *) local5 = (local2 - 0x4)) & -0x8) - local2 = (param0 = (local2 = (((local2 + local3) & (0x0 - param0)) - 0x8) + ((unsigned) (local2 - param1) <= 0x10) ? param0 : 0x0) - param1));
+      if ((local6 & 0x3)) {
+        {
+          *((unsigned int *) param0 + 0x4) = ((local3 | (*((unsigned int *) param0 + 0x4) & 0x1)) | 0x2);
+          *((unsigned int *) local3 = (param0 + local3) + 0x4) = (*((unsigned int *) local3 + 0x4) | 0x1);
+          *((unsigned int *) local5) = ((local2 | (*((unsigned int *) local5) & 0x1)) | 0x2);
+          *((unsigned int *) local3 = (param1 + local2) + 0x4) = (*((unsigned int *) local3 + 0x4) | 0x1);
+          $func6(param1, local2);
+          break label$2;
+        };
+      };
+      param1 = *((unsigned int *) param1);
+      *((unsigned int *) param0 + 0x4) = local3;
+      *((unsigned int *) param0) = (param1 + local2);
+    };
+    label$5: {
+      if (((param1 = *((unsigned int *) param0 + 0x4) & 0x3) == 0x0)) break label$5;
+      if (((unsigned) local2 = (param1 & -0x8) <= (local4 + 0x10))) break label$5;
+      *((unsigned int *) param0 + 0x4) = ((local4 | (param1 & 0x1)) | 0x2);
+      *((unsigned int *) param1 = (param0 + local4) + 0x4) = (local4 = (local2 - local4) | 0x3);
+      *((unsigned int *) local2 = (param0 + local2) + 0x4) = (*((unsigned int *) local2 + 0x4) | 0x1);
+      $func6(param1, local4);
+    };
+    local3 = (param0 + 0x8);
+  };
+  return local3;
+}
+
+// O[2] Disassembly of $func8, known as $func8
+void $func8(int param0, int param1) {
+  // local index=2
+  int local2;
+  // local index=3
+  int local3;
+  // local index=4
+  int local4;
+  // local index=5
+  int local5;
+
+  local2 = *((unsigned int *) param0 + 0xc);
+  label$1: {
+    label$2: {
+      if (((unsigned) param1 >= 0x100)) {
+        {
+          local3 = *((unsigned int *) param0 + 0x18);
+          label$4: {
+            label$5: {
+              if ((param0 == local2)) {
+                {
+                  if (param1 = *((unsigned int *) (param0 + local4 = *((unsigned int *) local2 = (param0 + 0x14)) ? 0x14 : 0x10))) break label$5;
+                  local2 = 0x0;
+                  break label$4;
+                };
+              };
+              *((unsigned int *) param1 = *((unsigned int *) param0 + 0x8) + 0xc) = local2;
+              *((unsigned int *) local2 + 0x8) = param1;
+              break label$4;
+            };
+            local4 = local4 ? local2 : (param0 + 0x10);
+            while (1) {
+              local5 = local4;
+              local4 = param1 = *((unsigned int *) param1) ? param1 = (local2 = param1 + 0x14) : (local2 + 0x10);
+              if (param1 = *((unsigned int *) (local2 + param1 ? 0x14 : 0x10))) break label$7;
+            break ;
+            };
+            *((unsigned int *) local5) = 0x0;
+          };
+          if ((local3 == 0x0)) break label$1;
+          if ((param0 != *((unsigned int *) param1 = ((*((unsigned int *) param0 + 0x1c) << 0x2) + 0x100e88)))) {
+            {
+              *((unsigned int *) (local3 + (*((unsigned int *) local3 + 0x10) == param0) ? 0x10 : 0x14)) = local2;
+              if ((local2 == 0x0)) break label$1;
+              break label$2;
+            };
+          };
+          *((unsigned int *) param1) = local2;
+          if (local2) break label$2;
+          *((unsigned int *) 0x101024) = (*((unsigned int *) 0x101024) & __rotl_i32(-0x2, *((unsigned int *) param0 + 0x1c)));
+          break label$1;
+        };
+      };
+      if ((param0 = *((unsigned int *) param0 + 0x8) != local2)) {
+        {
+          *((unsigned int *) param0 + 0xc) = local2;
+          *((unsigned int *) local2 + 0x8) = param0;
+          return;
+        };
+      };
+      *((unsigned int *) 0x101020) = (*((unsigned int *) 0x101020) & __rotl_i32(-0x2, (param1 >>> 0x3)));
+      return;
+    };
+    *((unsigned int *) local2 + 0x18) = local3;
+    if (param1 = *((unsigned int *) param0 + 0x10)) {
+      {
+        *((unsigned int *) local2 + 0x10) = param1;
+        *((unsigned int *) param1 + 0x18) = local2;
+      };
+    };
+    if ((param0 = *((unsigned int *) (param0 + 0x14)) == 0x0)) break label$1;
+    *((unsigned int *) (local2 + 0x14)) = param0;
+    *((unsigned int *) param0 + 0x18) = local2;
+  };
+}
+
+// O[2] Disassembly of $func9, known as $func9
+int $func9(int param0, int param1, int param2, int param3, int param4, int param5, int param6) {
+  // local index=7
+  int local7;
+  // local index=8
+  int local8;
+  // local index=9
+  int local9;
+  // local index=10
+  int local10;
+  // local index=11
+  int local11;
+  // local index=12
+  int local12;
+  // local index=13
+  int local13;
+  // local index=14
+  int local14;
+
+  local9 = 0x1;
+  label$1: {
+    label$2: {
+      if ((param2 == 0x0)) break label$2;
+      local10 = (param1 + (param2 << 0x1));
+      local11 = ((param0 & 0xff00) >>> 0x8);
+      local13 = (param0 & 0xff);
+      while (1) {
+        local12 = (param1 + 0x2);
+        local8 = (local7 + param2 = *((unsigned char *) param1 + 0x1));
+        if ((local11 != param1 = *((unsigned char *) param1))) {
+          {
+            if (((unsigned) param1 > local11)) break label$2;
+            local7 = local8;
+            if ((param1 = local12 == local10)) break label$2;
+            break label$3;
+          };
+        };
+        label$5: {
+          label$6: {
+            if (((unsigned) local7 <= local8)) {
+              {
+                if (((unsigned) param4 < local8)) break label$6;
+                param1 = (param3 + local7);
+                while (1) {
+                  if ((param2 == 0x0)) break label$5;
+                  param2 = (param2 - 0x1);
+                  if (({
+                    local14 = *((unsigned char *) param1);
+                    param1 = (param1 + 0x1);
+                    local14;
+                  } != local13)) break label$8;
+                break ;
+                };
+                local9 = 0x0;
+                break label$1;
+              };
+            };
+            $func23(local7, local8, 0x1004dc);
+            abort("unreachable");
+          };
+          global0 = param0 = (global0 - 0x30);
+          *((unsigned int *) param0) = local8;
+          *((unsigned int *) param0 + 0x4) = param4;
+          *((unsigned long *) (param0 + 0x14)) = 0x2;
+          *((unsigned int *) (param0 + 0x2c)) = 0x1;
+          *((unsigned int *) param0 + 0xc) = 0x2;
+          *((unsigned int *) param0 + 0x8) = 0x100354;
+          *((unsigned int *) param0 + 0x24) = 0x1;
+          *((unsigned int *) param0 + 0x10) = (param0 + 0x20);
+          *((unsigned int *) param0 + 0x28) = (param0 + 0x4);
+          *((unsigned int *) param0 + 0x20) = param0;
+          $func31((param0 + 0x8), 0x1004dc);
+          abort("unreachable");
+        };
+        local7 = local8;
+        if ((param1 = local12 != local10)) break label$3;
+      break ;
+      };
+    };
+    if ((param6 == 0x0)) break label$1;
+    param4 = (param5 + param6);
+    param1 = (param0 & 0xffff);
+    while (1) {
+      param0 = (param5 + 0x1);
+      label$10: {
+        if ((param3 = ((int) param2 = *((unsigned char *) param5)) >= 0x0)) {
+          {
+            param5 = param0;
+            break label$10;
+          };
+        };
+        if ((param0 != param4)) {
+          {
+            param2 = (*((unsigned char *) param5 + 0x1) | ((param3 & 0x7f) << 0x8));
+            param5 = (param5 + 0x2);
+            break label$10;
+          };
+        };
+        $func45(0x1004cc);
+        abort("unreachable");
+      };
+      if ((param1 = (param1 - param2) < 0x0)) break label$1;
+      local9 = (local9 ^ 0x1);
+      if ((param4 != param5)) break label$9;
+    break ;
+    };
+  };
+  return (local9 & 0x1);
+}
+
+// O[1] Decompilation of $func10, known as $func10
+int $func10(int param0, int param1) {
+  // local index=2
+  int local2;
+  // local index=3
+  int local3;
+  // local index=4
+  int local4;
+  // local index=5
+  int local5;
+  // local index=6
+  int local6;
+
+  global0 = local3 = (global0 - 0x10);
+  label$1: {
+    param1 = label$2: {
+      label$3: {
+        if (((unsigned) param1 >= 0x80)) {
+          {
+            *((unsigned int *) local3 + 0xc) = 0x0;
+            if (((unsigned) param1 < 0x800)) break label$3;
+            if (((unsigned) param1 < 0x10000)) {
+              {
+                *((unsigned char *) local3 + 0xe) = ((param1 & 0x3f) | 0x80);
+                *((unsigned char *) local3 + 0xc) = ((param1 >>> 0xc) | 0xe0);
+                *((unsigned char *) local3 + 0xd) = (((param1 >>> 0x6) & 0x3f) | 0x80);
+                break(0x3) label$2;
+              };
+            };
+            *((unsigned char *) local3 + 0xf) = ((param1 & 0x3f) | 0x80);
+            *((unsigned char *) local3 + 0xe) = (((param1 >>> 0x6) & 0x3f) | 0x80);
+            *((unsigned char *) local3 + 0xd) = (((param1 >>> 0xc) & 0x3f) | 0x80);
+            *((unsigned char *) local3 + 0xc) = (((param1 >>> 0x12) & 0x7) | 0xf0);
+            break(0x4) label$2;
+          };
+        };
+        if ((local2 = *((unsigned int *) param0 + 0x8) == *((unsigned int *) param0))) {
+          {
+            global0 = local4 = (global0 - 0x20);
+            label$7: {
+              label$8: {
+                if ((local2 = (local2 + 0x1) == 0x0)) break label$8;
+                local2 = ((local5 = ((unsigned) local2 <= 0x8) ? 0x8 : local2 = ((unsigned) local2 < local5) ? local5 = (local6 = *((unsigned int *) param0) << 0x1) : local2 ^ -0x1) >>> 0x1f);
+                label$9: {
+                  if ((local6 == 0x0)) {
+                    {
+                      *((unsigned int *) local4 + 0x18) = 0x0;
+                      break label$9;
+                    };
+                  };
+                  *((unsigned int *) local4 + 0x1c) = local6;
+                  *((unsigned int *) local4 + 0x18) = 0x1;
+                  *((unsigned int *) local4 + 0x14) = *((unsigned int *) param0 + 0x4);
+                };
+                $func19((local4 + 0x8), local2, local5, (local4 + 0x14));
+                local2 = *((unsigned int *) local4 + 0xc);
+                if ((*((unsigned int *) local4 + 0x8) == 0x0)) {
+                  {
+                    *((unsigned int *) param0) = local5;
+                    *((unsigned int *) param0 + 0x4) = local2;
+                    break label$7;
+                  };
+                };
+                if ((local2 == -0x7fffffff)) break label$7;
+                if ((local2 == 0x0)) break label$8;
+                $func47(local2, *((unsigned int *) (local4 + 0x10)));
+                abort("unreachable");
+              };
+              $func30();
+              abort("unreachable");
+            };
+            global0 = (local4 + 0x20);
+            local2 = *((unsigned int *) param0 + 0x8);
+          };
+        };
+        *((unsigned int *) param0 + 0x8) = (local2 + 0x1);
+        *((unsigned char *) (*((unsigned int *) param0 + 0x4) + local2)) = param1;
+        break label$1;
+      };
+      *((unsigned char *) local3 + 0xd) = ((param1 & 0x3f) | 0x80);
+      *((unsigned char *) local3 + 0xc) = ((param1 >>> 0x6) | 0xc0);
+      0x2;
+    };
+    if (((unsigned) param1 > (*((unsigned int *) param0) - local2 = *((unsigned int *) param0 + 0x8)))) {
+      {
+        $func18(param0, local2, param1);
+        local2 = *((unsigned int *) param0 + 0x8);
+      };
+    };
+    $func48((*((unsigned int *) param0 + 0x4) + local2), (local3 + 0xc), param1);
+    *((unsigned int *) param0 + 0x8) = (param1 + local2);
+  };
+  global0 = (local3 + 0x10);
+  return 0x0;
+}
+
+// O[1] Decompilation of $func11, known as $func11
+int $func11(long param0, int param1) {
+  // local index=2
+  int local2;
+  // local index=3
+  int local3;
+  // local index=4
+  int local4;
+  // local index=5
+  int local5;
+  // local index=6
+  int local6;
+  // local index=7
+  long local7;
+  // local index=8
+  int local8;
+  // local index=9
+  int local9;
+
+  global0 = local4 = (global0 - 0x30);
+  local2 = 0x27;
+  label$1: {
+    if (((unsigned) param0 < 0x10000)) {
+      {
+        local7 = param0;
+        break label$1;
+      };
+    };
+    while (1) {
+      *((unsigned short *) (local3 = ((local4 + 0x9) + local2) - 0x4)) = *((unsigned short *) ((local6 = ((unsigned) (local5 = ((int) (param0 - (local7 = ((unsigned) param0 / 0x10000) * 0x10000))) & 0xffff) / 0x64) << 0x1) + 0x100238 /* "00010203040506070809101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899range start index  out of range for slice of length " */ ));
+      *((unsigned short *) (local3 - 0x2)) = *((unsigned short *) ((((local5 - (local6 * 0x64)) & 0xffff) << 0x1) + 0x100238 /* "00010203040506070809101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899range start index  out of range for slice of length " */ ));
+      local2 = (local2 - 0x4);
+      if ({
+        local8 = ((unsigned) param0 > 0x99999999);
+        param0 = local7;
+        local8;
+      }) break label$3;
+    break ;
+    };
+  };
+  if (((unsigned) local3 = ((int) local7) > 0x63)) {
+    *((unsigned short *) (local2 = (local2 - 0x2) + (local4 + 0x9))) = *((unsigned short *) ((((local3 = ((int) local7) - (local3 = ((unsigned) (local3 & 0xffff) / 0x64) * 0x64)) & 0xffff) << 0x1) + 0x100238 /* "00010203040506070809101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899range start index  out of range for slice of length " */ ));
+  };
+  label$5: {
+    if (((unsigned) local3 >= 0xa)) {
+      {
+        *((unsigned short *) (local2 = (local2 - 0x2) + (local4 + 0x9))) = *((unsigned short *) ((local3 << 0x1) + 0x100238 /* "00010203040506070809101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899range start index  out of range for slice of length " */ ));
+        break label$5;
+      };
+    };
+    *((unsigned char *) (local2 = (local2 - 0x1) + (local4 + 0x9))) = (local3 + 0x30);
+  };
+  return {
+    local9 = $func3(param1, 0x10016c /* ".." */ , 0x0, ((local4 + 0x9) + local2), (0x27 - local2));
+    global0 = (local4 + 0x30);
+    local9;
+  };
+}
+
+// O[1] Decompilation of $func12, known as $func12
+int $func12(int param0, int param1) {
+  // local index=2
+  int local2;
+  // local index=3
+  int local3;
+  // local index=4
+  int local4;
+  // local index=5
+  int local5;
+  // local index=6
+  int local6;
+  // local index=7
+  int local7;
+
+  global0 = local4 = (global0 - 0x80);
+  label$1: {
+    label$2: {
+      return {
+        local7 = label$3: {
+          label$4: {
+            if (((local2 = *((unsigned int *) param1 + 0x1c) & 0x10) == 0x0)) {
+              {
+                if ((local2 & 0x20)) break label$4;
+                break($func11(*((unsigned int *) param0), param1)) label$3;
+              };
+            };
+            param0 = *((unsigned int *) param0);
+            local2 = 0x0;
+            while (1) {
+              *((unsigned char *) ((local2 + local4) + 0x7f)) = (((unsigned) local3 = (param0 & 0xf) < 0xa) ? 0x30 : 0x57 + local3);
+              local2 = (local2 - 0x1);
+              if (({
+                local5 = ((unsigned) param0 < 0x10);
+                param0 = (param0 >>> 0x4);
+                local5;
+              } == 0x0)) break label$6;
+            break ;
+            };
+            if (((unsigned) param0 = (local2 + 0x80) > 0x80)) break label$2;
+            break($func3(param1, 0x100223 /* "0x" */ , 0x2, ((local2 + local4) + 0x80), (0x0 - local2))) label$3;
+          };
+          param0 = *((unsigned int *) param0);
+          local2 = 0x0;
+          while (1) {
+            *((unsigned char *) ((local2 + local4) + 0x7f)) = (((unsigned) local3 = (param0 & 0xf) < 0xa) ? 0x30 : 0x37 + local3);
+            local2 = (local2 - 0x1);
+            if (({
+              local6 = ((unsigned) param0 < 0x10);
+              param0 = (param0 >>> 0x4);
+              local6;
+            } == 0x0)) break label$7;
+          break ;
+          };
+          if (((unsigned) param0 = (local2 + 0x80) > 0x80)) break label$1;
+          $func3(param1, 0x100223 /* "0x" */ , 0x2, ((local2 + local4) + 0x80), (0x0 - local2));
+        };
+        global0 = (local4 + 0x80);
+        local7;
+      };
+    };
+    $func21(param0, 0x80, 0x100228);
+    abort("unreachable");
+  };
+  $func21(param0, 0x80, 0x100228);
+  abort("unreachable");
+}
+
+// O[2] Disassembly of $func13, known as $func13
+void $func13(int param0, int param1) {
+  // local index=2
+  int local2;
+  // local index=3
+  int local3;
+  // local index=4
+  int local4;
+  // local index=5
+  int local5;
+
+  *((unsigned long *) param0 + 0x10) = 0x0;
+  *((unsigned int *) param0 + 0x1c) = local2 = label$1: {
+    if (((unsigned) param1 < 0x100)) break(0x0) label$1;
+    if (((unsigned) param1 > 0xffffff)) break(0x1f) label$1;
+    ((((param1 >>> (0x6 - local3 = __clz_i32((param1 >>> 0x8)))) & 0x1) - (local3 << 0x1)) + 0x3e);
+  };
+  local4 = ((local2 << 0x2) + 0x100e88);
+  label$2: {
+    if (((local5 = *((unsigned int *) 0x101024) & local3 = (0x1 << local2)) == 0x0)) {
+      {
+        *((unsigned int *) 0x101024) = (local3 | local5);
+        *((unsigned int *) local4) = param0;
+        *((unsigned int *) param0 + 0x18) = local4;
+        break label$2;
+      };
+    };
+    label$4: {
+      label$5: {
+        if ((param1 == (*((unsigned int *) local3 = *((unsigned int *) local4) + 0x4) & -0x8))) {
+          {
+            local2 = local3;
+            break label$5;
+          };
+        };
+        local4 = (param1 << (local2 != 0x1f) ? (0x19 - (local2 >>> 0x1)) : 0x0);
+        while (1) {
+          if ((local2 = *((unsigned int *) local5 = ((local3 + ((local4 >>> 0x1d) & 0x4)) + 0x10)) == 0x0)) break label$4;
+          local4 = (local4 << 0x1);
+          local3 = local2;
+          if (((*((unsigned int *) local2 + 0x4) & -0x8) != param1)) break label$7;
+        break ;
+        };
+      };
+      *((unsigned int *) param1 = *((unsigned int *) local2 + 0x8) + 0xc) = param0;
+      *((unsigned int *) local2 + 0x8) = param0;
+      *((unsigned int *) param0 + 0x18) = 0x0;
+      *((unsigned int *) param0 + 0xc) = local2;
+      *((unsigned int *) param0 + 0x8) = param1;
+      return;
+    };
+    *((unsigned int *) local5) = param0;
+    *((unsigned int *) param0 + 0x18) = local3;
+  };
+  *((unsigned int *) param0 + 0xc) = param0;
+  *((unsigned int *) param0 + 0x8) = param0;
+}
+
+// O[1] Decompilation of $func14, known as $func14
+int $func14(int param0, int param1) {
+  // local index=2
+  int local2;
+  // local index=3
+  int local3;
+  // local index=4
+  int local4;
+  // local index=5
+  int local5;
+  // local index=6
+  int local6;
+  // local index=7
+  int local7;
+  // local index=8
+  int local8;
+  // local index=9
+  int local9;
+  // local index=10
+  int local10;
+  // local index=11
+  int local11;
+
+  global0 = local2 = (global0 - 0x10);
+  local11 = 0x1;
+  label$1: {
+    label$2: {
+      if (__function_table[local10 = *((unsigned int *) *((unsigned int *) (param1 + 0x18)) + 0x10)](local9 = *((unsigned int *) param1 + 0x14), 0x27)) break label$2;
+      local3 = *((unsigned int *) param0);
+      global0 = local4 = (global0 - 0x10);
+      label$3: {
+        label$4: {
+          label$5: {
+            label$6: {
+              label$7: {
+                label$8: {
+                  label$9: {
+                    label$10: {
+                      label$11: {
+                        switch (local3) {
+                          case 0: break label$6;
+                          case 1: break label$4;
+                          case 2: break label$4;
+                          case 3: break label$4;
+                          case 4: break label$4;
+                          case 5: break label$4;
+                          case 6: break label$4;
+                          case 7: break label$4;
+                          case 8: break label$4;
+                          case 9: break label$10;
+                          case 10: break label$8;
+                          case 11: break label$4;
+                          case 12: break label$4;
+                          case 13: break label$9;
+                          case 14: break label$4;
+                          case 15: break label$4;
+                          case 16: break label$4;
+                          case 17: break label$4;
+                          case 18: break label$4;
+                          case 19: break label$4;
+                          case 20: break label$4;
+                          case 21: break label$4;
+                          case 22: break label$4;
+                          case 23: break label$4;
+                          case 24: break label$4;
+                          case 25: break label$4;
+                          case 26: break label$4;
+                          case 27: break label$4;
+                          case 28: break label$4;
+                          case 29: break label$4;
+                          case 30: break label$4;
+                          case 31: break label$4;
+                          case 32: break label$4;
+                          case 33: break label$4;
+                          case 34: break label$4;
+                          case 35: break label$4;
+                          case 36: break label$4;
+                          case 37: break label$4;
+                          case 38: break label$4;
+                          case 39: break label$5;
+                          default: break label$11;
+                        };
+                      };
+                      if ((local3 == 0x5c)) break label$7;
+                      break label$4;
+                    };
+                    *((unsigned short *) local2 + 0xa) = 0x200;
+                    *((unsigned long *) local2 + 0x2) = 0x0;
+                    *((unsigned short *) local2) = 0x745c;
+                    break label$3;
+                  };
+                  *((unsigned short *) local2 + 0xa) = 0x200;
+                  *((unsigned long *) local2 + 0x2) = 0x0;
+                  *((unsigned short *) local2) = 0x725c;
+                  break label$3;
+                };
+                *((unsigned short *) local2 + 0xa) = 0x200;
+                *((unsigned long *) local2 + 0x2) = 0x0;
+                *((unsigned short *) local2) = 0x6e5c;
+                break label$3;
+              };
+              *((unsigned short *) local2 + 0xa) = 0x200;
+              *((unsigned long *) local2 + 0x2) = 0x0;
+              *((unsigned short *) local2) = 0x5c5c;
+              break label$3;
+            };
+            *((unsigned short *) local2 + 0xa) = 0x200;
+            *((unsigned long *) local2 + 0x2) = 0x0;
+            *((unsigned short *) local2) = 0x305c;
+            break label$3;
+          };
+          *((unsigned short *) local2 + 0xa) = 0x200;
+          *((unsigned long *) local2 + 0x2) = 0x0;
+          *((unsigned short *) local2) = 0x275c;
+          break label$3;
+        };
+        label$12: {
+          label$13: {
+            label$14: {
+              if ((label$15: {
+                local6 = (local3 << 0xb);
+                param0 = 0x21;
+                local7 = 0x21;
+                label$16: {
+                  while (1) if ((local6 != param0 = (*((unsigned int *) ((param1 = ((param0 >>> 0x1) + local5) << 0x2) + 0x100af0)) << 0xb))) {
+                    {
+                      param0 = (local7 = ((unsigned) param0 > local6) ? param1 : local7 - local5 = ((unsigned) param0 < local6) ? (param1 + 0x1) : local5);
+                      if (((unsigned) local5 < local7)) break label$17;
+                      break label$16;
+                    };
+                  };
+                  local5 = (param1 + 0x1);
+                };
+                param0 = label$19: {
+                  (*((unsigned int *) ((label$20: {
+                    label$21: {
+                      if (((unsigned) local5 <= 0x20)) {
+                        {
+                          param1 = (*((unsigned int *) (param0 = (local5 << 0x2) + 0x100af0)) >>> 0x15);
+                          if ((local5 != 0x20)) break label$21;
+                          local7 = 0x2d7;
+                          break(0x1f) label$20;
+                        };
+                      };
+                      $func22(local5, 0x21, 0x100a90);
+                      abort("unreachable");
+                    };
+                    local7 = (*((unsigned int *) (param0 + 0x100af4)) >>> 0x15);
+                    if ((local5 == 0x0)) break(0x0) label$19;
+                    (local5 - 0x1);
+                  } << 0x2) + 0x100af0)) & 0x1fffff);
+                };
+                label$23: {
+                  label$24: {
+                    if (((local7 + (param1 ^ -0x1)) == 0x0)) break label$24;
+                    local6 = (local3 - param0);
+                    local8 = ((unsigned) param1 <= 0x2d7) ? 0x2d7 : param1;
+                    param0 = (local7 - 0x1);
+                    local5 = 0x0;
+                    while (1) {
+                      if ((param1 == local8)) break label$23;
+                      if (((unsigned) local5 = (local5 + *((unsigned char *) (param1 + 0x100b74))) > local6)) break label$24;
+                      if ((param0 != param1 = (param1 + 0x1))) break label$25;
+                    break ;
+                    };
+                    param1 = param0;
+                  };
+                  break((param1 & 0x1)) label$15;
+                };
+                $func22(local8, 0x2d7, 0x100aa0);
+                abort("unreachable");
+              } == 0x0)) {
+                {
+                  if ((label$27: {
+                    label$28: {
+                      if (((unsigned) local3 < 0x20)) break label$28;
+                      label$29: {
+                        break(label$30: {
+                          if (((unsigned) local3 < 0x7f)) break(0x1) label$30;
+                          if (((unsigned) local3 < 0x10000)) break label$29;
+                          label$31: {
+                            if (((unsigned) local3 >= 0x20000)) {
+                              {
+                                if ((((((unsigned) (local3 - 0x323b0) < 0xadd50) | ((unsigned) (local3 - 0x3134b) < 0x5)) | (((unsigned) (local3 - 0x2fa1e) < 0x5e2) | ((unsigned) (local3 - 0x2ebe1) < 0xc1f))) | (((local3 & -0x2) == 0x2b81e) | ((unsigned) (local3 - 0x2cea2) < 0xe)))) break label$28;
+                                if (((local3 & -0x20) != 0x2a6e0)) break label$31;
+                                break label$28;
+                              };
+                            };
+                            break($func9(local3, 0x1004ec, 0x2c, 0x100544, 0xc4, 0x100608, 0x1c2)) label$27;
+                          };
+                          if (((unsigned) (local3 - 0x2b73a) < 0x6)) break(0x0) label$30;
+                          ((unsigned) (local3 - 0x110000) < -0x2fe10);
+                        }) label$27;
+                      };
+                      break($func9(local3, 0x1007ca, 0x28, 0x10081a, 0x11f, 0x100939, 0x12f)) label$27;
+                    };
+                    0x0;
+                  } == 0x0)) break label$14;
+                  *((unsigned int *) local2 + 0x4) = local3;
+                  *((unsigned char *) local2) = 0x80;
+                  break label$3;
+                };
+              };
+              *((unsigned char *) (local4 + 0x8)) = 0x0;
+              *((unsigned short *) local4 + 0x6) = 0x0;
+              *((unsigned char *) local4 + 0xf) = 0x7d;
+              *((unsigned char *) local4 + 0xe) = *((unsigned char *) ((local3 & 0xf) + 0x100178 /* "0123456789abcdefcalled `Option::unwrap()` on a `None` value" */ ));
+              *((unsigned char *) local4 + 0xd) = *((unsigned char *) (((local3 >>> 0x4) & 0xf) + 0x100178 /* "0123456789abcdefcalled `Option::unwrap()` on a `None` value" */ ));
+              *((unsigned char *) local4 + 0xc) = *((unsigned char *) (((local3 >>> 0x8) & 0xf) + 0x100178 /* "0123456789abcdefcalled `Option::unwrap()` on a `None` value" */ ));
+              *((unsigned char *) local4 + 0xb) = *((unsigned char *) (((local3 >>> 0xc) & 0xf) + 0x100178 /* "0123456789abcdefcalled `Option::unwrap()` on a `None` value" */ ));
+              *((unsigned char *) local4 + 0xa) = *((unsigned char *) (((local3 >>> 0x10) & 0xf) + 0x100178 /* "0123456789abcdefcalled `Option::unwrap()` on a `None` value" */ ));
+              *((unsigned char *) local4 + 0x9) = *((unsigned char *) (((local3 >>> 0x14) & 0xf) + 0x100178 /* "0123456789abcdefcalled `Option::unwrap()` on a `None` value" */ ));
+              if (((unsigned) param1 = ((__clz_i32((local3 | 0x1)) >>> 0x2) - 0x2) >= 0xb)) break label$13;
+              *((unsigned short *) param0 = ((local4 + 0x6) + param1)) = *((unsigned short *) 0x100aca /* "\\u{" */ );
+              *((unsigned char *) (param0 + 0x2)) = *((unsigned char *) 0x100acc);
+              *((unsigned long *) local2) = *((unsigned long *) local4 + 0x6);
+              *((unsigned short *) (local2 + 0x8)) = *((unsigned short *) (local4 + 0xe));
+              *((unsigned char *) local2 + 0xb) = 0xa;
+              *((unsigned char *) local2 + 0xa) = param1;
+              break label$3;
+            };
+            *((unsigned char *) (local4 + 0x8)) = 0x0;
+            *((unsigned short *) local4 + 0x6) = 0x0;
+            *((unsigned char *) local4 + 0xf) = 0x7d;
+            *((unsigned char *) local4 + 0xe) = *((unsigned char *) ((local3 & 0xf) + 0x100178 /* "0123456789abcdefcalled `Option::unwrap()` on a `None` value" */ ));
+            *((unsigned char *) local4 + 0xd) = *((unsigned char *) (((local3 >>> 0x4) & 0xf) + 0x100178 /* "0123456789abcdefcalled `Option::unwrap()` on a `None` value" */ ));
+            *((unsigned char *) local4 + 0xc) = *((unsigned char *) (((local3 >>> 0x8) & 0xf) + 0x100178 /* "0123456789abcdefcalled `Option::unwrap()` on a `None` value" */ ));
+            *((unsigned char *) local4 + 0xb) = *((unsigned char *) (((local3 >>> 0xc) & 0xf) + 0x100178 /* "0123456789abcdefcalled `Option::unwrap()` on a `None` value" */ ));
+            *((unsigned char *) local4 + 0xa) = *((unsigned char *) (((local3 >>> 0x10) & 0xf) + 0x100178 /* "0123456789abcdefcalled `Option::unwrap()` on a `None` value" */ ));
+            *((unsigned char *) local4 + 0x9) = *((unsigned char *) (((local3 >>> 0x14) & 0xf) + 0x100178 /* "0123456789abcdefcalled `Option::unwrap()` on a `None` value" */ ));
+            if (((unsigned) param1 = ((__clz_i32((local3 | 0x1)) >>> 0x2) - 0x2) >= 0xb)) break label$12;
+            *((unsigned short *) param0 = ((local4 + 0x6) + param1)) = *((unsigned short *) 0x100aca /* "\\u{" */ );
+            *((unsigned char *) (param0 + 0x2)) = *((unsigned char *) 0x100acc);
+            *((unsigned long *) local2) = *((unsigned long *) local4 + 0x6);
+            *((unsigned short *) (local2 + 0x8)) = *((unsigned short *) (local4 + 0xe));
+            *((unsigned char *) local2 + 0xb) = 0xa;
+            *((unsigned char *) local2 + 0xa) = param1;
+            break label$3;
+          };
+          $func21(param1, 0xa, 0x100ad0);
+          abort("unreachable");
+        };
+        $func21(param1, 0xa, 0x100ad0);
+        abort("unreachable");
+      };
+      global0 = (local4 + 0x10);
+      label$33: {
+        if ((*((unsigned char *) local2) == 0x80)) {
+          {
+            local6 = (local2 + 0x8);
+            local8 = 0x80;
+            while (1) {
+              label$36: {
+                if ((local8 != 0x80)) {
+                  {
+                    if (((unsigned) param0 = *((unsigned char *) local2 + 0xa) >= *((unsigned char *) local2 + 0xb))) break label$33;
+                    *((unsigned char *) local2 + 0xa) = (param0 + 0x1);
+                    if (((unsigned) param0 >= 0xa)) break label$1;
+                    param1 = *((unsigned char *) (param0 + local2));
+                    break label$36;
+                  };
+                };
+                local8 = 0x0;
+                *((unsigned int *) local6) = 0x0;
+                param1 = *((unsigned int *) local2 + 0x4);
+                *((unsigned long *) local2) = 0x0;
+              };
+              if ((__function_table[local10](local9, param1) == 0x0)) break label$35;
+            break ;
+            };
+            break label$2;
+          };
+        };
+        param0 = ((unsigned) param1 <= 0xa) ? 0xa : param1 = *((unsigned char *) local2 + 0xa);
+        local7 = ((unsigned) param1 < local6) ? local6 = *((unsigned char *) local2 + 0xb) : param1;
+        while (1) {
+          if ((param1 == local7)) break label$33;
+          *((unsigned char *) local2 + 0xa) = local6 = (param1 + 0x1);
+          if ((param0 == param1)) break label$1;
+          local8 = (param1 + local2);
+          param1 = local6;
+          if ((__function_table[local10](local9, *((unsigned char *) local8)) == 0x0)) break label$38;
+        break ;
+        };
+        break label$2;
+      };
+      local11 = __function_table[local10](local9, 0x27);
+    };
+    global0 = (local2 + 0x10);
+    return local11;
+  };
+  $func22(param0, 0xa, 0x100ae0);
+  abort("unreachable");
+}
+
+// O[1] Decompilation of $func15, known as $func15
+void $func15(int param0, int param1) {
+  // local index=2
+  int local2;
+  // local index=3
+  int local3;
+  // local index=4
+  int local4;
+  // local index=5
+  long local5;
+
+  global0 = local2 = (global0 - 0x30);
+  if ((*((unsigned int *) param1) == -0x80000000)) {
+    {
+      local3 = *((unsigned int *) param1 + 0xc);
+      *((unsigned int *) local4 = (local2 + 0x2c)) = 0x0;
+      *((unsigned long *) local2 + 0x24) = 0x4294967296;
+      $func5((local2 + 0x24), 0x10002c, local3);
+      *((unsigned int *) (local2 + 0x20)) = local3 = *((unsigned int *) local4);
+      *((unsigned long *) local2 + 0x18) = local5 = *((unsigned long *) local2 + 0x24);
+      *((unsigned int *) (param1 + 0x8)) = local3;
+      *((unsigned long *) param1) = local5;
+    };
+  };
+  local5 = *((unsigned long *) param1);
+  *((unsigned long *) param1) = 0x4294967296;
+  *((unsigned int *) local3 = (local2 + 0x10)) = *((unsigned int *) param1 = (param1 + 0x8));
+  *((unsigned int *) param1) = 0x0;
+  *((unsigned char *) 0x100e4d);
+  *((unsigned long *) local2 + 0x8) = local5;
+  if ((param1 = $func37(0xc, 0x4) == 0x0)) {
+    {
+      $func47(0x4, 0xc);
+      abort("unreachable");
+    };
+  };
+  *((unsigned long *) param1) = *((unsigned long *) local2 + 0x8);
+  *((unsigned int *) (param1 + 0x8)) = *((unsigned int *) local3);
+  *((unsigned int *) param0 + 0x4) = 0x1000cc;
+  *((unsigned int *) param0) = param1;
+  global0 = (local2 + 0x30);
+}
+
+// O[1] Decompilation of $func16, known as $func16
+void $func16(int param0, int param1) {
+  // local index=2
+  int local2;
+  // local index=3
+  int local3;
+  // local index=4
+  int local4;
+  // local index=5
+  int local5;
+
+  global0 = local2 = (global0 - 0x20);
+  label$1: {
+    label$2: {
+      if ((param1 = (param1 + 0x1) == 0x0)) break label$2;
+      param1 = (local3 = ((unsigned) param1 <= 0x4) ? 0x4 : param1 = ((unsigned) param1 < local3) ? local3 = (local4 = *((unsigned int *) param0) << 0x1) : param1 << 0x2);
+      local5 = (((unsigned) local3 < 0x20000000) << 0x2);
+      label$3: {
+        if ((local4 == 0x0)) {
+          {
+            *((unsigned int *) local2 + 0x18) = 0x0;
+            break label$3;
+          };
+        };
+        *((unsigned int *) local2 + 0x18) = 0x4;
+        *((unsigned int *) local2 + 0x1c) = (local4 << 0x2);
+        *((unsigned int *) local2 + 0x14) = *((unsigned int *) param0 + 0x4);
+      };
+      $func19((local2 + 0x8), local5, param1, (local2 + 0x14));
+      param1 = *((unsigned int *) local2 + 0xc);
+      if ((*((unsigned int *) local2 + 0x8) == 0x0)) {
+        {
+          *((unsigned int *) param0) = local3;
+          *((unsigned int *) param0 + 0x4) = param1;
+          break label$1;
+        };
+      };
+      if ((param1 == -0x7fffffff)) break label$1;
+      if ((param1 == 0x0)) break label$2;
+      $func47(param1, *((unsigned int *) (local2 + 0x10)));
+      abort("unreachable");
+    };
+    $func30();
+    abort("unreachable");
+  };
+  global0 = (local2 + 0x20);
+}
+
+// O[1] Decompilation of $func17, known as $func17
+void $func17(int param0, int param1, int param2, int param3, int param4, int param5) {
+  // local index=6
+  int local6;
+  // local index=7
+  int local7;
+
+  global0 = local6 = (global0 - 0x20);
+  *((unsigned int *) 0x100e84) = (local7 = *((unsigned int *) 0x100e84) + 0x1);
+  label$1: {
+    label$2: {
+      if ((local7 < 0x0)) break label$2;
+      if (*((unsigned char *) 0x101050)) break label$2;
+      *((unsigned char *) 0x101050) = 0x1;
+      *((unsigned int *) 0x10104c) = (*((unsigned int *) 0x10104c) + 0x1);
+      *((unsigned char *) local6 + 0x1d) = param5;
+      *((unsigned char *) local6 + 0x1c) = param4;
+      *((unsigned int *) local6 + 0x18) = param3;
+      *((unsigned int *) local6 + 0x14) = param2;
+      *((unsigned int *) local6 + 0x10) = 0x100114;
+      *((unsigned int *) local6 + 0xc) = 0x10002c;
+      if ((param2 = *((unsigned int *) 0x100e74) < 0x0)) break label$2;
+      *((unsigned int *) 0x100e74) = (param2 + 0x1);
+      *((unsigned int *) 0x100e74) = if (*((unsigned int *) 0x100e7c)) {
+        {
+          __function_table[*((unsigned int *) param1 + 0x10)](local6, param0);
+          *((unsigned long *) local6 + 0xc) = *((unsigned long *) local6);
+          __function_table[*((unsigned int *) *((unsigned int *) 0x100e80) + 0x14)](*((unsigned int *) 0x100e7c), (local6 + 0xc));
+          (*((unsigned int *) 0x100e74) - 0x1);
+        };
+      } else {
+        param2;
+      };
+      *((unsigned char *) 0x101050) = 0x0;
+      if (param4) break label$1;
+    };
+    abort("unreachable");
+  };
+  abort("unreachable");
+}
+
+// O[1] Decompilation of $func18, known as $func18
+void $func18(int param0, int param1, int param2) {
+  // local index=3
+  int local3;
+  // local index=4
+  int local4;
+
+  global0 = local3 = (global0 - 0x20);
+  label$1: {
+    label$2: {
+      if (((unsigned) param1 > param1 = (param1 + param2))) break label$2;
+      param1 = ((local4 = ((unsigned) param1 <= 0x8) ? 0x8 : param1 = ((unsigned) param1 < local4) ? local4 = (param2 = *((unsigned int *) param0) << 0x1) : param1 ^ -0x1) >>> 0x1f);
+      label$3: {
+        if ((param2 == 0x0)) {
+          {
+            *((unsigned int *) local3 + 0x18) = 0x0;
+            break label$3;
+          };
+        };
+        *((unsigned int *) local3 + 0x1c) = param2;
+        *((unsigned int *) local3 + 0x18) = 0x1;
+        *((unsigned int *) local3 + 0x14) = *((unsigned int *) param0 + 0x4);
+      };
+      $func19((local3 + 0x8), param1, local4, (local3 + 0x14));
+      param1 = *((unsigned int *) local3 + 0xc);
+      if ((*((unsigned int *) local3 + 0x8) == 0x0)) {
+        {
+          *((unsigned int *) param0) = local4;
+          *((unsigned int *) param0 + 0x4) = param1;
+          break label$1;
+        };
+      };
+      if ((param1 == -0x7fffffff)) break label$1;
+      if ((param1 == 0x0)) break label$2;
+      $func47(param1, *((unsigned int *) (local3 + 0x10)));
+      abort("unreachable");
+    };
+    $func30();
+    abort("unreachable");
+  };
+  global0 = (local3 + 0x20);
+}
+
+// O[2] Disassembly of $func19, known as $func19
+void $func19(int param0, int param1, int param2, int param3) {
+  // local index=4
+  int local4;
+
+  label$1: {
+    label$2: {
+      if (param1) {
+        {
+          if ((param2 < 0x0)) break label$2;
+          if (param3 = label$4: {
+            if (*((unsigned int *) param3 + 0x4)) {
+              label$6: {
+                if ((local4 = *((unsigned int *) (param3 + 0x8)) == 0x0)) {
+                  break label$6;
+                };
+                break($func35(*((unsigned int *) param3), local4, param1, param2)) label$4;
+              };
+            };
+            if ((param2 == 0x0)) break(param1) label$4;
+            *((unsigned char *) 0x100e4d);
+            $func37(param2, param1);
+          }) {
+            {
+              *((unsigned int *) param0 + 0x4) = param3;
+              *((unsigned int *) (param0 + 0x8)) = param2;
+              *((unsigned int *) param0) = 0x0;
+              return;
+            };
+          };
+          *((unsigned int *) param0 + 0x4) = param1;
+          *((unsigned int *) (param0 + 0x8)) = param2;
+          break label$1;
+        };
+      };
+      *((unsigned int *) param0 + 0x4) = 0x0;
+      *((unsigned int *) (param0 + 0x8)) = param2;
+      break label$1;
+    };
+    *((unsigned int *) param0 + 0x4) = 0x0;
+  };
+  *((unsigned int *) param0) = 0x1;
+}
+
+// O[1] Decompilation of $func20, known as $func20
+void $func20(int param0, int param1) {
+  // local index=2
+  int local2;
+  // local index=3
+  int local3;
+  // local index=4
+  int local4;
+  // local index=5
+  long local5;
+
+  global0 = local2 = (global0 - 0x20);
+  if ((*((unsigned int *) param1) == -0x80000000)) {
+    {
+      local3 = *((unsigned int *) param1 + 0xc);
+      *((unsigned int *) local4 = (local2 + 0x1c)) = 0x0;
+      *((unsigned long *) local2 + 0x14) = 0x4294967296;
+      $func5((local2 + 0x14), 0x10002c, local3);
+      *((unsigned int *) (local2 + 0x10)) = local3 = *((unsigned int *) local4);
+      *((unsigned long *) local2 + 0x8) = local5 = *((unsigned long *) local2 + 0x14);
+      *((unsigned int *) (param1 + 0x8)) = local3;
+      *((unsigned long *) param1) = local5;
+    };
+  };
+  *((unsigned int *) param0 + 0x4) = 0x1000cc;
+  *((unsigned int *) param0) = param1;
+  global0 = (local2 + 0x20);
+}
+
+// O[1] Decompilation of $func21, known as $func21
+void $func21(int param0, int param1, int param2) {
+  // local index=3
+  int local3;
+
+  global0 = local3 = (global0 - 0x30);
+  *((unsigned int *) local3) = param0;
+  *((unsigned int *) local3 + 0x4) = param1;
+  *((unsigned long *) (local3 + 0x14)) = 0x2;
+  *((unsigned int *) (local3 + 0x2c)) = 0x1;
+  *((unsigned int *) local3 + 0xc) = 0x2;
+  *((unsigned int *) local3 + 0x8) = 0x100334;
+  *((unsigned int *) local3 + 0x24) = 0x1;
+  *((unsigned int *) local3 + 0x10) = (local3 + 0x20);
+  *((unsigned int *) local3 + 0x28) = (local3 + 0x4);
+  *((unsigned int *) local3 + 0x20) = local3;
+  $func31((local3 + 0x8), param2);
+  abort("unreachable");
+}
+
+// O[1] Decompilation of $func22, known as $func22
+void $func22(int param0, int param1, int param2) {
+  // local index=3
+  int local3;
+
+  global0 = local3 = (global0 - 0x30);
+  *((unsigned int *) local3 + 0x4) = param1;
+  *((unsigned int *) local3) = param0;
+  *((unsigned long *) (local3 + 0x14)) = 0x2;
+  *((unsigned int *) (local3 + 0x2c)) = 0x1;
+  *((unsigned int *) local3 + 0xc) = 0x2;
+  *((unsigned int *) local3 + 0x8) = 0x1001f8;
+  *((unsigned int *) local3 + 0x24) = 0x1;
+  *((unsigned int *) local3 + 0x10) = (local3 + 0x20);
+  *((unsigned int *) local3 + 0x28) = local3;
+  *((unsigned int *) local3 + 0x20) = (local3 + 0x4);
+  $func31((local3 + 0x8), param2);
+  abort("unreachable");
+}
+
+// O[1] Decompilation of $func23, known as $func23
+void $func23(int param0, int param1, int param2) {
+  // local index=3
+  int local3;
+
+  global0 = local3 = (global0 - 0x30);
+  *((unsigned int *) local3) = param0;
+  *((unsigned int *) local3 + 0x4) = param1;
+  *((unsigned long *) (local3 + 0x14)) = 0x2;
+  *((unsigned int *) (local3 + 0x2c)) = 0x1;
+  *((unsigned int *) local3 + 0xc) = 0x2;
+  *((unsigned int *) local3 + 0x8) = 0x100388;
+  *((unsigned int *) local3 + 0x24) = 0x1;
+  *((unsigned int *) local3 + 0x10) = (local3 + 0x20);
+  *((unsigned int *) local3 + 0x28) = (local3 + 0x4);
+  *((unsigned int *) local3 + 0x20) = local3;
+  $func31((local3 + 0x8), param2);
+  abort("unreachable");
+}
+
+// O[1] Decompilation of $func24, known as $func24
+int $func24(int param0, int param1) {
+  // local index=2
+  int local2;
+  // local index=3
+  int local3;
+
+  global0 = local2 = (global0 - 0x20);
+  return {
+    local3 = label$1: {
+      if ($func12(param0, param1)) break(0x1) label$1;
+      *((unsigned long *) (local2 + 0x14)) = 0x0;
+      *((unsigned int *) local2 + 0xc) = 0x1;
+      *((unsigned int *) local2 + 0x8) = 0x100170;
+      *((unsigned int *) local2 + 0x10) = 0x10016c /* ".." */;
+      if ($func5(*((unsigned int *) param1 + 0x14), *((unsigned int *) (param1 + 0x18)), (local2 + 0x8))) break(0x1) label$1;
+      $func12((param0 + 0x4), param1);
+    };
+    global0 = (local2 + 0x20);
+    local3;
+  };
+}
+
+// O[1] Decompilation of $func25, known as $func25
+void $func25(int param0, int param1) {
+  global0 = param0 = (global0 - 0x30);
+  if (*((unsigned char *) 0x100e4c)) {
+    {
+      *((unsigned long *) (param0 + 0x18)) = 0x1;
+      *((unsigned int *) param0 + 0x10) = 0x2;
+      *((unsigned int *) param0 + 0xc) = 0x100068;
+      *((unsigned int *) param0 + 0x28) = 0x1;
+      *((unsigned int *) param0 + 0x2c) = param1;
+      *((unsigned int *) param0 + 0x14) = (param0 + 0x24);
+      *((unsigned int *) param0 + 0x24) = (param0 + 0x2c);
+      $func31((param0 + 0xc), 0x100090);
+      abort("unreachable");
+    };
+  };
+  global0 = (param0 + 0x30);
+}
+
+// O[2] Disassembly of $func26, known as $func26
+int $func26(int param0, int param1, int param2) {
+  // local index=3
+  int local3;
+
+  if (((unsigned) param2 > (*((unsigned int *) param0) - local3 = *((unsigned int *) param0 + 0x8)))) {
+    {
+      $func18(param0, local3, param2);
+      local3 = *((unsigned int *) param0 + 0x8);
+    };
+  };
+  $func48((*((unsigned int *) param0 + 0x4) + local3), param1, param2);
+  *((unsigned int *) param0 + 0x8) = (param2 + local3);
+  return 0x0;
+}
+
+// O[2] Disassembly of $func27, known as $func27
+void $func27(int param0, int param1) {
+  // local index=2
+  int local2;
+  // local index=3
+  int local3;
+
+  *((unsigned char *) 0x100e4d);
+  local2 = *((unsigned int *) param1 + 0x4);
+  local3 = *((unsigned int *) param1);
+  if ((param1 = $func37(0x8, 0x4) == 0x0)) {
+    {
+      $func47(0x4, 0x8);
+      abort("unreachable");
+    };
+  };
+  *((unsigned int *) param1 + 0x4) = local2;
+  *((unsigned int *) param1) = local3;
+  *((unsigned int *) param0 + 0x4) = 0x1000dc;
+  *((unsigned int *) param0) = param1;
+}
+
+// O[2] Disassembly of $func28, known as $func28
+export "__wbindgen_malloc"; // $func28 is exported to "__wbindgen_malloc"
+int $func28(int param0, int param1) {
+  label$1: {
+    if (((__popcnt_i32(param1) != 0x1) | ((unsigned) (-0x80000000 - param1) < param0))) break label$1;
+    if (param0) {
+      {
+        *((unsigned char *) 0x100e4d);
+        if ((param1 = $func37(param0, param1) == 0x0)) break label$1;
+      };
+    };
+    return param1;
+  };
+  abort("unreachable");
+}
+
+// O[2] Disassembly of $func29, known as $func29
+int $func29(int param0, int param1, int param2, int param3, int param4) {
+  label$1: {
+    return label$2: {
+      if ((param2 != 0x110000)) {
+        if (__function_table[*((unsigned int *) param1 + 0x10)](param0, param2)) break(0x1) label$2;
+      };
+      if (param3) break label$1;
+      0x0;
+    };
+  };
+  return __function_table[*((unsigned int *) param1 + 0xc)](param0, param3, param4);
+}
+
+// O[1] Decompilation of $func30, known as $func30
+void $func30() {
+  // local index=0
+  int local0;
+
+  global0 = local0 = (global0 - 0x20);
+  *((unsigned long *) (local0 + 0x14)) = 0x0;
+  *((unsigned int *) local0 + 0xc) = 0x1;
+  *((unsigned int *) local0 + 0x8) = 0x100154;
+  *((unsigned int *) local0 + 0x10) = 0x100124 /* "library/alloc/src/raw_vec.rscapacity overflow" */;
+  $func31((local0 + 0x8), 0x10015c);
+  abort("unreachable");
+}
+
+// O[1] Decompilation of $func31, known as $func31
+void $func31(int param0, int param1) {
+  // local index=2
+  int local2;
+  // local index=3
+  int local3;
+
+  global0 = local2 = (global0 - 0x20);
+  *((unsigned short *) local2 + 0x1c) = 0x1;
+  *((unsigned int *) local2 + 0x18) = param1;
+  *((unsigned int *) local2 + 0x14) = param0;
+  *((unsigned int *) local2 + 0x10) = 0x1001b4;
+  *((unsigned int *) local2 + 0xc) = 0x10016c /* ".." */;
+  global0 = param1 = (global0 - 0x10);
+  if ((local2 = *((unsigned int *) param0 = (local2 + 0xc) + 0x8) == 0x0)) {
+    {
+      $func45(0x1000bc);
+      abort("unreachable");
+    };
+  };
+  *((unsigned int *) param1 + 0xc) = *((unsigned int *) param0 + 0xc);
+  *((unsigned int *) param1 + 0x8) = param0;
+  *((unsigned int *) param1 + 0x4) = local2;
+  global0 = param0 = (global0 - 0x10);
+  local3 = *((unsigned int *) (local2 = *((unsigned int *) param1 = (param1 + 0x4)) + 0xc));
+  label$2: {
+    local3 = label$3: {
+      label$4: {
+        label$5: {
+          switch (*((unsigned int *) local2 + 0x4)) {
+            case 0: break label$5;
+            case 1: break label$4;
+            default: break label$2;
+          };
+        };
+        if (local3) break label$2;
+        local2 = 0x0;
+        break(0x10002c) label$3;
+      };
+      if (local3) break label$2;
+      local2 = *((unsigned int *) local3 = *((unsigned int *) local2) + 0x4);
+      *((unsigned int *) local3);
+    };
+    *((unsigned int *) param0 + 0x4) = local2;
+    *((unsigned int *) param0) = local3;
+    $func17(param0, 0x1000ec, *((unsigned int *) param0 = *((unsigned int *) param1 + 0x4) + 0x8), *((unsigned int *) param1 + 0x8), *((unsigned char *) param0 + 0x10), *((unsigned char *) param0 + 0x11));
+    abort("unreachable");
+  };
+  *((unsigned int *) param0 + 0xc) = local2;
+  *((unsigned int *) param0) = -0x80000000;
+  $func17(param0, 0x100100, *((unsigned int *) param0 = *((unsigned int *) param1 + 0x4) + 0x8), *((unsigned int *) param1 + 0x8), *((unsigned char *) param0 + 0x10), *((unsigned char *) param0 + 0x11));
+  abort("unreachable");
+}
+
+// O[2] Disassembly of $func32, known as $func32
+export "__wbindgen_realloc"; // $func32 is exported to "__wbindgen_realloc"
+int $func32(int param0, int param1, int param2, int param3) {
+  label$1: {
+    if ((((__popcnt_i32(param3) != 0x1) | ((unsigned) (-0x80000000 - param3) < param1)) == 0x0)) {
+      if (param0 = $func35(param0, param1, param3, param2)) break label$1;
+    };
+    abort("unreachable");
+  };
+  return param0;
+}
+
+// O[2] Disassembly of $func33, known as $func33
+void $func33(int param0) {
+  if (((*((unsigned int *) param0) | -0x80000000) != -0x80000000)) {
+    $func4(*((unsigned int *) param0 + 0x4));
+  };
+}
+
+// O[2] Disassembly of $func34, known as $func34
+void $func34(int param0) {
+  if (*((unsigned int *) param0)) {
+    $func4(*((unsigned int *) param0 + 0x4));
+  };
+}
+
+// O[2] Disassembly of $func35, known as $func35
+int $func35(int param0, int param1, int param2, int param3) {
+  // local index=4
+  int local4;
+  // local index=5
+  int local5;
+  // local index=6
+  int local6;
+  // local index=7
+  int local7;
+  // local index=8
+  int local8;
+  // local index=9
+  int local9;
+
+  label$2: {
+    label$3: {
+      label$4: {
+        label$5: {
+          if (((unsigned) param2 >= 0x9)) {
+            {
+              if (local8 = $func7(param2, param3)) break label$5;
+              break(0x0) label$1;
+            };
+          };
+          if (((unsigned) param3 > -0x10034)) break label$4;
+          param1 = ((unsigned) param3 < 0xb) ? 0x10 : ((param3 + 0xb) & -0x8);
+          local4 = (local5 = *((unsigned int *) param2 = (param0 - 0x4)) & -0x8);
+          label$7: {
+            if (((local5 & 0x3) == 0x0)) {
+              {
+                if (((((unsigned) param1 < 0x100) | ((unsigned) local4 < (param1 | 0x4))) | ((unsigned) (local4 - param1) >= 0x20001))) break label$7;
+                break label$2;
+              };
+            };
+            local7 = (local6 = (param0 - 0x8) + local4);
+            label$9: {
+              label$10: {
+                label$11: {
+                  label$12: {
+                    if (((unsigned) param1 > local4)) {
+                      {
+                        if ((local7 == *((unsigned int *) 0x101034))) break label$9;
+                        if ((local7 == *((unsigned int *) 0x101030))) break label$11;
+                        if ((local5 = *((unsigned int *) local7 + 0x4) & 0x2)) break label$7;
+                        if (((unsigned) local4 = (local5 = (local5 & -0x8) + local4) < param1)) break label$7;
+                        $func8(local7, local5);
+                        if (((unsigned) param3 = (local4 - param1) < 0x10)) break label$12;
+                        *((unsigned int *) param2) = ((param1 | (*((unsigned int *) param2) & 0x1)) | 0x2);
+                        *((unsigned int *) param1 = (param1 + local6) + 0x4) = (param3 | 0x3);
+                        *((unsigned int *) param2 = (local4 + local6) + 0x4) = (*((unsigned int *) param2 + 0x4) | 0x1);
+                        $func6(param1, param3);
+                        break label$2;
+                      };
+                    };
+                    if (((unsigned) param3 = (local4 - param1) > 0xf)) break label$10;
+                    break label$2;
+                  };
+                  *((unsigned int *) param2) = ((local4 | (*((unsigned int *) param2) & 0x1)) | 0x2);
+                  *((unsigned int *) param1 = (local4 + local6) + 0x4) = (*((unsigned int *) param1 + 0x4) | 0x1);
+                  break label$2;
+                };
+                if (((unsigned) local4 = (*((unsigned int *) 0x101028) + local4) < param1)) break label$7;
+                label$14: {
+                  if (((unsigned) param3 = (local4 - param1) <= 0xf)) {
+                    {
+                      *((unsigned int *) param2) = (((local5 & 0x1) | local4) | 0x2);
+                      *((unsigned int *) param1 = (local4 + local6) + 0x4) = (*((unsigned int *) param1 + 0x4) | 0x1);
+                      param3 = 0x0;
+                      break label$14;
+                    };
+                  };
+                  *((unsigned int *) param2) = ((param1 | (local5 & 0x1)) | 0x2);
+                  *((unsigned int *) local8 = (param1 + local6) + 0x4) = (param3 | 0x1);
+                  *((unsigned int *) param1 = (local4 + local6)) = param3;
+                  *((unsigned int *) param1 + 0x4) = (*((unsigned int *) param1 + 0x4) & -0x2);
+                };
+                *((unsigned int *) 0x101030) = local8;
+                *((unsigned int *) 0x101028) = param3;
+                break label$2;
+              };
+              *((unsigned int *) param2) = ((param1 | (local5 & 0x1)) | 0x2);
+              *((unsigned int *) param1 = (param1 + local6) + 0x4) = (param3 | 0x3);
+              *((unsigned int *) local7 + 0x4) = (*((unsigned int *) local7 + 0x4) | 0x1);
+              $func6(param1, param3);
+              break label$2;
+            };
+            if (((unsigned) local4 = (*((unsigned int *) 0x10102c) + local4) > param1)) break label$3;
+          };
+          if ((param1 = $func0(param3) == 0x0)) break label$4;
+          break({
+            local9 = $func48(param1, param0, ((unsigned) param1 < param3) ? param1 = ((param1 = *((unsigned int *) param2) & 0x3) ? -0x4 : -0x8 + (param1 & -0x8)) : param3);
+            $func4(param0);
+            local9;
+          }) label$1;
+        };
+        $func48(local8, param0, ((unsigned) param1 < param3) ? param1 : param3);
+        $func4(param0);
+      };
+      break(local8) label$1;
+    };
+    *((unsigned int *) param2) = ((param1 | (local5 & 0x1)) | 0x2);
+    *((unsigned int *) param2 = (param1 + local6) + 0x4) = (param1 = (local4 - param1) | 0x1);
+    *((unsigned int *) 0x10102c) = param1;
+    *((unsigned int *) 0x101034) = param2;
+    break(param0) label$1;
+  };
+  return param0;
+}
+
+// O[1] Decompilation of $func36, known as $func36
+void $func36(int param0, int param1, int param2, int param3, int param4) {
+  // local index=5
+  int local5;
+  // local index=6
+  int local6;
+  // local index=7
+  int local7;
+  // local index=8
+  int local8;
+  // local index=9
+  int local9;
+
+  global0 = local5 = (global0 - 0x70);
+  *((unsigned int *) local5 + 0xc) = param3;
+  *((unsigned int *) local5 + 0x8) = param2;
+  label$1: {
+    label$2: {
+      local6 = label$3: {
+        if (((unsigned) param1 >= 0x101)) {
+          {
+            label$5: {
+              if ((local8 = ((unsigned) local6 = label$6: {
+                if ((*((char *) param0 + 0x100) > -0x41)) break(0x100) label$6;
+                if ((*((char *) param0 + 0xff) > -0x41)) break(0xff) label$6;
+                if ((*((char *) param0 + 0xfe) > -0x41)) break(0xfe) label$6;
+                0xfd;
+              } < param1) == 0x0)) {
+                {
+                  if ((param1 == local6)) break label$5;
+                  break label$2;
+                };
+              };
+              if ((*((char *) (param0 + local6)) <= -0x41)) break label$2;
+            };
+            *((unsigned int *) local5 + 0x10) = param0;
+            *((unsigned int *) local5 + 0x14) = local6;
+            local7 = local8 ? 0x5 : 0x0;
+            break(local8 ? 0x100398 : 0x10016c /* ".." */ ) label$3;
+          };
+        };
+        *((unsigned int *) local5 + 0x14) = param1;
+        *((unsigned int *) local5 + 0x10) = param0;
+        0x10016c /* ".." */;
+      };
+      *((unsigned int *) local5 + 0x1c) = local7;
+      *((unsigned int *) local5 + 0x18) = local6;
+      label$8: {
+        label$9: {
+          label$10: {
+            label$11: {
+              if (((local7 = ((unsigned) param1 < param2) | ((unsigned) param1 < param3)) == 0x0)) {
+                {
+                  if (((unsigned) param2 > param3)) break label$11;
+                  label$13: {
+                    if ((((param2 == 0x0) | ((unsigned) param1 <= param2)) == 0x0)) {
+                      if ((*((char *) (param0 + param2)) < -0x40)) break label$13;
+                    };
+                    param2 = param3;
+                  };
+                  *((unsigned int *) local5 + 0x20) = param2;
+                  if (((unsigned) param2 < param3 = param1)) {
+                    {
+                      if (((unsigned) param3 = ((unsigned) param2 >= param3) ? param3 = (param2 - 0x3) : 0x0 > local7 = (param2 + 0x1))) break label$10;
+                      label$16: {
+                        if ((param3 == local7)) break label$16;
+                        local7 = ((param0 + local7) - local8 = (param0 + param3));
+                        if ((*((char *) local9 = (param0 + param2)) > -0x41)) {
+                          {
+                            local6 = (local7 - 0x1);
+                            break label$16;
+                          };
+                        };
+                        if ((param2 == param3)) break label$16;
+                        if ((*((char *) param2 = (local9 - 0x1)) > -0x41)) {
+                          {
+                            local6 = (local7 - 0x2);
+                            break label$16;
+                          };
+                        };
+                        if ((param2 == local8)) break label$16;
+                        if ((*((char *) param2 = (local9 - 0x2)) > -0x41)) {
+                          {
+                            local6 = (local7 - 0x3);
+                            break label$16;
+                          };
+                        };
+                        if ((param2 == local8)) break label$16;
+                        if ((*((char *) param2 = (local9 - 0x3)) > -0x41)) {
+                          {
+                            local6 = (local7 - 0x4);
+                            break label$16;
+                          };
+                        };
+                        if ((param2 == local8)) break label$16;
+                        local6 = (local7 - 0x5);
+                      };
+                      param3 = (param3 + local6);
+                    };
+                  };
+                  if ((if (param3) {
+                    {
+                      label$22: {
+                        if (((unsigned) param1 <= param3)) {
+                          {
+                            if ((param1 == param3)) break label$22;
+                            break label$8;
+                          };
+                        };
+                        if ((*((char *) (param0 + param3)) <= -0x41)) break label$8;
+                      };
+                      (param1 - param3);
+                    };
+                  } else {
+                    param1;
+                  } == 0x0)) break label$9;
+                  param0 = label$25: {
+                    label$26: {
+                      label$27: {
+                        if ((param0 = *((char *) param1 = (param0 + param3)) < 0x0)) {
+                          {
+                            local6 = (*((unsigned char *) param1 + 0x1) & 0x3f);
+                            param2 = (param0 & 0x1f);
+                            if (((unsigned) param0 > -0x21)) break label$27;
+                            param2 = ((param2 << 0x6) | local6);
+                            break label$26;
+                          };
+                        };
+                        *((unsigned int *) local5 + 0x24) = (param0 & 0xff);
+                        break(0x1) label$25;
+                      };
+                      local6 = ((*((unsigned char *) param1 + 0x2) & 0x3f) | (local6 << 0x6));
+                      if (((unsigned) param0 < -0x10)) {
+                        {
+                          param2 = (local6 | (param2 << 0xc));
+                          break label$26;
+                        };
+                      };
+                      if ((param2 = (((param2 << 0x12) & 0x1c0000) | ((*((unsigned char *) param1 + 0x3) & 0x3f) | (local6 << 0x6))) == 0x110000)) break label$9;
+                    };
+                    *((unsigned int *) local5 + 0x24) = param2;
+                    if (((unsigned) param2 < 0x80)) break(0x1) label$25;
+                    if (((unsigned) param2 < 0x800)) break(0x2) label$25;
+                    ((unsigned) param2 < 0x10000) ? 0x3 : 0x4;
+                  };
+                  *((unsigned int *) local5 + 0x28) = param3;
+                  *((unsigned int *) local5 + 0x2c) = (param0 + param3);
+                  *((unsigned long *) (local5 + 0x3c)) = 0x5;
+                  *((unsigned int *) (local5 + 0x6c)) = 0x12;
+                  *((unsigned int *) (local5 + 0x64)) = 0x12;
+                  *((unsigned int *) (local5 + 0x5c)) = 0x13;
+                  *((unsigned int *) (local5 + 0x54)) = 0x14;
+                  *((unsigned int *) local5 + 0x34) = 0x5;
+                  *((unsigned int *) local5 + 0x30) = 0x100420;
+                  *((unsigned int *) local5 + 0x4c) = 0x1;
+                  *((unsigned int *) local5 + 0x38) = (local5 + 0x48);
+                  *((unsigned int *) local5 + 0x68) = (local5 + 0x18);
+                  *((unsigned int *) local5 + 0x60) = (local5 + 0x10);
+                  *((unsigned int *) local5 + 0x58) = (local5 + 0x28);
+                  *((unsigned int *) local5 + 0x50) = (local5 + 0x24);
+                  *((unsigned int *) local5 + 0x48) = (local5 + 0x20);
+                  break label$1;
+                };
+              };
+              *((unsigned int *) local5 + 0x28) = local7 ? param2 : param3;
+              *((unsigned long *) (local5 + 0x3c)) = 0x3;
+              *((unsigned int *) (local5 + 0x5c)) = 0x12;
+              *((unsigned int *) (local5 + 0x54)) = 0x12;
+              *((unsigned int *) local5 + 0x34) = 0x3;
+              *((unsigned int *) local5 + 0x30) = 0x100460;
+              *((unsigned int *) local5 + 0x4c) = 0x1;
+              *((unsigned int *) local5 + 0x38) = (local5 + 0x48);
+              *((unsigned int *) local5 + 0x58) = (local5 + 0x18);
+              *((unsigned int *) local5 + 0x50) = (local5 + 0x10);
+              *((unsigned int *) local5 + 0x48) = (local5 + 0x28);
+              break label$1;
+            };
+            *((unsigned int *) (local5 + 0x64)) = 0x12;
+            *((unsigned int *) (local5 + 0x5c)) = 0x12;
+            *((unsigned int *) (local5 + 0x54)) = 0x1;
+            *((unsigned long *) (local5 + 0x3c)) = 0x4;
+            *((unsigned int *) local5 + 0x34) = 0x4;
+            *((unsigned int *) local5 + 0x30) = 0x1003c0;
+            *((unsigned int *) local5 + 0x4c) = 0x1;
+            *((unsigned int *) local5 + 0x38) = (local5 + 0x48);
+            *((unsigned int *) local5 + 0x60) = (local5 + 0x18);
+            *((unsigned int *) local5 + 0x58) = (local5 + 0x10);
+            *((unsigned int *) local5 + 0x50) = (local5 + 0xc);
+            *((unsigned int *) local5 + 0x48) = (local5 + 0x8);
+            break label$1;
+          };
+          $func23(param3, local7, 0x100494);
+          abort("unreachable");
+        };
+        $func45(param4);
+        abort("unreachable");
+      };
+      $func36(param0, param1, param3, param1, param4);
+      abort("unreachable");
+    };
+    $func36(param0, param1, 0x0, local6, param4);
+    abort("unreachable");
+  };
+  $func31((local5 + 0x30), param4);
+  abort("unreachable");
+}
+
+// O[2] Disassembly of $func37, known as $func37
+int $func37(int param0, int param1) {
+  if (((unsigned) param1 >= 0x9)) {
+    break($func7(param1, param0)) label$1;
+  };
+  return $func0(param0);
+}
+
+// O[2] Disassembly of $func38, known as $func38
+void $func38(int param0, int param1) {
+  *((unsigned long *) param0 + 0x8) = 0x7916663017593141705;
+  *((unsigned long *) param0) = 0x8259774374431045597;
+}
+
+// O[2] Disassembly of $func39, known as $func39
+void $func39(int param0, int param1) {
+  *((unsigned long *) param0 + 0x8) = 0x8539995352090740368;
+  *((unsigned long *) param0) = -0x5441813922324612405;
+}
+
+// O[2] Disassembly of $func40, known as $func40
+void $func40(int param0, int param1) {
+  *((unsigned long *) param0 + 0x8) = -0x163230743173927068;
+  *((unsigned long *) param0) = -0x4493808902380553279;
+}
+
+// O[2] Disassembly of $func41, known as $func41
+void $func41(int param0, int param1) {
+  *((unsigned int *) param0 + 0x4) = 0x1000dc;
+  *((unsigned int *) param0) = param1;
+}
+
+// O[2] Disassembly of $func42, known as $func42
+int $func42(int param0, int param1) {
+  // local index=2
+  int local2;
+  // local index=3
+  int local3;
+  // local index=4
+  int local4;
+  // local index=5
+  int local5;
+  // local index=6
+  int local6;
+  // local index=7
+  int local7;
+  // local index=8
+  int local8;
+  // local index=9
+  int local9;
+  // local index=10
+  int local10;
+
+  local6 = *((unsigned int *) param0);
+  local4 = *((unsigned int *) param0 + 0x4);
+  label$2: {
+    if ((local10 = *((unsigned int *) local5 = param1) | param0 = *((unsigned int *) param1 + 0x8))) {
+      {
+        label$4: {
+          if ((param0 == 0x0)) break label$4;
+          local9 = (local4 + local6);
+          local7 = (*((unsigned int *) (local5 + 0xc)) + 0x1);
+          param1 = local6;
+          while (1) label$6: {
+            param0 = param1;
+            if ((local7 = (local7 - 0x1) == 0x0)) continue label$6;
+            if ((param0 == local9)) break label$4;
+            local2 = (param1 = label$7: {
+              if ((param1 = *((char *) param0) >= 0x0)) {
+                {
+                  local3 = (param1 & 0xff);
+                  break((param0 + 0x1)) label$7;
+                };
+              };
+              local8 = (*((unsigned char *) param0 + 0x1) & 0x3f);
+              local3 = (param1 & 0x1f);
+              if (((unsigned) param1 <= -0x21)) {
+                {
+                  local3 = ((local3 << 0x6) | local8);
+                  break((param0 + 0x2)) label$7;
+                };
+              };
+              local8 = ((*((unsigned char *) param0 + 0x2) & 0x3f) | (local8 << 0x6));
+              if (((unsigned) param1 < -0x10)) {
+                {
+                  local3 = (local8 | (local3 << 0xc));
+                  break((param0 + 0x3)) label$7;
+                };
+              };
+              if ((local3 = (((local3 << 0x12) & 0x1c0000) | ((*((unsigned char *) param0 + 0x3) & 0x3f) | (local8 << 0x6))) == 0x110000)) break label$4;
+              (param0 + 0x4);
+            } + (local2 - param0));
+            if ((local3 != 0x110000)) break label$5;
+            break label$4;
+          break label$6;
+          };
+          if ((param0 == local9)) break label$4;
+          if (((((param1 = *((char *) param0) >= 0x0) | ((unsigned) param1 < -0x20)) | ((unsigned) param1 < -0x10)) == 0x0)) {
+            if ((((((param1 & 0xff) << 0x12) & 0x1c0000) | ((*((unsigned char *) param0 + 0x3) & 0x3f) | (((*((unsigned char *) param0 + 0x2) & 0x3f) << 0x6) | ((*((unsigned char *) param0 + 0x1) & 0x3f) << 0xc)))) == 0x110000)) break label$4;
+          };
+          label$12: {
+            label$13: {
+              if ((local2 == 0x0)) break label$13;
+              if (((unsigned) local2 >= local4)) {
+                {
+                  param0 = 0x0;
+                  if ((local2 == local4)) break label$13;
+                  break label$12;
+                };
+              };
+              param0 = 0x0;
+              if ((*((char *) (local2 + local6)) < -0x40)) break label$12;
+            };
+            param0 = local6;
+          };
+          local4 = param0 ? local2 : local4;
+          local6 = param0 ? param0 : local6;
+        };
+        if ((local10 == 0x0)) break label$2;
+        local2 = *((unsigned int *) local5 + 0x4);
+        label$15: {
+          if (((unsigned) local4 >= 0x10)) {
+            {
+              param0 = $func2(local6, local4);
+              break label$15;
+            };
+          };
+          if ((local4 == 0x0)) {
+            {
+              param0 = 0x0;
+              break label$15;
+            };
+          };
+          local7 = (local4 & 0x3);
+          label$18: {
+            if (((unsigned) local4 < 0x4)) {
+              {
+                param0 = 0x0;
+                local3 = 0x0;
+                break label$18;
+              };
+            };
+            local9 = (local4 & -0x4);
+            param0 = 0x0;
+            local3 = 0x0;
+            while (1) {
+              param0 = ((((param0 + (*((char *) param1 = (local3 + local6)) > -0x41)) + (*((char *) (param1 + 0x1)) > -0x41)) + (*((char *) (param1 + 0x2)) > -0x41)) + (*((char *) (param1 + 0x3)) > -0x41));
+              if ((local9 != local3 = (local3 + 0x4))) break label$20;
+            break ;
+            };
+          };
+          if ((local7 == 0x0)) break label$15;
+          param1 = (local3 + local6);
+          while (1) {
+            param0 = (param0 + (*((char *) param1) > -0x41));
+            param1 = (param1 + 0x1);
+            if (local7 = (local7 - 0x1)) break label$21;
+          break ;
+          };
+        };
+        label$22: {
+          if (((unsigned) param0 < local2)) {
+            {
+              local2 = (local2 - param0);
+              param0 = 0x0;
+              label$24: {
+                label$25: {
+                  label$26: {
+                    switch ((*((unsigned char *) local5 + 0x20) - 0x1)) {
+                      case 0: break label$26;
+                      case 1: break label$25;
+                      default: break label$24;
+                    };
+                  };
+                  param0 = local2;
+                  local2 = 0x0;
+                  break label$24;
+                };
+                param0 = (local2 >>> 0x1);
+                local2 = ((local2 + 0x1) >>> 0x1);
+              };
+              param0 = (param0 + 0x1);
+              param1 = *((unsigned int *) (local5 + 0x18));
+              local3 = *((unsigned int *) local5 + 0x10);
+              local5 = *((unsigned int *) local5 + 0x14);
+              while (1) {
+                if ((param0 = (param0 - 0x1) == 0x0)) break label$22;
+                if ((__function_table[*((unsigned int *) param1 + 0x10)](local5, local3) == 0x0)) break label$27;
+              break ;
+              };
+              break(0x1) label$1;
+            };
+          };
+          break label$2;
+        };
+        break(if (__function_table[*((unsigned int *) param1 + 0xc)](local5, local6, local4)) {
+          0x1;
+        } else {
+          {
+            param0 = 0x0;
+            ((unsigned) label$30: {
+              while (1) {
+                if ((param0 == local2)) break(local2) label$30;
+                param0 = (param0 + 0x1);
+                if ((__function_table[*((unsigned int *) param1 + 0x10)](local5, local3) == 0x0)) break label$31;
+              break ;
+              };
+              (param0 - 0x1);
+            } < local2);
+          };
+        }) label$1;
+      };
+    };
+    break(__function_table[*((unsigned int *) *((unsigned int *) (local5 + 0x18)) + 0xc)](*((unsigned int *) local5 + 0x14), local6, local4)) label$1;
+  };
+  return __function_table[*((unsigned int *) *((unsigned int *) (local5 + 0x18)) + 0xc)](*((unsigned int *) local5 + 0x14), local6, local4);
+}
+
+// O[2] Disassembly of $func43, known as $func43
+int $func43(int param0, int param1) {
+  *((unsigned int *) param0);
+  while (1) break label$1;
+}
+
+// O[2] Disassembly of $func44, known as $func44
+int $func44(int param0, int param1) {
+  return $func11(*((unsigned int *) param0), param1);
+}
+
+// O[1] Decompilation of $func45, known as $func45
+void $func45(int param0) {
+  // local index=1
+  int local1;
+
+  global0 = local1 = (global0 - 0x20);
+  *((unsigned long *) (local1 + 0xc)) = 0x0;
+  *((unsigned int *) local1 + 0x4) = 0x1;
+  *((unsigned int *) local1 + 0x8) = 0x10016c /* ".." */;
+  *((unsigned int *) local1 + 0x1c) = 0x2b;
+  *((unsigned int *) local1 + 0x18) = 0x100188 /* "called `Option::unwrap()` on a `None` value" */;
+  *((unsigned int *) local1) = (local1 + 0x18);
+  $func31(local1, param0);
+  abort("unreachable");
+}
+
+// O[2] Disassembly of $func46, known as $func46
+int $func46(int param0, int param1) {
+  return $func5(param0, 0x10002c, param1);
+}
+
+// O[2] Disassembly of $func47, known as $func47
+void $func47(int param0, int param1) {
+  __function_table[param0 ? param0 = *((unsigned int *) 0x100e70) : 0x2](param0, param1);
+  abort("unreachable");
+}
+
+// O[2] Disassembly of $func48, known as $func48
+int $func48(int param0, int param1, int param2) {
+  // local index=3
+  int local3;
+  // local index=4
+  int local4;
+  // local index=5
+  int local5;
+  // local index=6
+  int local6;
+  // local index=7
+  int local7;
+  // local index=8
+  int local8;
+  // local index=9
+  int local9;
+
+  label$1: {
+    if (((unsigned) local4 = param2 < 0x10)) {
+      {
+        param2 = param0;
+        break label$1;
+      };
+    };
+    local5 = (param0 + local3 = ((0x0 - param0) & 0x3));
+    if (local3) {
+      {
+        param2 = param0;
+        local6 = param1;
+        while (1) {
+          *((unsigned char *) param2) = *((unsigned char *) local6);
+          local6 = (local6 + 0x1);
+          if (((unsigned) param2 = (param2 + 0x1) < local5)) break label$4;
+        break ;
+        };
+      };
+    };
+    param2 = (local5 + local7 = (local8 = (local4 - local3) & -0x4));
+    label$5: {
+      if ((local3 = (param1 + local3) & 0x3)) {
+        {
+          if ((local7 <= 0x0)) break label$5;
+          local9 = (local4 = (local3 << 0x3) & 0x18);
+          param1 = (local6 = (local3 & -0x4) + 0x4);
+          local4 = ((0x0 - local4) & 0x18);
+          local6 = *((unsigned int *) local6);
+          while (1) {
+            *((unsigned int *) local5) = ((local6 >>> local9) | (local6 = *((unsigned int *) param1) << local4));
+            param1 = (param1 + 0x4);
+            if (((unsigned) local5 = (local5 + 0x4) < param2)) break label$7;
+          break ;
+          };
+          break label$5;
+        };
+      };
+      if ((local7 <= 0x0)) break label$5;
+      param1 = local3;
+      while (1) {
+        *((unsigned int *) local5) = *((unsigned int *) param1);
+        param1 = (param1 + 0x4);
+        if (((unsigned) local5 = (local5 + 0x4) < param2)) break label$8;
+      break ;
+      };
+    };
+    local4 = (local8 & 0x3);
+    param1 = (local3 + local7);
+  };
+  if (local4) {
+    {
+      local3 = (param2 + local4);
+      while (1) {
+        *((unsigned char *) param2) = *((unsigned char *) param1);
+        param1 = (param1 + 0x1);
+        if (((unsigned) param2 = (param2 + 0x1) < local3)) break label$10;
+      break ;
+      };
+    };
+  };
+  return param0;
+}
+
+// O[2] Disassembly of $func49, known as $func49
+int $func49(int param0, int param1, int param2) {
+  // local index=3
+  int local3;
+  // local index=4
+  int local4;
+  // local index=5
+  int local5;
+
+  label$1: {
+    if ((param2 == 0x0)) break label$1;
+    while (1) if ((local4 = *((unsigned char *) param0) == local5 = *((unsigned char *) param1))) {
+      {
+        param0 = (param0 + 0x1);
+        param1 = (param1 + 0x1);
+        if (param2 = (param2 - 0x1)) break label$2;
+        break label$1;
+      };
+    };
+    local3 = (local4 - local5);
+  };
+  return local3;
+}
+
+// O[2] Disassembly of $func50, known as $func50
+void $func50(int param0) {}
+
+// Function table
+(*__function_table[23])() = {
+  NULL,
+  $func44, // $func44 i32 (i32, i32)
+  $func25, // $func25 void (i32, i32)
+  $func34, // $func34 void (i32)
+  $func26, // $func26 i32 (i32, i32, i32)
+  $func10, // $func10 i32 (i32, i32)
+  $func46, // $func46 i32 (i32, i32)
+  $func38, // $func38 void (i32, i32)
+  $func50, // $func50 void (i32)
+  $func40, // $func40 void (i32, i32)
+  $func27, // $func27 void (i32, i32)
+  $func41, // $func41 void (i32, i32)
+  $func33, // $func33 void (i32)
+  $func15, // $func15 void (i32, i32)
+  $func20, // $func20 void (i32, i32)
+  $func50, // $func50 void (i32)
+  $func39, // $func39 void (i32, i32)
+  $func43, // $func43 i32 (i32, i32)
+  $func42, // $func42 i32 (i32, i32)
+  $func24, // $func24 i32 (i32, i32)
+  $func14, // $func14 i32 (i32, i32)
+  $func50, // $func50 void (i32)
+  $func39, // $func39 void (i32, i32)
+};
+/****INITIALIZED MEMORY DUMP****/
+// 00100000: 73 72 63 2f 6c 69 62 2e 72 73 00 00 00 00 10 00 : "src/lib.rs\x00\x00\x00\x00\x10\x00"
+// 00100010: 0a 00 00 00 2c 00 00 00 12 00 00 00 00 00 10 00 : "\n\x00\x00\x00,\x00\x00\x00\x12\x00\x00\x00\x00\x00\x10\x00"
+// 00100020: 0a 00 00 00 10 00 00 00 2b 00 00 00 03 00 00 00 : "\n\x00\x00\x00\x10\x00\x00\x00+\x00\x00\x00\x03\x00\x00\x00"
+// 00100030: 0c 00 00 00 04 00 00 00 04 00 00 00 05 00 00 00 : "\f\x00\x00\x00\x04\x00\x00\x00\x04\x00\x00\x00\x05\x00\x00\x00"
+// 00100040: 06 00 00 00 6d 65 6d 6f 72 79 20 61 6c 6c 6f 63 : "\x06\x00\x00\x00memory alloc"
+// 00100050: 61 74 69 6f 6e 20 6f 66 20 20 62 79 74 65 73 20 : "ation of  bytes "
+// 00100060: 66 61 69 6c 65 64 00 00 44 00 10 00 15 00 00 00 : "failed\x00\x00D\x00\x10\x00\x15\x00\x00\x00"
+// 00100070: 59 00 10 00 0d 00 00 00 6c 69 62 72 61 72 79 2f : "Y\x00\x10\x00\r\x00\x00\x00library/"
+// 00100080: 73 74 64 2f 73 72 63 2f 61 6c 6c 6f 63 2e 72 73 : "std/src/alloc.rs"
+// 00100090: 78 00 10 00 18 00 00 00 62 01 00 00 09 00 00 00 : "x\x00\x10\x00\x18\x00\x00\x00b\x01\x00\x00\t\x00\x00\x00"
+// 001000a0: 6c 69 62 72 61 72 79 2f 73 74 64 2f 73 72 63 2f : "library/std/src/"
+// 001000b0: 70 61 6e 69 63 6b 69 6e 67 2e 72 73 a0 00 10 00 : "panicking.rs�\x00\x10\x00"
+// 001000c0: 1c 00 00 00 86 02 00 00 1e 00 00 00 03 00 00 00 : "\x1c\x00\x00\x00�\x02\x00\x00\x1e\x00\x00\x00\x03\x00\x00\x00"
+// 001000d0: 0c 00 00 00 04 00 00 00 07 00 00 00 08 00 00 00 : "\f\x00\x00\x00\x04\x00\x00\x00\x07\x00\x00\x00\b\x00\x00\x00"
+// 001000e0: 08 00 00 00 04 00 00 00 09 00 00 00 08 00 00 00 : "\b\x00\x00\x00\x04\x00\x00\x00\t\x00\x00\x00\b\x00\x00\x00"
+// 001000f0: 08 00 00 00 04 00 00 00 0a 00 00 00 0b 00 00 00 : "\b\x00\x00\x00\x04\x00\x00\x00\n\x00\x00\x00\x0b\x00\x00\x00"
+// 00100100: 0c 00 00 00 10 00 00 00 04 00 00 00 0d 00 00 00 : "\f\x00\x00\x00\x10\x00\x00\x00\x04\x00\x00\x00\r\x00\x00\x00"
+// 00100110: 0e 00 00 00 0f 00 00 00 00 00 00 00 01 00 00 00 : "\x0e\x00\x00\x00\x0f\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00"
+// 00100120: 10 00 00 00 6c 69 62 72 61 72 79 2f 61 6c 6c 6f : "\x10\x00\x00\x00library/allo"
+// 00100130: 63 2f 73 72 63 2f 72 61 77 5f 76 65 63 2e 72 73 : "c/src/raw_vec.rs"
+// 00100140: 63 61 70 61 63 69 74 79 20 6f 76 65 72 66 6c 6f : "capacity overflo"
+// 00100150: 77 00 00 00 40 01 10 00 11 00 00 00 24 01 10 00 : "w\x00\x00\x00@\x01\x10\x00\x11\x00\x00\x00$\x01\x10\x00"
+// 00100160: 1c 00 00 00 3a 02 00 00 05 00 00 00 2e 2e 00 00 : "\x1c\x00\x00\x00:\x02\x00\x00\x05\x00\x00\x00..\x00\x00"
+// 00100170: 6c 01 10 00 02 00 00 00 30 31 32 33 34 35 36 37 : "l\x01\x10\x00\x02\x00\x00\x0001234567"
+// 00100180: 38 39 61 62 63 64 65 66 63 61 6c 6c 65 64 20 60 : "89abcdefcalled `"
+// 00100190: 4f 70 74 69 6f 6e 3a 3a 75 6e 77 72 61 70 28 29 : "Option::unwrap()"
+// 001001a0: 60 20 6f 6e 20 61 20 60 4e 6f 6e 65 60 20 76 61 : "` on a `None` va"
+// 001001b0: 6c 75 65 00 15 00 00 00 00 00 00 00 01 00 00 00 : "lue\x00\x15\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00"
+// 001001c0: 16 00 00 00 69 6e 64 65 78 20 6f 75 74 20 6f 66 : "\x16\x00\x00\x00index out of"
+// 001001d0: 20 62 6f 75 6e 64 73 3a 20 74 68 65 20 6c 65 6e : " bounds: the len"
+// 001001e0: 20 69 73 20 20 62 75 74 20 74 68 65 20 69 6e 64 : " is  but the ind"
+// 001001f0: 65 78 20 69 73 20 00 00 c4 01 10 00 20 00 00 00 : "ex is \x00\x00�\x01\x10\x00 \x00\x00\x00"
+// 00100200: e4 01 10 00 12 00 00 00 6c 69 62 72 61 72 79 2f : "�\x01\x10\x00\x12\x00\x00\x00library/"
+// 00100210: 63 6f 72 65 2f 73 72 63 2f 66 6d 74 2f 6e 75 6d : "core/src/fmt/num"
+// 00100220: 2e 72 73 30 78 00 00 00 08 02 10 00 1b 00 00 00 : ".rs0x\x00\x00\x00\b\x02\x10\x00\x1b\x00\x00\x00"
+// 00100230: 69 00 00 00 17 00 00 00 30 30 30 31 30 32 30 33 : "i\x00\x00\x00\x17\x00\x00\x0000010203"
+// 00100240: 30 34 30 35 30 36 30 37 30 38 30 39 31 30 31 31 : "0405060708091011"
+// 00100250: 31 32 31 33 31 34 31 35 31 36 31 37 31 38 31 39 : "1213141516171819"
+// 00100260: 32 30 32 31 32 32 32 33 32 34 32 35 32 36 32 37 : "2021222324252627"
+// 00100270: 32 38 32 39 33 30 33 31 33 32 33 33 33 34 33 35 : "2829303132333435"
+// 00100280: 33 36 33 37 33 38 33 39 34 30 34 31 34 32 34 33 : "3637383940414243"
+// 00100290: 34 34 34 35 34 36 34 37 34 38 34 39 35 30 35 31 : "4445464748495051"
+// 001002a0: 35 32 35 33 35 34 35 35 35 36 35 37 35 38 35 39 : "5253545556575859"
+// 001002b0: 36 30 36 31 36 32 36 33 36 34 36 35 36 36 36 37 : "6061626364656667"
+// 001002c0: 36 38 36 39 37 30 37 31 37 32 37 33 37 34 37 35 : "6869707172737475"
+// 001002d0: 37 36 37 37 37 38 37 39 38 30 38 31 38 32 38 33 : "7677787980818283"
+// 001002e0: 38 34 38 35 38 36 38 37 38 38 38 39 39 30 39 31 : "8485868788899091"
+// 001002f0: 39 32 39 33 39 34 39 35 39 36 39 37 39 38 39 39 : "9293949596979899"
+// 00100300: 72 61 6e 67 65 20 73 74 61 72 74 20 69 6e 64 65 : "range start inde"
+// 00100310: 78 20 20 6f 75 74 20 6f 66 20 72 61 6e 67 65 20 : "x  out of range "
+// 00100320: 66 6f 72 20 73 6c 69 63 65 20 6f 66 20 6c 65 6e : "for slice of len"
+// 00100330: 67 74 68 20 00 03 10 00 12 00 00 00 12 03 10 00 : "gth \x00\x03\x10\x00\x12\x00\x00\x00\x12\x03\x10\x00"
+// 00100340: 22 00 00 00 72 61 6e 67 65 20 65 6e 64 20 69 6e : "\"\x00\x00\x00range end in"
+// 00100350: 64 65 78 20 44 03 10 00 10 00 00 00 12 03 10 00 : "dex D\x03\x10\x00\x10\x00\x00\x00\x12\x03\x10\x00"
+// 00100360: 22 00 00 00 73 6c 69 63 65 20 69 6e 64 65 78 20 : "\"\x00\x00\x00slice index "
+// 00100370: 73 74 61 72 74 73 20 61 74 20 20 62 75 74 20 65 : "starts at  but e"
+// 00100380: 6e 64 73 20 61 74 20 00 64 03 10 00 16 00 00 00 : "nds at \x00d\x03\x10\x00\x16\x00\x00\x00"
+// 00100390: 7a 03 10 00 0d 00 00 00 5b 2e 2e 2e 5d 62 65 67 : "z\x03\x10\x00\r\x00\x00\x00[...]beg"
+// 001003a0: 69 6e 20 3c 3d 20 65 6e 64 20 28 20 3c 3d 20 29 : "in <= end ( <= )"
+// 001003b0: 20 77 68 65 6e 20 73 6c 69 63 69 6e 67 20 60 60 : " when slicing ``"
+// 001003c0: 9d 03 10 00 0e 00 00 00 ab 03 10 00 04 00 00 00 : "�\x03\x10\x00\x0e\x00\x00\x00�\x03\x10\x00\x04\x00\x00\x00"
+// 001003d0: af 03 10 00 10 00 00 00 bf 03 10 00 01 00 00 00 : "�\x03\x10\x00\x10\x00\x00\x00�\x03\x10\x00\x01\x00\x00\x00"
+// 001003e0: 62 79 74 65 20 69 6e 64 65 78 20 20 69 73 20 6e : "byte index  is n"
+// 001003f0: 6f 74 20 61 20 63 68 61 72 20 62 6f 75 6e 64 61 : "ot a char bounda"
+// 00100400: 72 79 3b 20 69 74 20 69 73 20 69 6e 73 69 64 65 : "ry; it is inside"
+// 00100410: 20 20 28 62 79 74 65 73 20 29 20 6f 66 20 60 00 : "  (bytes ) of `\x00"
+// 00100420: e0 03 10 00 0b 00 00 00 eb 03 10 00 26 00 00 00 : "�\x03\x10\x00\x0b\x00\x00\x00�\x03\x10\x00&\x00\x00\x00"
+// 00100430: 11 04 10 00 08 00 00 00 19 04 10 00 06 00 00 00 : "\x11\x04\x10\x00\b\x00\x00\x00\x19\x04\x10\x00\x06\x00\x00\x00"
+// 00100440: bf 03 10 00 01 00 00 00 20 69 73 20 6f 75 74 20 : "�\x03\x10\x00\x01\x00\x00\x00 is out "
+// 00100450: 6f 66 20 62 6f 75 6e 64 73 20 6f 66 20 60 00 00 : "of bounds of `\x00\x00"
+// 00100460: e0 03 10 00 0b 00 00 00 48 04 10 00 16 00 00 00 : "�\x03\x10\x00\x0b\x00\x00\x00H\x04\x10\x00\x16\x00\x00\x00"
+// 00100470: bf 03 10 00 01 00 00 00 6c 69 62 72 61 72 79 2f : "�\x03\x10\x00\x01\x00\x00\x00library/"
+// 00100480: 63 6f 72 65 2f 73 72 63 2f 73 74 72 2f 6d 6f 64 : "core/src/str/mod"
+// 00100490: 2e 72 73 00 78 04 10 00 1b 00 00 00 0c 01 00 00 : ".rs\x00x\x04\x10\x00\x1b\x00\x00\x00\f\x01\x00\x00"
+// 001004a0: 2c 00 00 00 6c 69 62 72 61 72 79 2f 63 6f 72 65 : ",\x00\x00\x00library/core"
+// 001004b0: 2f 73 72 63 2f 75 6e 69 63 6f 64 65 2f 70 72 69 : "/src/unicode/pri"
+// 001004c0: 6e 74 61 62 6c 65 2e 72 73 00 00 00 a4 04 10 00 : "ntable.rs\x00\x00\x00�\x04\x10\x00"
+// 001004d0: 25 00 00 00 1a 00 00 00 36 00 00 00 a4 04 10 00 : "%\x00\x00\x00\x1a\x00\x00\x006\x00\x00\x00�\x04\x10\x00"
+// 001004e0: 25 00 00 00 0a 00 00 00 2b 00 00 00 00 06 01 01 : "%\x00\x00\x00\n\x00\x00\x00+\x00\x00\x00\x00\x06\x01\x01"
+// 001004f0: 03 01 04 02 05 07 07 02 08 08 09 02 0a 05 0b 02 : "\x03\x01\x04\x02\x05\x07\x07\x02\b\b\t\x02\n\x05\x0b\x02"
+// 00100500: 0e 04 10 01 11 02 12 05 13 11 14 01 15 02 17 02 : "\x0e\x04\x10\x01\x11\x02\x12\x05\x13\x11\x14\x01\x15\x02\x17\x02"
+// 00100510: 19 0d 1c 05 1d 08 1f 01 24 01 6a 04 6b 02 af 03 : "\x19\r\x1c\x05\x1d\b\x1f\x01$\x01j\x04k\x02�\x03"
+// 00100520: b1 02 bc 02 cf 02 d1 02 d4 0c d5 09 d6 02 d7 02 : "�\x02�\x02�\x02�\x02�\f�\t�\x02�\x02"
+// 00100530: da 01 e0 05 e1 02 e7 04 e8 02 ee 20 f0 04 f8 02 : "�\x01�\x05�\x02�\x04�\x02� �\x04�\x02"
+// 00100540: fa 03 fb 01 0c 27 3b 3e 4e 4f 8f 9e 9e 9f 7b 8b : "�\x03�\x01\f';>NO����{�"
+// 00100550: 93 96 a2 b2 ba 86 b1 06 07 09 36 3d 3e 56 f3 d0 : "�������\x06\x07\t6=>V��"
+// 00100560: d1 04 14 18 36 37 56 57 7f aa ae af bd 35 e0 12 : "�\x04\x14\x1867VW����5�\x12"
+// 00100570: 87 89 8e 9e 04 0d 0e 11 12 29 31 34 3a 45 46 49 : "����\x04\r\x0e\x11\x12)14:EFI"
+// 00100580: 4a 4e 4f 64 65 5c b6 b7 1b 1c 07 08 0a 0b 14 17 : "JNOde\\��\x1b\x1c\x07\b\n\x0b\x14\x17"
+// 00100590: 36 39 3a a8 a9 d8 d9 09 37 90 91 a8 07 0a 3b 3e : "69:����\t7���\x07\n;>"
+// 001005a0: 66 69 8f 92 11 6f 5f bf ee ef 5a 62 f4 fc ff 53 : "fi��\x11o_���Zb���S"
+// 001005b0: 54 9a 9b 2e 2f 27 28 55 9d a0 a1 a3 a4 a7 a8 ad : "T��./'(U��������"
+// 001005c0: ba bc c4 06 0b 0c 15 1d 3a 3f 45 51 a6 a7 cc cd : "���\x06\x0b\f\x15\x1d:?EQ����"
+// 001005d0: a0 07 19 1a 22 25 3e 3f e7 ec ef ff c5 c6 04 20 : "�\x07\x19\x1a\"%>?������\x04 "
+// 001005e0: 23 25 26 28 33 38 3a 48 4a 4c 50 53 55 56 58 5a : "#%&(38:HJLPSUVXZ"
+// 001005f0: 5c 5e 60 63 65 66 6b 73 78 7d 7f 8a a4 aa af b0 : "\\^`cefksx}�����"
+// 00100600: c0 d0 ae af 6e 6f be 93 5e 22 7b 05 03 04 2d 03 : "�Ю�no��^\"{\x05\x03\x04-\x03"
+// 00100610: 66 03 01 2f 2e 80 82 1d 03 31 0f 1c 04 24 09 1e : "f\x03\x01/.��\x1d\x031\x0f\x1c\x04$\t\x1e"
+// 00100620: 05 2b 05 44 04 0e 2a 80 aa 06 24 04 24 04 28 08 : "\x05+\x05D\x04\x0e*��\x06$\x04$\x04(\b"
+// 00100630: 34 0b 4e 43 81 37 09 16 0a 08 18 3b 45 39 03 63 : "4\x0bNC�7\t\x16\n\b\x18;E9\x03c"
+// 00100640: 08 09 30 16 05 21 03 1b 05 01 40 38 04 4b 05 2f : "\b\t0\x16\x05!\x03\x1b\x05\x01@8\x04K\x05/"
+// 00100650: 04 0a 07 09 07 40 20 27 04 0c 09 36 03 3a 05 1a : "\x04\n\x07\t\x07@ '\x04\f\t6\x03:\x05\x1a"
+// 00100660: 07 04 0c 07 50 49 37 33 0d 33 07 2e 08 0a 81 26 : "\x07\x04\f\x07PI73\r3\x07.\b\n�&"
+// 00100670: 52 4b 2b 08 2a 16 1a 26 1c 14 17 09 4e 04 24 09 : "RK+\b*\x16\x1a&\x1c\x14\x17\tN\x04$\t"
+// 00100680: 44 0d 19 07 0a 06 48 08 27 09 75 0b 42 3e 2a 06 : "D\r\x19\x07\n\x06H\b'\tu\x0bB>*\x06"
+// 00100690: 3b 05 0a 06 51 06 01 05 10 03 05 80 8b 62 1e 48 : ";\x05\n\x06Q\x06\x01\x05\x10\x03\x05��b\x1eH"
+// 001006a0: 08 0a 80 a6 5e 22 45 0b 0a 06 0d 13 3a 06 0a 36 : "\b\n��^\"E\x0b\n\x06\r\x13:\x06\n6"
+// 001006b0: 2c 04 17 80 b9 3c 64 53 0c 48 09 0a 46 45 1b 48 : ",\x04\x17��<dS\fH\t\nFE\x1bH"
+// 001006c0: 08 53 0d 49 07 0a 80 f6 46 0a 1d 03 47 49 37 03 : "\bS\rI\x07\n��F\n\x1d\x03GI7\x03"
+// 001006d0: 0e 08 0a 06 39 07 0a 81 36 19 07 3b 03 1c 56 01 : "\x0e\b\n\x069\x07\n�6\x19\x07;\x03\x1cV\x01"
+// 001006e0: 0f 32 0d 83 9b 66 75 0b 80 c4 8a 4c 63 0d 84 30 : "\x0f2\r��fu\x0b�ĊLc\r�0"
+// 001006f0: 10 16 8f aa 82 47 a1 b9 82 39 07 2a 04 5c 06 26 : "\x10\x16���G���9\x07*\x04\\\x06&"
+// 00100700: 0a 46 0a 28 05 13 82 b0 5b 65 4b 04 39 07 11 40 : "\nF\n(\x05\x13��[eK\x049\x07\x11@"
+// 00100710: 05 0b 02 0e 97 f8 08 84 d6 2a 09 a2 e7 81 33 0f : "\x05\x0b\x02\x0e��\b��*\t��3\x0f"
+// 00100720: 01 1d 06 0e 04 08 81 8c 89 04 6b 05 0d 03 09 07 : "\x01\x1d\x06\x0e\x04\b���\x04k\x05\r\x03\t\x07"
+// 00100730: 10 92 60 47 09 74 3c 80 f6 0a 73 08 70 15 46 7a : "\x10�`G\tt<��\ns\bp\x15Fz"
+// 00100740: 14 0c 14 0c 57 09 19 80 87 81 47 03 85 42 0f 15 : "\x14\f\x14\fW\t\x19���G\x03�B\x0f\x15"
+// 00100750: 84 50 1f 06 06 80 d5 2b 05 3e 21 01 70 2d 03 1a : "�P\x1f\x06\x06��+\x05>!\x01p-\x03\x1a"
+// 00100760: 04 02 81 40 1f 11 3a 05 01 81 d0 2a 82 e6 80 f7 : "\x04\x02�@\x1f\x11:\x05\x01��*���"
+// 00100770: 29 4c 04 0a 04 02 83 11 44 4c 3d 80 c2 3c 06 01 : ")L\x04\n\x04\x02�\x11DL=��<\x06\x01"
+// 00100780: 04 55 05 1b 34 02 81 0e 2c 04 64 0c 56 0a 80 ae : "\x04U\x05\x1b4\x02�\x0e,\x04d\fV\n��"
+// 00100790: 38 1d 0d 2c 04 09 07 02 0e 06 80 9a 83 d8 04 11 : "8\x1d\r,\x04\t\x07\x02\x0e\x06����\x04\x11"
+// 001007a0: 03 0d 03 77 04 5f 06 0c 04 01 0f 0c 04 38 08 0a : "\x03\r\x03w\x04_\x06\f\x04\x01\x0f\f\x048\b\n"
+// 001007b0: 06 28 08 22 4e 81 54 0c 1d 03 09 07 36 08 0e 04 : "\x06(\b\"N�T\f\x1d\x03\t\x076\b\x0e\x04"
+// 001007c0: 09 07 09 07 80 cb 25 0a 84 06 00 01 03 05 05 06 : "\t\x07\t\x07��%\n�\x06\x00\x01\x03\x05\x05\x06"
+// 001007d0: 06 02 07 06 08 07 09 11 0a 1c 0b 19 0c 1a 0d 10 : "\x06\x02\x07\x06\b\x07\t\x11\n\x1c\x0b\x19\f\x1a\r\x10"
+// 001007e0: 0e 0c 0f 04 10 03 12 12 13 09 16 01 17 04 18 01 : "\x0e\f\x0f\x04\x10\x03\x12\x12\x13\t\x16\x01\x17\x04\x18\x01"
+// 001007f0: 19 03 1a 07 1b 01 1c 02 1f 16 20 03 2b 03 2d 0b : "\x19\x03\x1a\x07\x1b\x01\x1c\x02\x1f\x16 \x03+\x03-\x0b"
+// 00100800: 2e 01 30 03 31 02 32 01 a7 02 a9 02 aa 04 ab 08 : ".\x010\x031\x022\x01�\x02�\x02�\x04�\b"
+// 00100810: fa 02 fb 05 fd 02 fe 03 ff 09 ad 78 79 8b 8d a2 : "�\x02�\x05�\x02�\x03�\t�xy���"
+// 00100820: 30 57 58 8b 8c 90 1c dd 0e 0f 4b 4c fb fc 2e 2f : "0WX���\x1c�\x0e\x0fKL��./"
+// 00100830: 3f 5c 5d 5f e2 84 8d 8e 91 92 a9 b1 ba bb c5 c6 : "?\\]_ℍ���������"
+// 00100840: c9 ca de e4 e5 ff 00 04 11 12 29 31 34 37 3a 3b : "������\x00\x04\x11\x12)147:;"
+// 00100850: 3d 49 4a 5d 84 8e 92 a9 b1 b4 ba bb c6 ca ce cf : "=IJ]������������"
+// 00100860: e4 e5 00 04 0d 0e 11 12 29 31 34 3a 3b 45 46 49 : "��\x00\x04\r\x0e\x11\x12)14:;EFI"
+// 00100870: 4a 5e 64 65 84 91 9b 9d c9 ce cf 0d 11 29 3a 3b : "J^de�������\r\x11):;"
+// 00100880: 45 49 57 5b 5c 5e 5f 64 65 8d 91 a9 b4 ba bb c5 : "EIW[\\^_de�������"
+// 00100890: c9 df e4 e5 f0 0d 11 45 49 64 65 80 84 b2 bc be : "�����\r\x11EIde�����"
+// 001008a0: bf d5 d7 f0 f1 83 85 8b a4 a6 be bf c5 c7 cf da : "����񃅋��������"
+// 001008b0: db 48 98 bd cd c6 ce cf 49 4e 4f 57 59 5e 5f 89 : "�H������INOWY^_�"
+// 001008c0: 8e 8f b1 b6 b7 bf c1 c6 c7 d7 11 16 17 5b 5c f6 : "����������\x11\x16\x17[\\�"
+// 001008d0: f7 fe ff 80 6d 71 de df 0e 1f 6e 6f 1c 1d 5f 7d : "����mq��\x0e\x1fno\x1c\x1d_}"
+// 001008e0: 7e ae af 7f bb bc 16 17 1e 1f 46 47 4e 4f 58 5a : "~����\x16\x17\x1e\x1fFGNOXZ"
+// 001008f0: 5c 5e 7e 7f b5 c5 d4 d5 dc f0 f1 f5 72 73 8f 74 : "\\^~��������rs�t"
+// 00100900: 75 96 26 2e 2f a7 af b7 bf c7 cf d7 df 9a 40 97 : "u�&./�������ߚ@�"
+// 00100910: 98 30 8f 1f d2 d4 ce ff 4e 4f 5a 5b 07 08 0f 10 : "�0�\x1f����NOZ[\x07\b\x0f\x10"
+// 00100920: 27 2f ee ef 6e 6f 37 3d 3f 42 45 90 91 53 67 75 : "'/��no7=?BE��Sgu"
+// 00100930: c8 c9 d0 d1 d8 d9 e7 fe ff 00 20 5f 22 82 df 04 : "���������\x00 _\"��\x04"
+// 00100940: 82 44 08 1b 04 06 11 81 ac 0e 80 ab 05 1f 09 81 : "�D\b\x1b\x04\x06\x11��\x0e��\x05\x1f\t�"
+// 00100950: 1b 03 19 08 01 04 2f 04 34 04 07 03 01 07 06 07 : "\x1b\x03\x19\b\x01\x04/\x044\x04\x07\x03\x01\x07\x06\x07"
+// 00100960: 11 0a 50 0f 12 07 55 07 03 04 1c 0a 09 03 08 03 : "\x11\nP\x0f\x12\x07U\x07\x03\x04\x1c\n\t\x03\b\x03"
+// 00100970: 07 03 02 03 03 03 0c 04 05 03 0b 06 01 0e 15 05 : "\x07\x03\x02\x03\x03\x03\f\x04\x05\x03\x0b\x06\x01\x0e\x15\x05"
+// 00100980: 4e 07 1b 07 57 07 02 06 17 0c 50 04 43 03 2d 03 : "N\x07\x1b\x07W\x07\x02\x06\x17\fP\x04C\x03-\x03"
+// 00100990: 01 04 11 06 0f 0c 3a 04 1d 25 5f 20 6d 04 6a 25 : "\x01\x04\x11\x06\x0f\f:\x04\x1d%_ m\x04j%"
+// 001009a0: 80 c8 05 82 b0 03 1a 06 82 fd 03 59 07 16 09 18 : "��\x05��\x03\x1a\x06��\x03Y\x07\x16\t\x18"
+// 001009b0: 09 14 0c 14 0c 6a 06 0a 06 1a 06 59 07 2b 05 46 : "\t\x14\f\x14\fj\x06\n\x06\x1a\x06Y\x07+\x05F"
+// 001009c0: 0a 2c 04 0c 04 01 03 31 0b 2c 04 1a 06 0b 03 80 : "\n,\x04\f\x04\x01\x031\x0b,\x04\x1a\x06\x0b\x03�"
+// 001009d0: ac 06 0a 06 2f 31 4d 03 80 a4 08 3c 03 0f 03 3c : "�\x06\n\x06/1M\x03��\b<\x03\x0f\x03<"
+// 001009e0: 07 38 08 2b 05 82 ff 11 18 08 2f 11 2d 03 21 0f : "\x078\b+\x05��\x11\x18\b/\x11-\x03!\x0f"
+// 001009f0: 21 0f 80 8c 04 82 97 19 0b 15 88 94 05 2f 05 3b : "!\x0f��\x04��\x19\x0b\x15��\x05/\x05;"
+// 00100a00: 07 02 0e 18 09 80 be 22 74 0c 80 d6 1a 0c 05 80 : "\x07\x02\x0e\x18\t��\"t\f��\x1a\f\x05�"
+// 00100a10: ff 05 80 df 0c f2 9d 03 37 09 81 5c 14 80 b8 08 : "�\x05��\f�\x037\t�\\\x14��\b"
+// 00100a20: 80 cb 05 0a 18 3b 03 0a 06 38 08 46 08 0c 06 74 : "��\x05\n\x18;\x03\n\x068\bF\b\f\x06t"
+// 00100a30: 0b 1e 03 5a 04 59 09 80 83 18 1c 0a 16 09 4c 04 : "\x0b\x1e\x03Z\x04Y\t��\x18\x1c\n\x16\tL\x04"
+// 00100a40: 80 8a 06 ab a4 0c 17 04 31 a1 04 81 da 26 07 0c : "��\x06��\f\x17\x041�\x04��&\x07\f"
+// 00100a50: 05 05 80 a6 10 81 f5 07 01 20 2a 06 4c 04 80 8d : "\x05\x05��\x10��\x07\x01 *\x06L\x04��"
+// 00100a60: 04 80 be 03 1b 03 0f 0d 6c 69 62 72 61 72 79 2f : "\x04��\x03\x1b\x03\x0f\rlibrary/"
+// 00100a70: 63 6f 72 65 2f 73 72 63 2f 75 6e 69 63 6f 64 65 : "core/src/unicode"
+// 00100a80: 2f 75 6e 69 63 6f 64 65 5f 64 61 74 61 2e 72 73 : "/unicode_data.rs"
+// 00100a90: 68 0a 10 00 28 00 00 00 50 00 00 00 28 00 00 00 : "h\n\x10\x00(\x00\x00\x00P\x00\x00\x00(\x00\x00\x00"
+// 00100aa0: 68 0a 10 00 28 00 00 00 5c 00 00 00 16 00 00 00 : "h\n\x10\x00(\x00\x00\x00\\\x00\x00\x00\x16\x00\x00\x00"
+// 00100ab0: 6c 69 62 72 61 72 79 2f 63 6f 72 65 2f 73 72 63 : "library/core/src"
+// 00100ac0: 2f 65 73 63 61 70 65 2e 72 73 5c 75 7b 00 00 00 : "/escape.rs\\u{\x00\x00\x00"
+// 00100ad0: b0 0a 10 00 1a 00 00 00 38 00 00 00 0b 00 00 00 : "�\n\x10\x00\x1a\x00\x00\x008\x00\x00\x00\x0b\x00\x00\x00"
+// 00100ae0: b0 0a 10 00 1a 00 00 00 66 00 00 00 23 00 00 00 : "�\n\x10\x00\x1a\x00\x00\x00f\x00\x00\x00#\x00\x00\x00"
+// 00100af0: 00 03 00 00 83 04 20 00 91 05 60 00 5d 13 a0 00 : "\x00\x03\x00\x00�\x04 \x00�\x05`\x00]\x13�\x00"
+// 00100b00: 12 17 20 1f 0c 20 60 1f ef 2c a0 2b 2a 30 20 2c : "\x12\x17 \x1f\f `\x1f�,�+*0 ,"
+// 00100b10: 6f a6 e0 2c 02 a8 60 2d 1e fb 60 2e 00 fe 20 36 : "o��,\x02�`-\x1e�`.\x00� 6"
+// 00100b20: 9e ff 60 36 fd 01 e1 36 01 0a 21 37 24 0d e1 37 : "��`6�\x01�6\x01\n!7$\r�7"
+// 00100b30: ab 0e 61 39 2f 18 a1 39 30 1c 61 48 f3 1e a1 4c : "�\x0ea9/\x18�90\x1caH�\x1e�L"
+// 00100b40: 40 34 61 50 f0 6a a1 51 4f 6f 21 52 9d bc a1 52 : "@4aP�j�QOo!R���R"
+// 00100b50: 00 cf 61 53 65 d1 a1 53 00 da 21 54 00 e0 e1 55 : "\x00�aSeѡS\x00�!T\x00��U"
+// 00100b60: ae e2 61 57 ec e4 21 59 d0 e8 a1 59 20 00 ee 59 : "��aW��!Y��Y \x00�Y"
+// 00100b70: f0 01 7f 5a 00 70 00 07 00 2d 01 01 01 02 01 02 : "�\x01Z\x00p\x00\x07\x00-\x01\x01\x01\x02\x01\x02"
+// 00100b80: 01 01 48 0b 30 15 10 01 65 07 02 06 02 02 01 04 : "\x01\x01H\x0b0\x15\x10\x01e\x07\x02\x06\x02\x02\x01\x04"
+// 00100b90: 23 01 1e 1b 5b 0b 3a 09 09 01 18 04 01 09 01 03 : "#\x01\x1e\x1b[\x0b:\t\t\x01\x18\x04\x01\t\x01\x03"
+// 00100ba0: 01 05 2b 03 3c 08 2a 18 01 20 37 01 01 01 04 08 : "\x01\x05+\x03<\b*\x18\x01 7\x01\x01\x01\x04\b"
+// 00100bb0: 04 01 03 07 0a 02 1d 01 3a 01 01 01 02 04 08 01 : "\x04\x01\x03\x07\n\x02\x1d\x01:\x01\x01\x01\x02\x04\b\x01"
+// 00100bc0: 09 01 0a 02 1a 01 02 02 39 01 04 02 04 02 02 03 : "\t\x01\n\x02\x1a\x01\x02\x029\x01\x04\x02\x04\x02\x02\x03"
+// 00100bd0: 03 01 1e 02 03 01 0b 02 39 01 04 05 01 02 04 01 : "\x03\x01\x1e\x02\x03\x01\x0b\x029\x01\x04\x05\x01\x02\x04\x01"
+// 00100be0: 14 02 16 06 01 01 3a 01 01 02 01 04 08 01 07 03 : "\x14\x02\x16\x06\x01\x01:\x01\x01\x02\x01\x04\b\x01\x07\x03"
+// 00100bf0: 0a 02 1e 01 3b 01 01 01 0c 01 09 01 28 01 03 01 : "\n\x02\x1e\x01;\x01\x01\x01\f\x01\t\x01(\x01\x03\x01"
+// 00100c00: 37 01 01 03 05 03 01 04 07 02 0b 02 1d 01 3a 01 : "7\x01\x01\x03\x05\x03\x01\x04\x07\x02\x0b\x02\x1d\x01:\x01"
+// 00100c10: 02 01 02 01 03 01 05 02 07 02 0b 02 1c 02 39 02 : "\x02\x01\x02\x01\x03\x01\x05\x02\x07\x02\x0b\x02\x1c\x029\x02"
+// 00100c20: 01 01 02 04 08 01 09 01 0a 02 1d 01 48 01 04 01 : "\x01\x01\x02\x04\b\x01\t\x01\n\x02\x1d\x01H\x01\x04\x01"
+// 00100c30: 02 03 01 01 08 01 51 01 02 07 0c 08 62 01 02 09 : "\x02\x03\x01\x01\b\x01Q\x01\x02\x07\f\bb\x01\x02\t"
+// 00100c40: 0b 07 49 02 1b 01 01 01 01 01 37 0e 01 05 01 02 : "\x0b\x07I\x02\x1b\x01\x01\x01\x01\x017\x0e\x01\x05\x01\x02"
+// 00100c50: 05 0b 01 24 09 01 66 04 01 06 01 02 02 02 19 02 : "\x05\x0b\x01$\t\x01f\x04\x01\x06\x01\x02\x02\x02\x19\x02"
+// 00100c60: 04 03 10 04 0d 01 02 02 06 01 0f 01 00 03 00 03 : "\x04\x03\x10\x04\r\x01\x02\x02\x06\x01\x0f\x01\x00\x03\x00\x03"
+// 00100c70: 1d 02 1e 02 1e 02 40 02 01 07 08 01 02 0b 09 01 : "\x1d\x02\x1e\x02\x1e\x02@\x02\x01\x07\b\x01\x02\x0b\t\x01"
+// 00100c80: 2d 03 01 01 75 02 22 01 76 03 04 02 09 01 06 03 : "-\x03\x01\x01u\x02\"\x01v\x03\x04\x02\t\x01\x06\x03"
+// 00100c90: db 02 02 01 3a 01 01 07 01 01 01 01 02 08 06 0a : "�\x02\x02\x01:\x01\x01\x07\x01\x01\x01\x01\x02\b\x06\n"
+// 00100ca0: 02 01 30 1f 31 04 30 07 01 01 05 01 28 09 0c 02 : "\x02\x010\x1f1\x040\x07\x01\x01\x05\x01(\t\f\x02"
+// 00100cb0: 20 04 02 02 01 03 38 01 01 02 03 01 01 03 3a 08 : " \x04\x02\x02\x01\x038\x01\x01\x02\x03\x01\x01\x03:\b"
+// 00100cc0: 02 02 98 03 01 0d 01 07 04 01 06 01 03 02 c6 40 : "\x02\x02�\x03\x01\r\x01\x07\x04\x01\x06\x01\x03\x02�@"
+// 00100cd0: 00 01 c3 21 00 03 8d 01 60 20 00 06 69 02 00 04 : "\x00\x01�!\x00\x03�\x01` \x00\x06i\x02\x00\x04"
+// 00100ce0: 01 0a 20 02 50 02 00 01 03 01 04 01 19 02 05 01 : "\x01\n \x02P\x02\x00\x01\x03\x01\x04\x01\x19\x02\x05\x01"
+// 00100cf0: 97 02 1a 12 0d 01 26 08 19 0b 2e 03 30 01 02 04 : "�\x02\x1a\x12\r\x01&\b\x19\x0b.\x030\x01\x02\x04"
+// 00100d00: 02 02 27 01 43 06 02 02 02 02 0c 01 08 01 2f 01 : "\x02\x02'\x01C\x06\x02\x02\x02\x02\f\x01\b\x01/\x01"
+// 00100d10: 33 01 01 03 02 02 05 02 01 01 2a 02 08 01 ee 01 : "3\x01\x01\x03\x02\x02\x05\x02\x01\x01*\x02\b\x01�\x01"
+// 00100d20: 02 01 04 01 00 01 00 10 10 10 00 02 00 01 e2 01 : "\x02\x01\x04\x01\x00\x01\x00\x10\x10\x10\x00\x02\x00\x01�\x01"
+// 00100d30: 95 05 00 03 01 02 05 04 28 03 04 01 a5 02 00 04 : "�\x05\x00\x03\x01\x02\x05\x04(\x03\x04\x01�\x02\x00\x04"
+// 00100d40: 00 02 50 03 46 0b 31 04 7b 01 36 0f 29 01 02 02 : "\x00\x02P\x03F\x0b1\x04{\x016\x0f)\x01\x02\x02"
+// 00100d50: 0a 03 31 04 02 02 07 01 3d 03 24 05 01 08 3e 01 : "\n\x031\x04\x02\x02\x07\x01=\x03$\x05\x01\b>\x01"
+// 00100d60: 0c 02 34 09 0a 04 02 01 5f 03 02 01 01 02 06 01 : "\f\x024\t\n\x04\x02\x01_\x03\x02\x01\x01\x02\x06\x01"
+// 00100d70: 02 01 9d 01 03 08 15 02 39 02 01 01 01 01 16 01 : "\x02\x01�\x01\x03\b\x15\x029\x02\x01\x01\x01\x01\x16\x01"
+// 00100d80: 0e 07 03 05 c3 08 02 03 01 01 17 01 51 01 02 06 : "\x0e\x07\x03\x05�\b\x02\x03\x01\x01\x17\x01Q\x01\x02\x06"
+// 00100d90: 01 01 02 01 01 02 01 02 eb 01 02 04 06 02 01 02 : "\x01\x01\x02\x01\x01\x02\x01\x02�\x01\x02\x04\x06\x02\x01\x02"
+// 00100da0: 1b 02 55 08 02 01 01 02 6a 01 01 01 02 06 01 01 : "\x1b\x02U\b\x02\x01\x01\x02j\x01\x01\x01\x02\x06\x01\x01"
+// 00100db0: 65 03 02 04 01 05 00 09 01 02 f5 01 0a 02 01 01 : "e\x03\x02\x04\x01\x05\x00\t\x01\x02�\x01\n\x02\x01\x01"
+// 00100dc0: 04 01 90 04 02 02 04 01 20 0a 28 06 02 04 08 01 : "\x04\x01�\x04\x02\x02\x04\x01 \n(\x06\x02\x04\b\x01"
+// 00100dd0: 09 06 02 03 2e 0d 01 02 00 07 01 06 01 01 52 16 : "\t\x06\x02\x03.\r\x01\x02\x00\x07\x01\x06\x01\x01R\x16"
+// 00100de0: 02 07 01 02 01 02 7a 06 03 01 01 02 01 07 01 01 : "\x02\x07\x01\x02\x01\x02z\x06\x03\x01\x01\x02\x01\x07\x01\x01"
+// 00100df0: 48 02 03 01 01 01 00 02 0b 02 34 05 05 01 01 01 : "H\x02\x03\x01\x01\x01\x00\x02\x0b\x024\x05\x05\x01\x01\x01"
+// 00100e00: 00 01 06 0f 00 05 3b 07 00 01 3f 04 51 01 00 02 : "\x00\x01\x06\x0f\x00\x05;\x07\x00\x01?\x04Q\x01\x00\x02"
+// 00100e10: 00 2e 02 17 00 01 01 03 04 05 08 08 02 07 1e 04 : "\x00.\x02\x17\x00\x01\x01\x03\x04\x05\b\b\x02\x07\x1e\x04"
+// 00100e20: 94 03 00 37 04 32 08 01 0e 01 16 05 01 0f 00 07 : "�\x03\x007\x042\b\x01\x0e\x01\x16\x05\x01\x0f\x00\x07"
+// 00100e30: 01 11 02 07 01 02 01 05 64 01 a0 07 00 01 3d 04 : "\x01\x11\x02\x07\x01\x02\x01\x05d\x01�\x07\x00\x01=\x04"
+// 00100e40: 00 04 00 07 6d 07 00 60 80 f0 : "\x00\x04\x00\x07m\x07\x00`��"
+
