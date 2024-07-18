@@ -3,11 +3,11 @@
 Reversing TEA algorithm in wasm binary.
 
 ## Description
-cumi asam manis adalah makanan favoritku, informasi ini tidak akan membantumu solve soal ini, tetapi setidaknya kamu tahu.
+I'm not sure people will reverse this, so i give a little bit of 🧀
 
 ## Release
 
 `service : web`
 
 ## Flag
-`hacktoday{teh_yang_asam_or_should_we_say_TEA_in_WASM??}`
+`hacktoday{TEA_in_wasm_but_iMade_easy_s0_uC0uld_cheese_it_but_1H0pe_you_n0t}`
