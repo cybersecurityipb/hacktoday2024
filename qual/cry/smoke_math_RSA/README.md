@@ -5,7 +5,7 @@ RSA with a spice of math
 better be rembering those algebras
 
 # Release
-nc <ip><port>
+nc <ip> <port>
 
 # flag
 hacktoday{w3_c4n_g0_RSA_4_RSA}
