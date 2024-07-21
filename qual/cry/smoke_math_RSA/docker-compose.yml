@@ -1,0 +1,12 @@
+version: '3'
+services:
+  hacktoday2023:
+    container_name: AES_Enjoyer
+    restart: always
+    build:
+      context: .
+      args:
+        binary: server.py
+    ports:
+      - "18002:5000" # exposed:local
+    read_only: true
