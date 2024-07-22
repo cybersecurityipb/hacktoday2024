@@ -1,4 +1,4 @@
-# smoke_math_RSA
+# Smoke Math RSA
 RSA with a spice of math
 
 ## Description
