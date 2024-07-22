@@ -8,7 +8,6 @@ better be rembering those algebras
 file.txt
 
 
-
 enc.py
 
 ## flag
