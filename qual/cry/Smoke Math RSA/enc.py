@@ -35,7 +35,6 @@ cipher = encrypt(FLAG, (e, n1))
 
 print('e =', e)
 print('cipher =', cipher)
-print('n1 =', n1)
 print('x =', x)
 print('y =', y)
 print('z =', z)
