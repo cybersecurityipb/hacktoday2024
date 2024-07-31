@@ -1,10 +1,9 @@
 # CodeRun
 ## Description
-aku takut bug!
+oh no, there's a bug!!!
 
 ## Release
-
 - CodeRun.jar
 
 ## Flag
-`hacktoday{WOww_Y0u_4re_Th3_Be5t_G4m3r!!!}`
+hacktoday{Bu6_bu9_BU9_1m_V3ry_Hate_BuG5!!!}
