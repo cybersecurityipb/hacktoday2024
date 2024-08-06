@@ -14,19 +14,19 @@ import javax.crypto.spec.PBEKeySpec;
 import javax.crypto.spec.SecretKeySpec;
 
 public class GiftManager {
-    private String fakeflag="hacktoday{upsss_this_is_fake_flag_(again)_ehehehe}";
+    private String fakeflag="hacktoday{upsss_this_is_fake_flag_(again)_ehehehehehehehehehehe}";
     private String gift = "ibCwMf8C6lK2DpWlajcNClSJ4mkcTsISzA1CsYaSz/sFo7rLNiilZ61XTtYOiGAiTp4JyTCKyavvV71pMQKhwwSJPGpCvp6F/fw4jdMHTNecd8vs+MLfgRQu6CEzz+Z2";
-    long[] e = {9739771, 9748457, 9177139, 16481627, 16188631, 11192021, 9188887, 11438111, 15400867, 13872029, 12560267};
-    long[] en = {11495201, 20087279, 12279581, 15936241, 12195289, 9004517, 14319841, 14717887, 13550507, 16149437, 16353977};
-    long[] ct = {2317923, 6911077, 5987641, 2963639, 4617467, 628623, 9495313, 4673109, 412248, 5680062, 6028258};
+    long[] ekhm = {9739771, 9748457, 9177139, 16481627, 16188631, 11192021, 9188887, 11438111, 15400867, 13872029, 12560267};
+    long[] noo = {11495201, 20087279, 12279581, 15936241, 12195289, 9004517, 14319841, 14717887, 13550507, 16149437, 16353977};
+    long[] what = {2317923, 6911077, 5987641, 2963639, 4617467, 628623, 9495313, 4673109, 412248, 5680062, 6028258};
 
-    long[] e1 = {613141, 997463, 900283, 935413, 819563, 1026661, 727297, 1045391};
-    long[] n1 = {317825153, 162490421, 289363199, 417409397, 203977337, 269122423, 222951973, 203977337};
-    long[] ct2 = {159265919, 409493227, 198673187, 119711067, 144322529, 17404690, 90631929, 47048868};
+    long[] ekhmm = {613141, 997463, 900283, 935413, 819563, 1026661, 727297, 1045391};
+    long[] nonoo = {317825153, 162490421, 289363199, 417409397, 203977337, 269122423, 222951973, 203977337};
+    long[] whatt = {159265919, 409493227, 198673187, 119711067, 144322529, 17404690, 90631929, 47048868};
 
-    int[] sn = {130, 136, 133, 131, 138, 129, 128, 137, 135, 132, 134};
-    int[] sn2 ={513, 517, 519, 520, 522, 521, 515, 512, 514, 518, 516};
-    int[] sn3 = {1031, 1027, 1026, 1030, 1029, 1025, 1024, 1028};
+    int[] apaini = {130, 136, 133, 131, 138, 129, 128, 137, 135, 132, 134};
+    int[] apainii ={513, 517, 519, 520, 522, 521, 515, 512, 514, 518, 516};
+    int[] apainiii = {1031, 1027, 1026, 1030, 1029, 1025, 1024, 1028};
 
     public boolean verify(BigInteger x, BigInteger y){
         String s = x.toString(0);
@@ -41,12 +41,12 @@ public class GiftManager {
 
         n = v.size();
         for(int i=0; i<n; i++){
-            BigInteger tmp = power(v.get(i), e[sn[i] ^ 128], en[sn[i]^128]);
-            tmp = power(tmp, e[sn2[i] ^ 512], en[sn2[i]^512]);
-            if(!tmp.equals(BigInteger.valueOf(ct[i]))) return false;
+            BigInteger tmp = extract(v.get(i), ekhm[apaini[i] ^ 128], noo[apaini[i]^128]);
+            tmp = extract(tmp, ekhm[apainii[i] ^ 512], noo[apainii[i]^512]);
+            if(!tmp.equals(BigInteger.valueOf(what[i]))) return false;
         }
 
-        if(n!=ct.length) return false;
+        if(n!=what.length) return false;
 
         s = y.toString(0);
         n=s.length();
@@ -64,30 +64,30 @@ public class GiftManager {
 
         n = d1.size();
         for(int i=0; i<n; i++){
-            int id = sn3[i] ^ 1024;
-            if(id>n) id=0;
-            BigInteger tmp = power(d1.get(id), e1[sn3[i] ^ 1024], n1[sn3[i]^1024]);
-            if(!tmp.equals(BigInteger.valueOf(ct2[i]))) return false;
+            int urgent = apainiii[i] ^ 1024;
+            if(urgent>n) urgent=0;
+            BigInteger tmp = extract(d1.get(urgent), ekhmm[apainiii[i] ^ 1024], nonoo[apainiii[i]^1024]);
+            if(!tmp.equals(BigInteger.valueOf(whatt[i]))) return false;
         }
 
-        if(n != ct2.length) return false;
+        if(n != whatt.length) return false;
 
         return true;
     }
 
     
 
-    public BigInteger power(BigInteger x, Long y, Long m) {
-        BigInteger temp;
+    public BigInteger extract(BigInteger x, Long y, Long m) {
+        BigInteger hm;
         if (y==0)
             return BigInteger.ONE;
-        temp = power(x, y/2, m);
-        temp = temp.mod(BigInteger.valueOf(m));
+        hm = extract(x, y/2, m);
+        hm = hm.mod(BigInteger.valueOf(m));
 
         if (y % 2 ==0)
-            return (temp.multiply(temp)).mod(BigInteger.valueOf(m));
+            return (hm.multiply(hm)).mod(BigInteger.valueOf(m));
         else {
-            return (x.multiply(temp).mod(BigInteger.valueOf(m)).multiply(temp)).mod(BigInteger.valueOf(m));
+            return (x.multiply(hm).mod(BigInteger.valueOf(m)).multiply(hm)).mod(BigInteger.valueOf(m));
         }
     }
 
