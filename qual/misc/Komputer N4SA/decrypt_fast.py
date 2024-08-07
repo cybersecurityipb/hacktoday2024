@@ -7,29 +7,6 @@ bound1 = 12959112412950709127590625109274191823710925709127409172094712907499861
 bound2 = 9124789812750912709571902562640812649812640812640126508126408612084612856193641021290712049605126091
 bound3 = 5275097124129650129640129471209719207491206751249012709217590109128390127490172599471092650192750500
 
-def eq1(x):
-    return x + 2
-def eq2(x):
-    return 3 * x**2 + x + 5
-def eq3(x):
-    return 69 * x**4 + 420 * (x + 69)**2 + 420 * x
-
-def eq1_eval(n):
-    ret = 0
-    for x in range(1, n + 1):
-        ret += eq1(x)
-    return ret % (bound1 * bound2)
-def eq2_eval(n):
-    ret = 0
-    for x in range(1, n + 1):
-        ret += eq2(x)
-    return ret % (bound1 * bound3)
-def eq3_eval(n):
-    ret = 0
-    for x in range(1, n + 1):
-        ret += eq3(x)
-    return ret % (bound2 * bound3)
-
 def mat_pow(mat, p, mod):
     base = np.copy(mat)
     ret = np.eye(mat.shape[0], dtype=object)
