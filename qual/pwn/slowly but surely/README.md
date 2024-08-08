@@ -1,13 +1,13 @@
-# raisha
+# slowly but surely
 
-hijacking control flow of catch handler aka CHOP
+printf arbitrary write but one byte at a time
 
 ## Description
-i don't know why this chall name is raisha, maybe because it always raising an error
+Progress, no matter how slow, is still progress
 
 ## Release
 
 handouts/*
 
 ## Flag
-`hacktoday{Sekarang_aku_tersadar_cinta_yang_ku_tunggu_tak_kunjung_datang_fabd3498ddc32ce}`
+`hacktoday{0n3_bYTe_4t_a_TimE_bUt_It_W0Rks}`
