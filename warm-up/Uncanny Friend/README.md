@@ -6,7 +6,7 @@ my friend he's acting weird lately, he likes to see a corrupted and cropped imag
 ## Attachment
 H4H4H4H4H4H4H4H4H4H4H4H4H4H4_n0_0n3_c4n_kn0w.png
 
-## flag
+## Flag
 hacktoday{i_will_find_you_Gsdy6f5hsna}
 
 
