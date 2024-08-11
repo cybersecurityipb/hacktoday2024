@@ -2,7 +2,9 @@
 
 ## Description
 
-p balap.
+p balapan first blood.
+
+Service : notetoself.hac.tod.my.id
 
 ## Release
 
@@ -11,4 +13,4 @@ p balap.
 
 ## Flag
 
-`hacktoday{nanti_di_update_untuk_flag_nya}`
+`hacktoday{certified_pembalap_jalanan_9872321}`
