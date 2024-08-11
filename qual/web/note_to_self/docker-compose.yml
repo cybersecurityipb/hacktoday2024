@@ -5,4 +5,4 @@ services:
     build:
       context: .
     ports:
-      - "13337:8000" # exposed:local
+      - "80:8000" # exposed:local
