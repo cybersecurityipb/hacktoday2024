@@ -1,6 +1,4 @@
 # Smoke Math RSA
-RSA with a spice of math
-
 ## Description
 better be rembering those algebras
 
