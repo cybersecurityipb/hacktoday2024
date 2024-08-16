@@ -5,5 +5,5 @@ services:
         build: src/
         restart: always
         ports:
-            - "1470:9001"
+            - "9001:8000"
         read_only: true
