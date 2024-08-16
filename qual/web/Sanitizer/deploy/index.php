@@ -9,16 +9,12 @@
 </head>
 <body>
     <?php
-        $nonce = bin2hex(random_bytes(32));
-        $csp_header = "Content-Security-Policy: default-src 'self'; script-src 'self' 'nonce-" . $nonce . "'; style-src 'self';";
-        header($csp_header);
-
         $blacklists = ["img", "script", "svg", "frame", "body", "br", "td", "table", "link", "base"];
         $name = "budiono siregar";
 
         if ($_SERVER["REQUEST_METHOD"] == "GET") {
             if (!empty($_GET["name"])) {
-                if (strlen($_GET['name']) > 250) {
+                if (strlen($_GET['name']) > 500) {
                     echo 'Namamu Terlalu Panjang';
                     die();
                 }
@@ -34,6 +30,9 @@
         if (!empty($request_name)){
             $name = $request_name;
         }
+	$nonce = bin2hex(random_bytes(32));
+        $csp_header = "Content-Security-Policy: default-src 'self'; script-src 'self' 'nonce-" . $nonce . "'; style-src 'self';";
+        header($csp_header);
     ?>
     <div class="container">
         <h1>Perkenalkan nama saya <span id="h1"></span>, cita-cita saya kapal lawd</h1>
