@@ -1,10 +1,10 @@
-# Bukan biskuit
+# Why me?
 
-Just change your role in cookie.
+Just change your role in cookie base64.
 
 ## Description
 
-Entah sejak kapan website ini dalam perbaikan tapi yang ku tahu untuk mengakses bagian lain website, server harus memeriksa data ini.
+the owner forced me to be an admin.
 
 ## Flag
 
