@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  php:
+    build: .
+    container_name: php_app
+    ports:
+      - "8080:20000"
+    volumes:
+      - .:/var/www/html:ro
+    read_only: true
+    networks:
+      - webnet
+
+networks:
+  webnet:
