@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perkenalan</title>
+    <title>Budiono Siregar</title>
     <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
     <?php
+        $nonce = bin2hex(random_bytes(32));
+        $csp_header = "Content-Security-Policy: default-src 'self'; script-src 'self' 'nonce-" . $nonce . "'; style-src 'self';";
+        header($csp_header);
+
         $blacklists = ["img", "script", "svg", "frame", "body", "br", "td", "table", "link", "base"];
         $name = "budiono siregar";
 
@@ -21,7 +25,7 @@
                 $request_name = strtolower($_GET['name']);
                 foreach ($blacklists as $blacklist) {
                     while (strpos($request_name, $blacklist) !== false) {
-                        echo "Ga boleh pake nama ini '".$request_name."' ya kawan!!";
+                        echo htmlspecialchars("Ga boleh pake nama ini '".$request_name."' ya kawan!!");
                         $request_name = str_replace($blacklist, '', $request_name);
                     }
                 }
@@ -30,9 +34,6 @@
         if (!empty($request_name)){
             $name = $request_name;
         }
-        $nonce = bin2hex(random_bytes(32));
-        $csp_header = "Content-Security-Policy: default-src 'self'; script-src 'self' 'nonce-" . $nonce . "'; style-src 'self';";
-        header($csp_header);
     ?>
     <div class="container">
         <h1>Perkenalkan nama saya <span id="h1"></span>, cita-cita saya kapal lawd</h1>
