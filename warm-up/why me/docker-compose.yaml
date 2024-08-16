@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  flask-app:
+    build:
+      context: .
+    container_name: why-me
+    ports:
+      - "10001:5000"
+    restart: always
+    volumes:
+      - .:/app
