@@ -1,0 +1,1 @@
+Ini soal paling mudah 
