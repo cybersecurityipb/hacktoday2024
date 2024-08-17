@@ -1,4 +1,4 @@
-# Super Guesser
+# Zafin Knowledge Proof
 
 Nonce Bias
 
