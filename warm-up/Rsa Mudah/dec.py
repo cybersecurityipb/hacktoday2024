@@ -20,7 +20,7 @@ def solve_rsa_primes(s: int, m: int) -> tuple:
     tmp = math.isqrt(half_s ** 2 - m)
     return int(half_s + tmp), int(half_s - tmp);  
 
-# Now run with the real input
+# cek flagnya
 p, q = solve_rsa_primes(x, n)
 m = math.lcm(p - 1, q - 1)
 e = 65537
