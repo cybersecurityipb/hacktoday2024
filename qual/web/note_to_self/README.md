@@ -1,5 +1,13 @@
 # note to self
 
+## Author
+
+patsac
+
+## Categories
+
+web
+
 ## Description
 
 p balapan first blood.

@@ -1,5 +1,13 @@
 # jot2surf
 
+## Author
+
+patsac
+
+## Categories
+
+web,mis,cry
+
 ## Description
 
 black-boxing?
