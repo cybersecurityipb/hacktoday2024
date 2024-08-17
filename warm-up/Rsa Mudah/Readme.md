@@ -2,7 +2,7 @@
 
 ## Description
 
-kenaoa soal ini sangat mudah
+kenapa soal ini sangat mudah
 
 ## Attachments
 - enc.py
