@@ -1,0 +1,12 @@
+version: '3'
+services:
+  hacktod:
+    container_name: Zafin Knowledge Proof
+    restart: always
+    build:
+      context: .
+      args:
+        binary: server.py
+    ports:
+      - "18007:5000" # exposed:local
+    read_only: true
