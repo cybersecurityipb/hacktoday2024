@@ -1,4 +1,4 @@
-# Curve Enjoyer
+# Knapsack RSA
 Knapsack and generalized franklin
 
 ## Description
