@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  osint:
+    container_name: ceremony
+    network_mode: bridge
+    restart: always
+    build: .
+    ports:
+      - "1475:1475"
