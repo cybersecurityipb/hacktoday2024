@@ -20,9 +20,9 @@ app.config['ALLOWED_EXTENSIONS'] = {'pdf'}
 app.config['MAX_CONTENT_LENGTH'] = 2 * 1024 * 1024
 
 conn = connect(dbname=os.getenv('DBNAME'), user=os.getenv('DBUSER'), password=os.getenv('DBPASS'), host=os.getenv('DBHOST'), port=os.getenv('DBPORT'))
-cur = conn.cursor()
 
 def create_tables():
+    cur = conn.cursor()
     cur.execute('''
         CREATE TABLE IF NOT EXISTS users (
             id SERIAL PRIMARY KEY,
@@ -57,6 +57,7 @@ def create_tables():
         ON CONFLICT DO NOTHING
     ''')
     conn.commit()
+    cur.close()
 
 create_tables()
 
@@ -112,8 +113,10 @@ def login_required(f):
 def accepted_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
+        cur = conn.cursor()
         cur.execute("SELECT * FROM accepted_users WHERE user_id = %s", (session['user_id'],))
         accepted_user = cur.fetchone()
+        cur.close()
         if not accepted_user:
             return abort(403)
         return f(*args, **kwargs)
@@ -130,9 +133,10 @@ def admin_required(f):
 @app.route('/')
 @login_required
 def index():
+    cur = conn.cursor()
     cur.execute("SELECT * FROM history WHERE username = %s", (session.get('username'),))
     data = cur.fetchall()
-    print(data)
+    cur.close()
     return render_template('index.html', data=data)
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -141,8 +145,10 @@ def login():
         username = request.form['username']
         password = request.form['password']
 
+        cur = conn.cursor()
         cur.execute("SELECT id, username FROM users WHERE username = %s AND password = %s", (username, password))
         user = cur.fetchone()
+        cur.close()
         if user:
             if user[1] == 'admin' and request.remote_addr != '127.0.0.1':
                 abort(403)
@@ -161,8 +167,10 @@ def register():
         username = request.form['username']
         password = request.form['password']
 
+        cur = conn.cursor()
         cur.execute("INSERT INTO users (username, password) VALUES (%s, %s)", (username, password))
         conn.commit()
+        cur.close()
 
         return redirect(url_for('login'))
     return render_template('register.html')
@@ -185,8 +193,10 @@ def send_cv():
             file_path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
             file.save(file_path)
             
+            cur = conn.cursor()
             cur.execute("INSERT INTO history (username, filename) VALUES ('%s', '%s')" % (username, filename))
             conn.commit()
+            cur.close()
 
             flash('File successfully uploaded', 'success')
             return redirect(url_for('send_cv'))
@@ -202,11 +212,13 @@ def send_cv():
 def admin():
     if request.method == 'POST':
         username = request.form['username']
+        cur = conn.cursor()
         cur.execute("SELECT id FROM users WHERE username = %s", (username,))
         user = cur.fetchone()
         if user:
             cur.execute("INSERT INTO accepted_users (user_id) VALUES (%s)", (user[0],))
             conn.commit()
+        cur.close()
         return redirect(url_for('admin'))
     return render_template('admin.html')
 
