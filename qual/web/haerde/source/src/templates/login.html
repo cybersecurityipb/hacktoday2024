@@ -6,7 +6,7 @@
 <div class="flex justify-center items-center py-20">
     <div class="bg-white p-10 rounded-lg shadow-lg w-full max-w-md h-auto">
         <h1 class=" font-bold mb-6 text-center">Login</h1>
-        <form action="/login" method="post" class="space-y-4">
+        <form action="{{ url_for('login') }}" method="post" class="space-y-4">
             <div>
                 <label for="username" class="block text-gray-700 font-bold mb-2 text-2xl py-2">Username:</label>
                 <input type="text" id="username" name="username" required
