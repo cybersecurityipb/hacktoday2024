@@ -128,9 +128,12 @@ def admin_required(f):
     return decorated_function
 
 @app.route('/')
+@login_required
 def index():
     cur.execute("SELECT * FROM history WHERE username = %s", (session.get('username'),))
-    return render_template('index.html', data=cur.fetchall())
+    data = cur.fetchall()
+    print(data)
+    return render_template('index.html', data=data)
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
