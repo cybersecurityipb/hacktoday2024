@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+    <title>Dashboard</title>
+{% endblock %}
+
+{% block body %}
+    <h1>Admin</h1>
+    <p>Welcome to the Admin page!</p>
+    <form action="{{ url_for('admin') }}" method="POST" enctype="multipart/form-data">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+        <input type="submit" value="accept">
+    </form>
+{% endblock %}

