@@ -9,7 +9,6 @@ Flag: `hacktoday{nama_pelaku}`
 
 ## Attachment
 
-- tersangka.txt
 - server.py
 
 ## Flag
