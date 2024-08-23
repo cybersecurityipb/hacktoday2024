@@ -3,5 +3,5 @@ services:
   housemd:
     build: .
     ports:
-      - 5000:5000
+      - 7012:5000
     privileged: true
