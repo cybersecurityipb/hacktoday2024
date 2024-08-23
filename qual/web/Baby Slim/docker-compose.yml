@@ -5,7 +5,7 @@ services:
     build: .
     container_name: babyslim
     ports:
-      - "15091:80"
+      - "10011:80"
     volumes:
       - ./web:/var/www/html
     read_only: true
