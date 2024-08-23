@@ -19,7 +19,7 @@ RUN pip3 install sympy
 RUN mkdir /challs
 COPY $binary /challs/$binary
 COPY server.py /challs/server.py
-COPY server.py /challs/secret.py
+COPY secret.py /challs/secret.py
 WORKDIR /challs
 
 # securing flag
