@@ -5,7 +5,7 @@ services:
     build: .
     container_name: sanitizer
     ports:
-      - "2000:80"
+      - "10013:80"
     volumes:
       - .:/var/www/html:ro
     read_only: true
