@@ -5,4 +5,4 @@ services:
         build: src/
         restart: always
         ports:
-            - "1472:8000"
+            - "9011:8000"
