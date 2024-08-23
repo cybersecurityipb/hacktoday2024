@@ -11,7 +11,8 @@ loop = 1
 while True:
     print(loop)
     loop += 1
-    io = process(['python3', 'server.py'])
+    # io = process(['python3', 'server.py'])
+    io = remote('localhost', 8010)
 
     io.recvuntil(b'= ')
     iv = bytes.fromhex(io.recvline(0).decode())
