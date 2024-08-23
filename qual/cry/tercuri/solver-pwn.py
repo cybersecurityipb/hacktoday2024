@@ -5,55 +5,49 @@ from sympy.ntheory.modular import crt
 from gmpy2 import *
 from itertools import combinations
 
-pasangan = {}
+pasangan = []
 stop = False
 
 while True:
-    conn = remote('194.238.16.121', 8020)
+    conn = remote('localhost', 8020)
     if stop:
         break
 
-    conn.recvuntil("n = ")
+    conn.recvuntil(b"n = ")
     n = int(conn.recvline().strip())
-    conn.recvuntil("e = ")
+    conn.recvuntil(b"e = ")
     e = int(conn.recvline().strip())
-    conn.recvuntil("c = ")
+    conn.recvuntil(b"c = ")
     c = int(conn.recvline().strip())
 
-    #SOLVER
     if e == 17:
-        if pasangan.get(e):
-            pasangan[e].append((n,c))
-        else:
-            pasangan[e] = [(n,c)]
+        pasangan.append((n, c))
         
-    for key in pasangan.keys():
-        if len(pasangan[key]) >= 3:
-            ns = [p[0] for p in pasangan[key]]
-            cs = [p[1] for p in pasangan[key]]
+    if len(pasangan) >= 19:
 
-            # Generate combinations of ns and cs
-            ns_combinations = combinations(ns, 3)
-            cs_combinations = combinations(cs, 3)
+        comb = combinations(pasangan, 7)
 
-            for ns_comb, cs_comb in zip(ns_combinations, cs_combinations):
-                me = crt(ns_comb, cs_comb)
+        for c in comb:
+            ns = [n for n, _ in c]
+            cs = [c for _, c in c]
 
-                hasil = iroot(me[0], key)[0]
-                try:
-                    byteAns = long_to_bytes(hasil)
-                    ans = byteAns.decode()
-                    print("masuk")
-                    print(ans)
-                    print(f'jumlah = {len(pasangan[key])}')
+            me = crt(ns, cs)
+
+            hasil = iroot(me[0], 17)[0]
+            try:
+                byteAns = long_to_bytes(hasil)
+                ans = byteAns.decode()
+                print(ans)
+                print(f'jumlah = {len(pasangan)}')
+                if 'hacktoday' in ans:
                     stop = True
-                    break  # Exit the loop once the flag is found
-                except:
-                    pass
+                    print(ans)
+                    break
+            except:
+                pass
+        pasangan = []
 
-    if stop == False:
-        print(pasangan.keys())
-        print(pasangan)
-        print([len(pasangan[key]) for key in pasangan.keys()])
+    if not stop:
+        print(len(pasangan))
 
 conn.close()

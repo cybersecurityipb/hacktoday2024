@@ -16,7 +16,8 @@ def enc(m):
             return n,e,c
 
 if __name__ == '__main__':
-    tersangka = bytes_to_long(choice(TERSANGKA).encode())
+    tt = choice(TERSANGKA)
+    tersangka = bytes_to_long(tt.encode())
     n,e,c = enc(tersangka)
 
     print(f'{n = }')
