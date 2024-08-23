@@ -8,5 +8,5 @@ services:
       args:
         binary: server.py
     ports:
-      - "<ports>:5000" # exposed:local
+      - "8011:5000" # exposed:local
     read_only: true
