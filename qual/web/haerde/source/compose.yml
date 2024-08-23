@@ -9,4 +9,4 @@ services:
     container_name: haerde
     env_file: ./src/.env
     ports:
-      - "5000:5000"
+      - "10013:5000"
