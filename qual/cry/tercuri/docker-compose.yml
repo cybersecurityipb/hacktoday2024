@@ -4,4 +4,4 @@ services:
     build: .
     container_name: tercuri
     ports:
-      - "8020:5000"
+      - "8012:5000"
