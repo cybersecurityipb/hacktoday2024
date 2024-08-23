@@ -1,0 +1,6 @@
+services:
+  tercuri:
+    build: .
+    container_name: tercuri
+    ports:
+      - "8020:5000"
