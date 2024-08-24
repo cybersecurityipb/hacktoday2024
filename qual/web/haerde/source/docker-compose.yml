@@ -9,4 +9,6 @@ services:
     container_name: haerde
     env_file: ./src/.env
     ports:
-      - "10013:5000"
+      - "10012:5000"
+    volumes:
+      - ./data:/var/lib/postgresql/data
