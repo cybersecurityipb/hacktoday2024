@@ -1,0 +1,6 @@
+services:
+  yqroojob:
+    build: .
+    ports: 
+    - 31337:5000
+    privileged: true

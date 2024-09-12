@@ -10,5 +10,3 @@ services:
     env_file: ./src/.env
     ports:
       - "10012:5000"
-    volumes:
-      - ./data:/var/lib/postgresql/data

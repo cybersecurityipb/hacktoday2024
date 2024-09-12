@@ -83,7 +83,7 @@ def visit(target_url):
         username_field.send_keys(USERNAME)
         password_field.send_keys(PASSWORD)
         submit_button.click()
-        sleep(1)
+        sleep(3)
 
         driver.get(target_url)
 
@@ -168,9 +168,13 @@ def register():
         password = request.form['password']
 
         cur = conn.cursor()
-        cur.execute("INSERT INTO users (username, password) VALUES (%s, %s)", (username, password))
-        conn.commit()
-        cur.close()
+        try:
+            cur.execute("INSERT INTO users (username, password) VALUES (%s, %s)", (username, password))
+            conn.commit()
+        except:
+            abort(500)
+        finally:
+            cur.close()
 
         return redirect(url_for('login'))
     return render_template('register.html')
@@ -194,9 +198,13 @@ def send_cv():
             file.save(file_path)
             
             cur = conn.cursor()
-            cur.execute("INSERT INTO history (username, filename) VALUES ('%s', '%s')" % (username, filename))
-            conn.commit()
-            cur.close()
+            try:
+                cur.execute("INSERT INTO history (username, filename) VALUES (%s, %s)" % (username, filename))
+                conn.commit()
+            except:
+                abort(500)
+            finally:
+                cur.close()
 
             flash('File successfully uploaded', 'success')
             return redirect(url_for('send_cv'))
@@ -215,10 +223,16 @@ def admin():
         cur = conn.cursor()
         cur.execute("SELECT id FROM users WHERE username = %s", (username,))
         user = cur.fetchone()
-        if user:
-            cur.execute("INSERT INTO accepted_users (user_id) VALUES (%s)", (user[0],))
-            conn.commit()
         cur.close()
+        if user:
+            try:
+                cur = conn.cursor()
+                cur.execute("INSERT INTO accepted_users (user_id) VALUES (%s)", (user[0],))
+                conn.commit()
+            except:
+                abort(500)
+            finally:
+                cur.close()
         return redirect(url_for('admin'))
     return render_template('admin.html')
 
