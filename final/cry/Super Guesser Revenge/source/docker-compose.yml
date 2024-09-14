@@ -1,0 +1,12 @@
+version: '3'
+services:
+  hacktod:
+    container_name: Super-Guesser-Revenge
+    restart: always
+    build:
+      context: .
+      args:
+        binary: server.py
+    ports:
+      - "8015:5000"
+    read_only: true
