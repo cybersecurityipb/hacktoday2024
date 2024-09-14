@@ -30,7 +30,7 @@
         if (!empty($request_name)){
             $name = $request_name;
         }
-	$nonce = bin2hex(random_bytes(32));
+	    $nonce = bin2hex(random_bytes(32));
         $csp_header = "Content-Security-Policy: default-src 'self'; script-src 'self' 'nonce-" . $nonce . "'; style-src 'self';";
         header($csp_header);
     ?>

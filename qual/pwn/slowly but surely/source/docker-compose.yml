@@ -3,5 +3,5 @@ services:
   slowy-but-surely:
     build: .
     ports:
-      - 5000:5000
+      - 7013:5000
     privileged: true

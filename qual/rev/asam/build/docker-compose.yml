@@ -3,4 +3,4 @@ services:
   awesome:
     build: .
     ports:
-      - "8080:80"
+      - "6010:80"

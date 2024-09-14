@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block head %}
+    <title>Report</title>
+{% endblock %}
+
+{% block body %}
+<div class="flex justify-center items-center py-20">
+    <div class="bg-white p-10 rounded-lg shadow-lg w-full max-w-md h-auto">
+        <h1 class="font-bold mb-6 text-center">Register</h1>
+        <form action="{{ url_for('register') }}" method="post" class="space-y-4">
+            <div>
+                <label for="username" class="block text-gray-700 font-bold mb-2 text-2xl py-2">Username:</label>
+                <input type="text" id="username" name="username" required
+                    class="border text-xl border-gray-300 rounded-md w-full py-3 px-3 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
+            </div>
+            <div>
+                <label for="password" class="block text-gray-700 font-bold mb-2 text-2xl">Password:</label>
+                <input type="password" id="password" name="password" required
+                    class="border text-xl border-gray-300 rounded-md w-full py-3 px-3 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-primary-500">
+            </div>
+            <div class="flex justify-center py-4">
+                <button type="submit"
+                    class="bg-gray-800 text-white text-2xl font-bold py-2 px-10 rounded-md">Register</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

@@ -3,9 +3,9 @@ version: '3.8'
 services:
   php:
     build: .
-    container_name: php_app
+    container_name: sanitizer
     ports:
-      - "8080:20000"
+      - "10012:80"
     volumes:
       - .:/var/www/html:ro
     read_only: true

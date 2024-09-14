@@ -1,0 +1,56 @@
+{% extends 'layout.html' %} {% block head %}
+<title>Dashboard</title>
+{% endblock %} {% block body %}
+<h1 class="text-2xl font-bold mb-4">Home</h1>
+<p class="mb-6">Welcome to the home page!</p>
+
+<div class="overflow-x-auto">
+  <table class="min-w-full bg-white border border-gray-200">
+    <thead>
+      <tr class="w-full bg-gray-100 border-b">
+        <th
+          class="py-3 px-6 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+        >
+          No
+        </th>
+        <th
+          class="py-3 px-6 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+        >
+          Nama File
+        </th>
+        <th
+          class="py-3 px-6 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+        >
+          Uploaded At
+        </th>
+        <th
+          class="py-3 px-6 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+        >
+          Aksi
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in data %}
+      <tr class="border-b hover:bg-gray-50">
+        <td class="py-4 px-6 text-sm font-medium text-gray-900">
+          {{ loop.index }}
+        </td>
+        <td class="py-4 px-6 text-sm text-gray-900">
+          {{ row[2] | safe }}
+        </td>
+        <td class="py-4 px-6 text-sm text-gray-900">
+          {{ row[3] | safe }}
+        </td>
+        <td class="py-4 px-6 text-sm text-gray-900">
+            <a
+                href="https://www.youtube.com/watch?v=9FtrJMm238c"
+                class="text-blue-500 hover:text-blue-800"
+                >Download</a>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

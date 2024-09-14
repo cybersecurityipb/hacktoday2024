@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  tercuri:
+    build: .
+    container_name: tercuri
+    ports:
+      - "8012:5000"

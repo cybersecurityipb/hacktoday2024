@@ -29,7 +29,7 @@ def main():
             P = ellipticcurve.Point(curve, x, y)
             Q = P*flag
             print(f"p = {p}")
-            print(f"G = {P}")
+            print(f"P = {P}")
             print(f"Q = {Q}")
         except Exception as e:
             print("Something wrong")

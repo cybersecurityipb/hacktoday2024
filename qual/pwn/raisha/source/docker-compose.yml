@@ -3,5 +3,5 @@ services:
   raisha:
     build: .
     ports:
-      - 5000:5000
+      - 7010:5000
     privileged: true

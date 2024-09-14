@@ -1,0 +1,12 @@
+services:
+  haerde:
+    build:
+      context: .
+      args:
+        - GECKODRIVER_VERSION=0.34.0
+        - SELENIUM_VERSION=4.16.0
+    restart: always
+    container_name: haerde
+    env_file: ./src/.env
+    ports:
+      - "10012:5000"

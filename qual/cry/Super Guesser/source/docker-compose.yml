@@ -1,12 +1,12 @@
 version: '3'
 services:
   hacktod:
-    container_name: Super Guesser
+    container_name: Super-Guesser
     restart: always
     build:
       context: .
       args:
         binary: server.py
     ports:
-      - "18005:5000" # exposed:local
+      - "8010:5000"
     read_only: true

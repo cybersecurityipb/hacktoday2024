@@ -3,5 +3,5 @@ services:
   examination:
     build: .
     ports:
-      - 5000:5000
+      - 7011:5000
     privileged: true
