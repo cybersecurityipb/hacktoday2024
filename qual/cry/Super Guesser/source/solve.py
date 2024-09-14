@@ -6,12 +6,14 @@ gagal = 1 - 2*st.norm.cdf(-2)
 
 context.log_level = 'warn'
 
+nc = "nc 103.217.145.97 8010".split()
 
 loop = 1
 while True:
     print(loop)
     loop += 1
-    io = process(['python3', 'server.py'])
+    # io = process(['python3', 'server.py'])
+    io = remote('localhost', 8010)
 
     io.recvuntil(b'= ')
     iv = bytes.fromhex(io.recvline(0).decode())
@@ -33,7 +35,7 @@ while True:
 
     berhasil = 1 - st.norm.cdf(-C1) - st.norm.cdf(-C2)
     gagal = 1 -  st.norm.cdf(-C3) - st.norm.cdf(-C4)
-    if abs(berhasil - gagal) > 0.8:
+    if abs(berhasil - gagal) > 0.7:
         print(berhasil, gagal)
         break
     print(abs(berhasil - gagal))
@@ -62,7 +64,7 @@ for k in range(1, len(ct)):
         for j in range(256):
             iv_baru = b'\x00'*(15 - i) + bytes([j]) + blok_akhir
             send_ct = iv_baru + blok_kanan
-            prob = get_oracle(send_ct, 10)
+            prob = get_oracle(send_ct, 15)
             if abs(prob - berhasil) < abs(prob - gagal):
                 plain = xor(bytes([j]), i + 1, blok_kiri[-(i + 1)]) + plain
                 blok_akhir = xor(blok_kiri[-(i + 1):], plain, i + 2)
