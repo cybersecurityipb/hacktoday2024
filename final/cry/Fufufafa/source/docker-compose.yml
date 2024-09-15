@@ -1,0 +1,12 @@
+version: '3'
+services:
+  hacktod:
+    container_name: Fufufafa
+    restart: always
+    build:
+      context: .
+      args:
+        binary: server.py
+    ports:
+      - "8013:5000"
+    read_only: true
