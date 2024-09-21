@@ -1,8 +1,7 @@
-// Pin untuk indikator dan sinyal
-const int p1 = 12; 
-const int p2 = 8;
 
-// Durasi
+const int p1 = 12; //led
+const int p2 = 8; // buzzer
+
 const int d1 = 250;  
 const int d2 = d1 * 3;
 const int g1 = d1;
