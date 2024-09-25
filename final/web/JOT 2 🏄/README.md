@@ -14,15 +14,15 @@ my friend is a pentester. he mentioned that his client's FastAPI-based web appli
   
 .
   
-using automated tools for enumeration is allowed for this challenge, but you won't need them much tho.
+he said that the knowledge of fastapi will help.
   
-.  
+.
   
-jot2surf.hac.tod.my.id
+https://jot2surf.hac.tod.my.id
 
 ## Release
 
-black box bang, no source code, url aja jot2surf.hac.tod.my.id
+black box bang, no source code, url aja https://jot2surf.hac.tod.my.id
 
 ## Flag
 
