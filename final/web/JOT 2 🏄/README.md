@@ -10,11 +10,7 @@ web
 
 ## Description
 
-my friend is a pentester. he mentioned that his client's FastAPI-based web application is full of vulnerabilities.
-  
-.
-  
-he said that the knowledge of fastapi will help.
+my friend is a pentester. he said his client's FastAPI web is loaded with vulns. by chaining them, he got rce to the server. he also said knowing FastAPI helped a lot.
   
 .
   
@@ -26,4 +22,4 @@ black box bang, no source code, url aja https://jot2surf.hac.tod.my.id
 
 ## Flag
 
-`hacktoday{nanti_di_update_untuk_flag_nya}`
+`hacktoday{chained_eazyyy_web_vulns__9461832823}`
