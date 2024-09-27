@@ -1,0 +1,8 @@
+version: '3'
+services:
+  forensic_legacy:
+    container_name: forensic_legacy
+    build: .
+    ports:
+      - "2169:8081" # exposed:local
+    restart: unless-stopped
