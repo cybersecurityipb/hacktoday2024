@@ -1,9 +1,9 @@
 ## Forensic Technical Test
 
 ## Desc
-Level: Medium
+Level: Medium<br>
 The OT infrastructure is equipped with an automated mechanism that activates during critical cyber-attacks. When a severe threat is detected, the system immediately creates a backup of essential data by generating a system image. Afterward, all operations are automatically shut down to safeguard critical information and prevent further damage or unauthorized access.
-<br>
+<br><br>
 Your task is to recover our data from the system image using traditional recovery methods, but the mechanisms used to secure this data are still used today.
 
 
