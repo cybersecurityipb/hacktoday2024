@@ -5,8 +5,6 @@ services:
     restart: always
     build:
       context: .
-      args:
-        binary: server.py
     ports:
       - "8013:5000"
     read_only: true
