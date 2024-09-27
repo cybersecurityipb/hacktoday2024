@@ -6,7 +6,7 @@ Felt depressed after being hacked by ln y. ln y's friend upgraded his computer i
 computational abomination. This newly modified computer can simulate a 1:100 scale of
 the planet Earth. Because of this, even more complicated equations have emerged. This
 time, he truly believes that no one can decrypt his data.
-
+.
 Once again... prove him wrong. >:)
 
 ## Release
