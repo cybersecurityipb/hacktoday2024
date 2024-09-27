@@ -1,0 +1,32 @@
+version: "3"
+services:
+  app:
+    build: .
+    container_name: cross-god-app
+    ports:
+      - "3000:3000"
+    environment:
+      MONGO_URL: mongodb://mongo:27017/cross-god
+    depends_on:
+      - mongo
+    volumes:
+      - .:/usr/src/app
+    networks:
+      - cross-god-net
+
+  mongo:
+    image: mongo:latest
+    container_name: cross-god-mongo
+    volumes:
+      - mongo-data:/data/db
+    ports:
+      - "27017:27017"
+    networks:
+      - cross-god-net
+
+networks:
+  cross-god-net:
+    driver: bridge
+
+volumes:
+  mongo-data:

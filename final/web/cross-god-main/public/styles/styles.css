@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  background-color: #0d1117; /* Dark background color */
+  color: #c9d1d9; /* Light text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.login-box {
+  background-color: #161b22;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.login-box h2 {
+  margin-bottom: 10px;
+  color: #58a6ff; /* Light blue text color */
+  margin-bottom: 50px;
+}
+
+.login-box p {
+  margin-bottom: 20px;
+  color: #8b949e; /* Lighter text color */
+}
+
+.oauth-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.google {
+  background-color: #4285f4;
+  color: white;
+}
+
+.github {
+  background-color: #333;
+  color: white;
+}
+
+.form-group {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 15px;
+  color: #c9d1d9; /* Light text color */
+}
+
+.form-group input {
+  width: 92%;
+  padding: 10px;
+  border: 1px solid #30363d;
+  border-radius: 5px;
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+.sign-in-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #238636;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.sign-in-button:hover {
+  background-color: #2ea043;
+}
+
+a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Keys</title>
+    <link rel="stylesheet" href="/styles/styleDashboard.css" />
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #121212;
+        color: #e0e0e0;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        margin: 20px auto;
+        max-width: 1200px;
+        padding: 20px;
+        background-color: #1e1e1e;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+      .navbar {
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px 20px;
+        background-color: #232323;
+        border-bottom: 2px solid #444;
+      }
+      .logout-button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        background-color: #e74c3c;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      .logout-button:hover {
+        background-color: #c0392b;
+      }
+      .dashboard-header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .dashboard-header h1 {
+        font-size: 2.5em;
+        margin: 0;
+      }
+      .tabs {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      .tab-button {
+        padding: 10px 20px;
+        margin: 0 10px;
+        border: none;
+        border-radius: 4px;
+        background-color: #1e1e1e;
+        color: #e0e0e0;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      .tab-button.active,
+      .tab-button:hover {
+        background-color: #1abc9c;
+      }
+      .search-bar form {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      .search-bar input[type="text"] {
+        padding: 10px;
+        width: 300px;
+        border: 1px solid #444;
+        border-radius: 4px 0 0 4px;
+        outline: none;
+        background-color: #2a2a2a;
+        color: #e0e0e0;
+      }
+      .search-bar button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 0 4px 4px 0;
+        background-color: #1abc9c;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      .search-bar button:hover {
+        background-color: #16a085;
+      }
+      .generate-key-form {
+        margin-bottom: 20px;
+      }
+      .generate-key-form h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+      .generate-key-form form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        background-color: #232323;
+        padding: 20px;
+        border-radius: 8px;
+      }
+      .generate-key-form label {
+        flex: 1 1 100%;
+      }
+      .generate-key-form input,
+      .generate-key-form select,
+      .generate-key-form button {
+        flex: 1 1 calc(33.333% - 20px);
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #444;
+        border-radius: 4px;
+        background-color: #2a2a2a;
+        color: #e0e0e0;
+      }
+      .generate-key-form button {
+        background-color: #1abc9c;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      .generate-key-form button:hover {
+        background-color: #16a085;
+      }
+      .keys-section {
+        margin-bottom: 20px;
+      }
+      .keys-section h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+      .table-responsive {
+        overflow-x: auto;
+      }
+      .keys-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 10px;
+      }
+      .keys-table th,
+      .keys-table td {
+        padding: 10px;
+        border: 1px solid #444;
+        text-align: left;
+        background-color: #1e1e1e;
+      }
+      .keys-table th {
+        background-color: #1abc9c;
+      }
+      .pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .pagination a {
+        margin: 0 5px;
+        padding: 10px 15px;
+        text-decoration: none;
+        border: 1px solid #444;
+        color: #e0e0e0;
+        background-color: #2a2a2a;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      .pagination a.active,
+      .pagination a:hover {
+        background-color: #1abc9c;
+        color: #fff;
+      }
+      .keys-section form {
+        display: inline;
+      }
+      .keys-section button {
+        padding: 5px 10px;
+        border: none;
+        border-radius: 4px;
+        background-color: #e74c3c;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        margin: 5px;
+      }
+      .keys-section button:hover {
+        background-color: #c0392b;
+      }
+      .copy-button {
+        background-color: #3498db;
+      }
+      .copy-button:hover {
+        background-color: #2980b9;
+      }
+      @media (max-width: 768px) {
+        .generate-key-form form {
+          flex-direction: column;
+        }
+        .generate-key-form input,
+        .generate-key-form select,
+        .generate-key-form button {
+          flex: 1 1 100%;
+        }
+        .keys-table th,
+        .keys-table td {
+          padding: 8px;
+        }
+        .pagination a {
+          padding: 8px 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <form action="/admin/logout" method="POST">
+        <button class="logout-button">Logout</button>
+      </form>
+    </div>
+    <div class="container">
+      <div class="dashboard-header">
+        <h1>Manage Keys</h1>
+      </div>
+      <div class="tabs">
+        <button
+          class="tab-button"
+          onclick="window.location.href='/admin/dashboard'"
+        >
+          Overview
+        </button>
+        <button class="tab-button active">Manager</button>
+      </div>
+      <div class="search-bar">
+        <form action="/admin/manage" method="GET">
+          <input
+            type="text"
+            name="search"
+            placeholder="Search keys..."
+            value="<%= data.searchTerm %>"
+          />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+
+      <div class="generate-key-form">
+        <h2>Generate Keys</h2>
+        <form action="/admin/manage/generate-key" method="POST">
+          <label for="expiresAt">Expires At:</label>
+          <input type="date" name="expiresAt" required />
+          <label for="isPremium">Is Premium:</label>
+          <select name="isPremium" required>
+            <option value="false">Normal</option>
+            <option value="true">Premium</option>
+          </select>
+          <label for="howMuchKey">How Many Keys:</label>
+          <input type="number" name="howMuchKey" required />
+          <button type="submit">Generate</button>
+        </form>
+      </div>
+
+      <div class="keys-section">
+        <h2>Normal Keys</h2>
+        <div class="table-responsive">
+          <table class="keys-table">
+            <thead>
+              <tr>
+                <th>Key</th>
+                <th>Created At</th>
+                <th>Expires At</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% data.normalKeysRender.forEach(function(key) { %>
+              <tr>
+                <td><%= key.value %></td>
+                <td><%= data.formatDate(key.createdAt) %></td>
+                <td><%= data.formatDate(key.expiresAt) %></td>
+                <td>
+                  <button
+                    class="copy-button"
+                    onclick="copyToClipboard('<%= key.value %>')"
+                  >
+                    Copy
+                  </button>
+                  <form
+                    action="/admin/manage/delete-key/<%= key._id %>"
+                    method="POST"
+                    style="display: inline"
+                  >
+                    <button type="submit">Delete</button>
+                  </form>
+                  <form
+                    action="/admin/manage/reset-hwid/<%= key._id %>"
+                    method="POST"
+                    style="display: inline"
+                  >
+                    <button type="submit">Reset HWID</button>
+                  </form>
+                  <form
+                    action="/admin/manage/edit-ispremium-key/<%= key._id %>"
+                    method="POST"
+                    style="display: inline"
+                  >
+                    <button type="submit">Toggle Premium</button>
+                  </form>
+                </td>
+              </tr>
+              <% }) %>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagination">
+          <% for(let i = 1; i <= data.totalPages; i++) { %>
+          <a
+            href="?page=<%= i %>&search=<%= data.searchTerm %>"
+            class="<%= i === data.currentPage ? 'active' : '' %>"
+            ><%= i %></a
+          >
+          <% } %>
+        </div>
+        <form
+          action="/admin/manage/delete-key-normal"
+          method="POST"
+          style="display: inline"
+        >
+          <button type="submit">Delete All Normal Keys</button>
+        </form>
+      </div>
+
+      <div class="keys-section">
+        <h2>Premium Keys</h2>
+        <div class="table-responsive">
+          <table class="keys-table">
+            <thead>
+              <tr>
+                <th>Key</th>
+                <th>Created At</th>
+                <th>Expires At</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% data.premiumKeysRender.forEach(function(key) { %>
+              <tr>
+                <td><%= key.value %></td>
+                <td><%= data.formatDate(key.createdAt) %></td>
+                <td><%= data.formatDate(key.expiresAt) %></td>
+                <td>
+                  <button
+                    class="copy-button"
+                    onclick="copyToClipboard('<%= key.value %>')"
+                  >
+                    Copy
+                  </button>
+                  <form
+                    action="/admin/manage/delete-key/<%= key._id %>"
+                    method="POST"
+                    style="display: inline"
+                  >
+                    <button type="submit">Delete</button>
+                  </form>
+                  <form
+                    action="/admin/manage/reset-hwid/<%= key._id %>"
+                    method="POST"
+                    style="display: inline"
+                  >
+                    <button type="submit">Reset HWID</button>
+                  </form>
+                  <form
+                    action="/admin/manage/edit-ispremium-key/<%= key._id %>"
+                    method="POST"
+                    style="display: inline"
+                  >
+                    <button type="submit">Toggle Premium</button>
+                  </form>
+                </td>
+              </tr>
+              <% }) %>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagination">
+          <% for(let i = 1; i <= data.totalPages; i++) { %>
+          <a
+            href="?page=<%= i %>&search=<%= data.searchTerm %>"
+            class="<%= i === data.currentPage ? 'active' : '' %>"
+            ><%= i %></a
+          >
+          <% } %>
+        </div>
+        <form
+          action="/admin/manage/delete-key-premium"
+          method="POST"
+          style="display: inline"
+        >
+          <button type="submit">Delete All Premium Keys</button>
+        </form>
+      </div>
+
+      <div class="keys-section">
+        <h2>Generated Keys</h2>
+        <div class="table-responsive">
+          <table class="keys-table">
+            <thead>
+              <tr>
+                <th>Key</th>
+                <th>Created At</th>
+                <th>Expires At</th>
+                <th>Is Premium</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% data.generatedKeysRender.forEach(function(key) { %>
+              <tr>
+                <td><%= key.value %></td>
+                <td><%= data.formatDate(key.createdAt) %></td>
+                <td><%= data.formatDate(key.expiresAt) %></td>
+                <td><%= key.isPremium ? 'Premium' : 'Normal' %></td>
+                <td>
+                  <button
+                    class="copy-button"
+                    onclick="copyToClipboard('<%= key.value %>')"
+                  >
+                    Copy
+                  </button>
+                  <form
+                    action="/admin/manage/delete-generated-key/<%= key._id %>"
+                    method="POST"
+                    style="display: inline"
+                  >
+                    <button type="submit">Delete</button>
+                  </form>
+                  <form
+                    action="/admin/manage/edit-ispremium-generatedkey/<%= key._id %>"
+                    method="POST"
+                    style="display: inline"
+                  >
+                    <button type="submit">Toggle Premium</button>
+                  </form>
+                </td>
+              </tr>
+              <% }) %>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagination">
+          <% for(let i = 1; i <= data.totalPagesGenerated; i++) { %>
+          <a
+            href="?pageGenerated=<%= i %>&searchGenerated=<%= data.searchTermGenerated %>"
+            class="<%= i === data.currentPageGenerated ? 'active' : '' %>"
+            ><%= i %></a
+          >
+          <% } %>
+        </div>
+        <form
+          action="/admin/manage/delete-generated-key-all"
+          method="POST"
+          style="display: inline"
+        >
+          <button type="submit">Delete All Generated Keys</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      function copyToClipboard(text) {
+        const textarea = document.createElement("textarea");
+        textarea.value = text;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand("copy");
+        document.body.removeChild(textarea);
+        alert("Key copied to clipboard");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/styles/styleDashboard.css" />
+    <style>
+      .overview-chart canvas {
+        width: 100% !important;
+        height: 400px !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <form action="/admin/logout" method="POST">
+        <button class="logout-button">Logout</button>
+      </form>
+    </div>
+    <div class="container">
+      <div class="dashboard-header">
+        <h1>Statistic</h1>
+      </div>
+      <div class="tabs">
+        <button
+          class="tab-button active"
+          onclick="window.location.href='/admin/dashboard'"
+        >
+          Overview
+        </button>
+        <button
+          class="tab-button"
+          onclick="window.location.href='/admin/manage'"
+        >
+          Manager
+        </button>
+      </div>
+      <div class="stats">
+        <div class="stat-box">
+          <h2>Normal Keys</h2>
+          <p>1</p>
+        </div>
+        <div class="stat-box">
+          <h2>Premium Keys</h2>
+          <p>0</p>
+        </div>
+        <div class="stat-box">
+          <h2>Generated Normal Key</h2>
+          <p>2</p>
+        </div>
+        <div class="stat-box">
+          <h2>Generated Premium Key</h2>
+          <p>0</p>
+        </div>
+      </div>
+      <div class="overview-chart">
+        <h2>Overview (UTC/GMT)</h2>
+        <canvas id="myChart"></canvas>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const canvas = document.getElementById("myChart");
+        const ctx = canvas.getContext("2d");
+
+        const ratio = window.devicePixelRatio || 1;
+        canvas.width = canvas.offsetWidth * ratio;
+        canvas.height = canvas.offsetHeight * ratio;
+        ctx.scale(ratio, ratio);
+
+        const myChart = new Chart(ctx, {
+          type: "line",
+          data: {
+            labels: [
+              "2024-05-15",
+              "2024-05-16",
+              "2024-05-17",
+              "2024-05-18",
+              "2024-05-19",
+              "2024-05-20",
+              "2024-05-21",
+            ],
+            datasets: [
+              {
+                label: "Keys",
+                data: [0, 0, 0, 0, 0, 1, 1],
+                borderColor: "white",
+                borderWidth: 2,
+                pointBackgroundColor: "white",
+                pointRadius: 7,
+                fill: false,
+              },
+              {
+                label: "Generated Keys",
+                data: [0, 0, 0, 0, 0, 0, 0],
+                borderColor: "cyan",
+                borderWidth: 2,
+                pointBackgroundColor: "cyan",
+                pointRadius: 7,
+                fill: false,
+              },
+            ],
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+              x: {
+                ticks: {
+                  color: "white",
+                  font: {
+                    size: 14,
+                  },
+                },
+                grid: {
+                  color: "rgba(255, 255, 255, 0.1)",
+                },
+              },
+              y: {
+                ticks: {
+                  stepSize: 1,
+                  color: "white",
+                  font: {
+                    size: 14,
+                  },
+                },
+                grid: {
+                  color: "rgba(255, 255, 255, 0.1)",
+                },
+                beginAtZero: true,
+              },
+            },
+            plugins: {
+              legend: {
+                labels: {
+                  color: "white",
+                  font: {
+                    size: 16,
+                  },
+                },
+              },
+              tooltip: {
+                callbacks: {
+                  title: function (context) {
+                    return context[0].label;
+                  },
+                  label: function (context) {
+                    let label = context.dataset.label || "";
+                    if (label) {
+                      label += ": ";
+                    }
+                    if (context.parsed.y !== null) {
+                      label += context.parsed.y;
+                    }
+                    return label;
+                  },
+                  footer: function (context) {
+                    const index = context[0].dataIndex;
+                    const generatedKeysCount =
+                      context[0].chart.data.datasets[1].data[index];
+                    return "Generated Keys: " + generatedKeysCount;
+                  },
+                },
+                backgroundColor: "rgba(0, 0, 0, 0.7)",
+                titleColor: "white",
+                bodyColor: "white",
+                footerColor: "white",
+              },
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

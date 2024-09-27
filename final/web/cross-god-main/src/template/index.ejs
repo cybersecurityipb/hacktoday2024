@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ninja Hub</title>
+    <link rel="stylesheet" href="/styles/styleIndex.css" />
+  </head>
+  <body>
+    <div class="profile-card">
+      <img
+        src="https://i1.sndcdn.com/artworks-ACi2iXZQeSQ10sEH-xV3pZw-t500x500.jpg"
+        alt="Monalisa Roy"
+        class="profile-img"
+      />
+      <h2>Cross God</h2>
+      <p>Be the cross god right now!!</p>
+      <div class="buttons">
+        <button class="message-button">Request the God</button>
+      </div>
+    </div>
+    <script>
+      const scriptLink = "/request-flag";
+      const downloadButton = document.querySelector(".message-button");
+      downloadButton.addEventListener("click", () => {
+        window.location.href = scriptLink;
+      });
+    </script>
+  </body>
+</html>
