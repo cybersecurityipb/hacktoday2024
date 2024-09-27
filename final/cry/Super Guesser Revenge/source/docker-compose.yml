@@ -1,6 +1,6 @@
 version: '3'
 services:
-  hacktod:
+  superguesser:
     container_name: Super-Guesser-Revenge
     restart: always
     build:
