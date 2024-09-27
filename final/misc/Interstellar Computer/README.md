@@ -7,7 +7,7 @@ computational abomination. This newly modified computer can simulate a 1:100 sca
 the planet Earth. Because of this, even more complicated equations have emerged. This
 time, he truly believes that no one can decrypt his data.
 
-Once again... prove him wrong. >:
+Once again... prove him wrong. >:)
 
 ## Release
 - encrypt.py
