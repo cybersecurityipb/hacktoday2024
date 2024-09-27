@@ -17,6 +17,7 @@ Berdasarkan pengakuan korban ia mendapatkan email tawaran pekerjaan freelance de
 password archive : maafyagesngasihmalemmalem
 
 notes : sudah dapet flag part1? udah tau arah tujuan untuk mendapatkan flag part2 tapi menemukan anomali di file bersangkutan? coba ke nc ini `nc IP 2169`
+
 notes : ada file exe? mager baca hasil decompile? strings solusinya, asal tau arah tujuannya pasti ga tersesat kok menggunakan strings (:moai:) 
 
 attachment : https://mega.nz/file/I8hgSbra#Ub6xCaT9UvTJOWdJ521zENvA3EoA064JFpd3JykCFeo
