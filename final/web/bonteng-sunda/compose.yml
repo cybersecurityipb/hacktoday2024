@@ -1,0 +1,8 @@
+services:
+  bonteng:
+    container_name: bontent-sunda
+    build:
+      context: .
+    ports:
+      - "5500:5500"
+    read_only: true
