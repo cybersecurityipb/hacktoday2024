@@ -1,6 +1,6 @@
 version: '3'
 services:
-  Fufufafa:
+  fufufafa:
     container_name: Fufufafa
     restart: always
     build:

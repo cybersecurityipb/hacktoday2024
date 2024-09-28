@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-flag = open('flag.txt','rb').read()
 if __name__ == "__main__":
     score = 0
     print('''
