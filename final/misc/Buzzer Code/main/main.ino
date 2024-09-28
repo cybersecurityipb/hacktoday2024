@@ -25,7 +25,7 @@ void setup() {
 void loop() {
     f2(); f1(); f1(); f1(); delay(ls); f1(); f1(); f2(); delay(ls); f2(); f2(); f1(); f1(); delay(ls); f1(); f1(); f1(); f2(); f2(); delay(ls); f1(); f2(); f1(); delay(ls); f2(); f1(); f2(); delay(ls);
     f2(); f2(); f2(); f2(); f2(); delay(ls); f2(); f1(); f2(); delay(ls); f2(); f1(); f1(); delay(ls); f1(); f1(); delay(ls); f2(); f1(); f2(); f2(); delay(ls); f1(); delay(ls); f1(); f2(); f1(); delay(ls); f2(); f1(); f2(); f1(); delay(ls); f1(); f1(); f1(); f1(); f2(); delay(ls);
-    f2(); f1(); f2(); delay(ls); f1(); f1(); f1(); f1(); f2(); delay(ls);
+    f2(); f1(); f2(); f2(); delay(ls); f1(); f1(); f1(); f1(); f2(); delay(ls);
     f2(); f1(); f1(); f2(); delay(ls);
     f1(); f2(); f2(); f2(); f2(); delay(ls); 
     f2(); f1(); f1(); f2(); delay(ls); 
