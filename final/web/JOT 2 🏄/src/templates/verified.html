@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOT2🏄️</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f9ff;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .welcome-container {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            width: 600px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 12px 20px;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        img {
+            width: 30%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        .ping-form {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .ping-form input[type="text"] {
+            width: calc(100% - 24px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .ping-form button {
+            width: 100%;
+        }
+        .ping-result, .ping-error {
+            display: none;
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #e9ecef;
+            border: 1px solid #ddd;
+            width: 100%;
+            max-width: 600px;
+            box-sizing: border-box;
+            white-space: pre-wrap;
+        }
+        .ping-result {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .ping-error {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .loading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .spinner {
+            border: 4px solid rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #007BFF;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <h1>Welcome, {{ username }}!</h1>
+        <p>You have successfully logged in.</p>
+        <button onclick="logout()">Logout</button>
+        
+        <img src="/assets/michie3.svg">
+        <p>Do you think the flag is here? Lol, no.</p>
+        <div class="ping-form">
+            <h2>Ping Check</h2>
+            <form id="ping-form">
+                <input type="text" id="ip-address" placeholder="Enter IP address" required>
+                <button type="submit">Check</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="ping-result" class="ping-result"></div>
+    <div id="ping-error" class="ping-error"></div>
+    <div id="loading" class="loading" style="display: none;">
+        <div class="spinner"></div>
+        <p>Ping pong! Waiting for a bounce back...</p>
+    </div>
+
+    <script>
+        function logout() {
+            window.location.href = '/logout';
+        }
+        document.getElementById('ping-form').addEventListener('submit', async function(event) {
+            event.preventDefault();
+
+            const ipAddress = document.getElementById('ip-address').value;
+            const pingResult = document.getElementById('ping-result');
+            const pingError = document.getElementById('ping-error');
+            const loading = document.getElementById('loading');
+
+            const ipRegex = /^(25[0-5]|2[0-4][0-9]|[0-1]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[0-1]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[0-1]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[0-1]?[0-9][0-9]?)$/;
+
+            pingResult.textContent = '';
+            pingError.textContent = '';
+
+            pingResult.style.display = 'none';
+            pingError.style.display = 'none';
+
+            if (!ipRegex.test(ipAddress)) {
+                pingError.textContent = 'Invalid IP address format.';
+                pingError.style.display = 'block';
+                return;
+            }
+
+            // Show the loading spinner
+            loading.style.display = 'flex';
+
+            try {
+                const response = await fetch('/api/check_ping_result', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ ip: ipAddress }),
+                });
+
+                if (!response.ok) {
+                    throw new Error('Network response was not ok.');
+                }
+
+                const result = await response.json();
+
+                if (result.success) {
+                    pingResult.textContent = `Ping result: ${result.output}`;
+                    pingResult.style.display = 'block';
+                } else {
+                    pingError.textContent = result.message || 'Ping check failed.';
+                    pingError.style.display = 'block';
+                }
+            } catch (error) {
+                pingError.textContent = 'There was a problem with the ping check: ' + error.message;
+                pingError.style.display = 'block';
+            } finally {
+                loading.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>

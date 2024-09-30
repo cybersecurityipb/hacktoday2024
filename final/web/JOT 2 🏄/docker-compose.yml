@@ -1,0 +1,13 @@
+services:
+  hacktoday:
+    container_name: jot2surf
+    hostname: michie-machine
+    restart: always
+    build:
+      context: .
+    ports:
+      - "80:80" # exposed:local
+    volumes:
+      - ./src/databases:/ctf/src/databases
+      - ./src/__pycache__:/ctf/src/__pycache__
+    read_only: true
