@@ -6,7 +6,7 @@ services:
     build:
       context: .
     ports:
-      - "80:80" # exposed:local
+      - "80:8000" # exposed:local
     volumes:
       - ./src/databases:/ctf/src/databases
       - ./src/__pycache__:/ctf/src/__pycache__
