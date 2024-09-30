@@ -23,3 +23,9 @@ black box bang, no source code, url aja https://jot2surf.hac.tod.my.id
 ## Flag
 
 `hacktoday{chained_eazyyy_web_vulns__9461832823}`
+
+## How to Run
+
+```bash
+./deploy_safe.sh
+```
